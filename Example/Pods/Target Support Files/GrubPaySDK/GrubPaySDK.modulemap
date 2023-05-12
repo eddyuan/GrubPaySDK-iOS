@@ -1,0 +1,6 @@
+framework module GrubPaySDK {
+  umbrella header "GrubPaySDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_GrubPaySDK_Example {
+  umbrella header "Pods-GrubPaySDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

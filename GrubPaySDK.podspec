@@ -32,9 +32,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'GrubPaySDK/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'GrubPaySDK' => ['GrubPaySDK/Assets/*.png']
-  # }
+  s.ios.resource_bundle = { 'GrubPaySDK' => ['GrubPaySDK/Resources/*.lproj'] }
+  
+  s.resource_bundles = {
+    'GrubPaySDK' => ['GrubPaySDK/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

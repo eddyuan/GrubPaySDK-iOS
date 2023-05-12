@@ -1,0 +1,22 @@
+{
+  "name": "GrubPaySDK",
+  "version": "0.1.0",
+  "summary": "A short description of GrubPaySDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/43017558/GrubPaySDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "43017558": "edward.yuan@iotpay.ca"
+  },
+  "source": {
+    "git": "https://github.com/43017558/GrubPaySDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "GrubPaySDK/Classes/**/*"
+}

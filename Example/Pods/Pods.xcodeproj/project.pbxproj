@@ -1,0 +1,1386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22AD34B23ED2AE2CE4C0E9EC4A0096F1 /* GrubPaySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3466ED50989FDFEE6EAD75B5F288D6B5 /* GrubPaySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
+		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C0029102A0487E1006909AD /* GPInputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00290F2A0487E1006909AD /* GPInputStyle.swift */; };
+		2C0029122A0996ED006909AD /* GPInput+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029112A0996ED006909AD /* GPInput+Card.swift */; };
+		2C0029142A09B9AF006909AD /* GPInput+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029132A09B9AF006909AD /* GPInput+Expiry.swift */; };
+		2C0029162A09C205006909AD /* GPInput+CVV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029152A09C205006909AD /* GPInput+CVV.swift */; };
+		2C0029182A09C3A2006909AD /* GPInput+HolderName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029172A09C3A2006909AD /* GPInput+HolderName.swift */; };
+		2C00293C2A0C6428006909AD /* cc-visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291A2A0C6428006909AD /* cc-visa@2x.png */; };
+		2C00293D2A0C6428006909AD /* cc-discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291B2A0C6428006909AD /* cc-discover.png */; };
+		2C00293E2A0C6428006909AD /* cc-maestro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291C2A0C6428006909AD /* cc-maestro.png */; };
+		2C00293F2A0C6428006909AD /* cc-visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291D2A0C6428006909AD /* cc-visa@3x.png */; };
+		2C0029402A0C6428006909AD /* cc-jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291E2A0C6428006909AD /* cc-jcb@3x.png */; };
+		2C0029412A0C6428006909AD /* cc-cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291F2A0C6428006909AD /* cc-cvc@2x.png */; };
+		2C0029422A0C6428006909AD /* cc-discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029202A0C6428006909AD /* cc-discover@3x.png */; };
+		2C0029432A0C6428006909AD /* cc-dinner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029212A0C6428006909AD /* cc-dinner@3x.png */; };
+		2C0029442A0C6428006909AD /* cc-maestro@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029222A0C6428006909AD /* cc-maestro@3x.png */; };
+		2C0029452A0C6428006909AD /* cc-master@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029232A0C6428006909AD /* cc-master@2x.png */; };
+		2C0029462A0C6428006909AD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029242A0C6428006909AD /* .gitkeep */; };
+		2C0029472A0C6428006909AD /* cc-generic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029252A0C6428006909AD /* cc-generic@3x.png */; };
+		2C0029482A0C6428006909AD /* cc-amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029262A0C6428006909AD /* cc-amex.png */; };
+		2C0029492A0C6428006909AD /* cc-generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029272A0C6428006909AD /* cc-generic@2x.png */; };
+		2C00294A2A0C6428006909AD /* cc-cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029282A0C6428006909AD /* cc-cvc.png */; };
+		2C00294B2A0C6428006909AD /* cc-master@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029292A0C6428006909AD /* cc-master@3x.png */; };
+		2C00294C2A0C6428006909AD /* cc-dinner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292A2A0C6428006909AD /* cc-dinner@2x.png */; };
+		2C00294D2A0C6428006909AD /* cc-maestro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292B2A0C6428006909AD /* cc-maestro@2x.png */; };
+		2C00294E2A0C6428006909AD /* cc-cvc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292C2A0C6428006909AD /* cc-cvc@3x.png */; };
+		2C00294F2A0C6428006909AD /* cc-discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292D2A0C6428006909AD /* cc-discover@2x.png */; };
+		2C0029502A0C6428006909AD /* cc-jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292E2A0C6428006909AD /* cc-jcb@2x.png */; };
+		2C0029512A0C6428006909AD /* cc-amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292F2A0C6428006909AD /* cc-amex@2x.png */; };
+		2C0029522A0C6428006909AD /* cc-amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029302A0C6428006909AD /* cc-amex@3x.png */; };
+		2C0029532A0C6428006909AD /* cc-dinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029312A0C6428006909AD /* cc-dinner.png */; };
+		2C0029542A0C6428006909AD /* cc-bcglobal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029322A0C6428006909AD /* cc-bcglobal.png */; };
+		2C0029552A0C6428006909AD /* cc-unionpay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029332A0C6428006909AD /* cc-unionpay@2x.png */; };
+		2C0029562A0C6428006909AD /* cc-unionpay.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029342A0C6428006909AD /* cc-unionpay.png */; };
+		2C0029572A0C6428006909AD /* cc-bcglobal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029352A0C6428006909AD /* cc-bcglobal@3x.png */; };
+		2C0029582A0C6428006909AD /* cc-bcglobal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029362A0C6428006909AD /* cc-bcglobal@2x.png */; };
+		2C0029592A0C6428006909AD /* cc-visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029372A0C6428006909AD /* cc-visa.png */; };
+		2C00295A2A0C6428006909AD /* cc-master.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029382A0C6428006909AD /* cc-master.png */; };
+		2C00295B2A0C6428006909AD /* cc-unionpay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029392A0C6428006909AD /* cc-unionpay@3x.png */; };
+		2C00295C2A0C6428006909AD /* cc-generic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00293A2A0C6428006909AD /* cc-generic.png */; };
+		2C00295D2A0C6428006909AD /* cc-jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00293B2A0C6428006909AD /* cc-jcb.png */; };
+		2C00295F2A0D8892006909AD /* GPInput+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00295E2A0D8892006909AD /* GPInput+Country.swift */; };
+		2C0029612A0D8CBB006909AD /* GPCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029602A0D8CBB006909AD /* GPCountryPicker.swift */; };
+		2C0029672A0EC118006909AD /* GPCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029662A0EC118006909AD /* GPCardForm.swift */; };
+		2C5A8C3829FB4BB10038D3C1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A8C3729FB4BB10038D3C1 /* Enums.swift */; };
+		2C901FA72A01B61D00DADC09 /* GPExpiryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C901FA62A01B61D00DADC09 /* GPExpiryPicker.swift */; };
+		2C9020352A0333BC00DADC09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C90200B2A0333BC00DADC09 /* Localizable.strings */; };
+		2CA89EAD2A04352200DA5850 /* GPInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA89EAC2A04352200DA5850 /* GPInput.swift */; };
+		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
+		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
+		33DFFB2FF6E320468B348B485DD45D7E /* Pods-GrubPaySDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124BE762C46BF8B57919DDA18DE9F124 /* Pods-GrubPaySDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4A82A6F80E805E824B4D9FDF8BD3E264 /* GrubPaySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA002712F930F823DEFFE56832586CF6 /* GrubPaySDK-dummy.m */; };
+		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
+		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
+		745E528729EE7401745CAF4A737F8FA8 /* Pods-GrubPaySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A476FF009CD43B560951370079D94 /* Pods-GrubPaySDK_Example-dummy.m */; };
+		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
+		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
+		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9B4A5BAE661D648534426CA2FC202274 /* Pods-GrubPaySDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F317602BF41007CD2C92141BA5E8AF4 /* Pods-GrubPaySDK_Tests-dummy.m */; };
+		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
+		A81B693D616BE8545304F1E98719BDCC /* Pods-GrubPaySDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ABFB724C989A5462683BCD0361AE421 /* Pods-GrubPaySDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
+		B5DC6AF043D27D424D036331D63BD96D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
+		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
+		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
+		E0A2ADE63A9999671AC6190FA88D153D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		F43CD14F0A971A19E762A3F8082A1C15 /* GrubpayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubpayElement.swift */; };
+		F63933AE089493BC1FA943CD54FF6F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12FF64385CFAACCB7612AB8868CFC0AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		1A5EC94A8F43A915B59A6E780B4A6380 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B78181CEE004200C39D588BF34625D1;
+			remoteInfo = GrubPaySDK;
+		};
+		841FF93C7413C9AE5E9EB651D26EB174 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAFFCBAA1A04555DBB657BEFB92BECFD;
+			remoteInfo = "Pods-GrubPaySDK_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		033293CA61A3BBCB97BCAD59CFE6F536 /* Pods-GrubPaySDK_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GrubPaySDK_Tests"; path = Pods_GrubPaySDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		124BE762C46BF8B57919DDA18DE9F124 /* Pods-GrubPaySDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GrubPaySDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		128A5887E805EEA192A51CE2FBE9CD06 /* GrubPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GrubPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		254DE6CDBA97A51BA245006AA8A97C3E /* Pods-GrubPaySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrubPaySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		2C00290F2A0487E1006909AD /* GPInputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPInputStyle.swift; sourceTree = "<group>"; };
+		2C0029112A0996ED006909AD /* GPInput+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Card.swift"; sourceTree = "<group>"; };
+		2C0029132A09B9AF006909AD /* GPInput+Expiry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Expiry.swift"; sourceTree = "<group>"; };
+		2C0029152A09C205006909AD /* GPInput+CVV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+CVV.swift"; sourceTree = "<group>"; };
+		2C0029172A09C3A2006909AD /* GPInput+HolderName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+HolderName.swift"; sourceTree = "<group>"; };
+		2C00291A2A0C6428006909AD /* cc-visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa@2x.png"; sourceTree = "<group>"; };
+		2C00291B2A0C6428006909AD /* cc-discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover.png"; sourceTree = "<group>"; };
+		2C00291C2A0C6428006909AD /* cc-maestro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro.png"; sourceTree = "<group>"; };
+		2C00291D2A0C6428006909AD /* cc-visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa@3x.png"; sourceTree = "<group>"; };
+		2C00291E2A0C6428006909AD /* cc-jcb@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb@3x.png"; sourceTree = "<group>"; };
+		2C00291F2A0C6428006909AD /* cc-cvc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc@2x.png"; sourceTree = "<group>"; };
+		2C0029202A0C6428006909AD /* cc-discover@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover@3x.png"; sourceTree = "<group>"; };
+		2C0029212A0C6428006909AD /* cc-dinner@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner@3x.png"; sourceTree = "<group>"; };
+		2C0029222A0C6428006909AD /* cc-maestro@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro@3x.png"; sourceTree = "<group>"; };
+		2C0029232A0C6428006909AD /* cc-master@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master@2x.png"; sourceTree = "<group>"; };
+		2C0029242A0C6428006909AD /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		2C0029252A0C6428006909AD /* cc-generic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic@3x.png"; sourceTree = "<group>"; };
+		2C0029262A0C6428006909AD /* cc-amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex.png"; sourceTree = "<group>"; };
+		2C0029272A0C6428006909AD /* cc-generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic@2x.png"; sourceTree = "<group>"; };
+		2C0029282A0C6428006909AD /* cc-cvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc.png"; sourceTree = "<group>"; };
+		2C0029292A0C6428006909AD /* cc-master@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master@3x.png"; sourceTree = "<group>"; };
+		2C00292A2A0C6428006909AD /* cc-dinner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner@2x.png"; sourceTree = "<group>"; };
+		2C00292B2A0C6428006909AD /* cc-maestro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro@2x.png"; sourceTree = "<group>"; };
+		2C00292C2A0C6428006909AD /* cc-cvc@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc@3x.png"; sourceTree = "<group>"; };
+		2C00292D2A0C6428006909AD /* cc-discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover@2x.png"; sourceTree = "<group>"; };
+		2C00292E2A0C6428006909AD /* cc-jcb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb@2x.png"; sourceTree = "<group>"; };
+		2C00292F2A0C6428006909AD /* cc-amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex@2x.png"; sourceTree = "<group>"; };
+		2C0029302A0C6428006909AD /* cc-amex@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex@3x.png"; sourceTree = "<group>"; };
+		2C0029312A0C6428006909AD /* cc-dinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner.png"; sourceTree = "<group>"; };
+		2C0029322A0C6428006909AD /* cc-bcglobal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal.png"; sourceTree = "<group>"; };
+		2C0029332A0C6428006909AD /* cc-unionpay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay@2x.png"; sourceTree = "<group>"; };
+		2C0029342A0C6428006909AD /* cc-unionpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay.png"; sourceTree = "<group>"; };
+		2C0029352A0C6428006909AD /* cc-bcglobal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal@3x.png"; sourceTree = "<group>"; };
+		2C0029362A0C6428006909AD /* cc-bcglobal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal@2x.png"; sourceTree = "<group>"; };
+		2C0029372A0C6428006909AD /* cc-visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa.png"; sourceTree = "<group>"; };
+		2C0029382A0C6428006909AD /* cc-master.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master.png"; sourceTree = "<group>"; };
+		2C0029392A0C6428006909AD /* cc-unionpay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay@3x.png"; sourceTree = "<group>"; };
+		2C00293A2A0C6428006909AD /* cc-generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic.png"; sourceTree = "<group>"; };
+		2C00293B2A0C6428006909AD /* cc-jcb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb.png"; sourceTree = "<group>"; };
+		2C00295E2A0D8892006909AD /* GPInput+Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Country.swift"; sourceTree = "<group>"; };
+		2C0029602A0D8CBB006909AD /* GPCountryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPCountryPicker.swift; sourceTree = "<group>"; };
+		2C0029662A0EC118006909AD /* GPCardForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPCardForm.swift; path = GrubPaySDK/Classes/GPCardForm.swift; sourceTree = "<group>"; };
+		2C5A8C3729FB4BB10038D3C1 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		2C901FA62A01B61D00DADC09 /* GPExpiryPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPExpiryPicker.swift; sourceTree = "<group>"; };
+		2C90200C2A0333BC00DADC09 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90200D2A0333BC00DADC09 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90200E2A0333BC00DADC09 /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_AU; path = en_AU.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90200F2A0333BC00DADC09 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020102A0333BC00DADC09 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020112A0333BC00DADC09 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C9020122A0333BC00DADC09 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020132A0333BC00DADC09 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C9020142A0333BC00DADC09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020152A0333BC00DADC09 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020162A0333BC00DADC09 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C9020172A0333BC00DADC09 /* es_419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es_419; path = es_419.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020182A0333BC00DADC09 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020192A0333BC00DADC09 /* pt_BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_BR; path = pt_BR.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90201A2A0333BC00DADC09 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90201B2A0333BC00DADC09 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90201C2A0333BC00DADC09 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90201D2A0333BC00DADC09 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_PT; path = pt_PT.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90201E2A0333BC00DADC09 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90201F2A0333BC00DADC09 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020202A0333BC00DADC09 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020212A0333BC00DADC09 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020222A0333BC00DADC09 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C9020232A0333BC00DADC09 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020242A0333BC00DADC09 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020252A0333BC00DADC09 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020262A0333BC00DADC09 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020272A0333BC00DADC09 /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = en_GB.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020282A0333BC00DADC09 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020292A0333BC00DADC09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90202A2A0333BC00DADC09 /* zh-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-CN"; path = "zh-CN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C90202B2A0333BC00DADC09 /* fr_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_CA; path = fr_CA.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90202C2A0333BC00DADC09 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90202D2A0333BC00DADC09 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90202E2A0333BC00DADC09 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C90202F2A0333BC00DADC09 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020302A0333BC00DADC09 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020312A0333BC00DADC09 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020322A0333BC00DADC09 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020332A0333BC00DADC09 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C9020342A0333BC00DADC09 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2CA89EAC2A04352200DA5850 /* GPInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPInput.swift; sourceTree = "<group>"; };
+		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		33AE0FBD3614E812B518FE92A70C37EF /* Pods-GrubPaySDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GrubPaySDK_Example.modulemap"; sourceTree = "<group>"; };
+		340E331FAF01259372786724B8B26A08 /* GrubPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GrubPaySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3466ED50989FDFEE6EAD75B5F288D6B5 /* GrubPaySDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrubPaySDK-umbrella.h"; sourceTree = "<group>"; };
+		36D2F1C2CC9E742BDA398C9C239A30B7 /* Pods-GrubPaySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		38485DE0886557EE3B1B79CB4FAC51DD /* Pods-GrubPaySDK_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GrubPaySDK_Example"; path = Pods_GrubPaySDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B31372B494D4D7C7A41CF9DCF4E776F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		3FC2ED9F6D9E5F89B73D18C6319C0F7F /* Pods-GrubPaySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GrubPaySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		438A476FF009CD43B560951370079D94 /* Pods-GrubPaySDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GrubPaySDK_Example-dummy.m"; sourceTree = "<group>"; };
+		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		4A02A7B9F33ED5D315D2A147A70102FE /* GrubPaySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrubPaySDK-prefix.pch"; sourceTree = "<group>"; };
+		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		547F7A29C95B277B1F8EB99F52AC80E5 /* Pods-GrubPaySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5852E8AEEBA3F6F789509ECA08D55B1E /* Pods-GrubPaySDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GrubPaySDK_Tests.modulemap"; sourceTree = "<group>"; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBE7DFE389A77FB2CEBA82452311BFD /* Pods-GrubPaySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrubPaySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		6ABFB724C989A5462683BCD0361AE421 /* Pods-GrubPaySDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GrubPaySDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		72CD73CBA3D08331D503F9F34A3CA6F4 /* Pods-GrubPaySDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrubPaySDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		873E9165995F2BD81A4824EEFB978257 /* GrubPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GrubPaySDK.debug.xcconfig; sourceTree = "<group>"; };
+		87C9CEB3B3942612BEF6386C64CB829E /* Pods-GrubPaySDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrubPaySDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		8FB2C1815F4700F31894EB4D1E5D91B1 /* GrubPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GrubPaySDK.release.xcconfig; sourceTree = "<group>"; };
+		909A56D5D4C4773119EC411A0F6FB7B4 /* Pods-GrubPaySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GrubPaySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F317602BF41007CD2C92141BA5E8AF4 /* Pods-GrubPaySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GrubPaySDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		A61ED119951047D1B93EF48191DD632B /* GrubPaySDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GrubPaySDK-Info.plist"; sourceTree = "<group>"; };
+		A660C3C3BE4292EA0A04B251F616B032 /* Pods-GrubPaySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		ACF30B631F407A2F75588E854F272901 /* GrubPaySDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GrubPaySDK.modulemap; sourceTree = "<group>"; };
+		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		B517B2236F49FADC155A120AFCD0DE27 /* Pods-GrubPaySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrubPaySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		D0E68BF2FF67BE3C3A60C1305E728560 /* Pods-GrubPaySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubpayElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrubpayElement.swift; path = GrubPaySDK/Classes/GrubpayElement.swift; sourceTree = "<group>"; };
+		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F1B355655FB3FE2639D5FD62EABA67F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FA002712F930F823DEFFE56832586CF6 /* GrubPaySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GrubPaySDK-dummy.m"; sourceTree = "<group>"; };
+		FD1AA09B6E84D0C573610E7946AB4996 /* Pods-GrubPaySDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrubPaySDK_Example-Info.plist"; sourceTree = "<group>"; };
+		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21B0B087672E090B5F1B46A40CF464E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DC6AF043D27D424D036331D63BD96D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8021F2A0C41D0D997C15656663983B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0A2ADE63A9999671AC6190FA88D153D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A67C55AD534677D8992B6C85C846018E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F63933AE089493BC1FA943CD54FF6F16 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3B880388FF17A336FBF90E30E537508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */,
+				C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */,
+				875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */,
+				9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2716BE7EC212C47230FEE74C92C03ABC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACF30B631F407A2F75588E854F272901 /* GrubPaySDK.modulemap */,
+				FA002712F930F823DEFFE56832586CF6 /* GrubPaySDK-dummy.m */,
+				A61ED119951047D1B93EF48191DD632B /* GrubPaySDK-Info.plist */,
+				4A02A7B9F33ED5D315D2A147A70102FE /* GrubPaySDK-prefix.pch */,
+				3466ED50989FDFEE6EAD75B5F288D6B5 /* GrubPaySDK-umbrella.h */,
+				873E9165995F2BD81A4824EEFB978257 /* GrubPaySDK.debug.xcconfig */,
+				8FB2C1815F4700F31894EB4D1E5D91B1 /* GrubPaySDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GrubPaySDK";
+			sourceTree = "<group>";
+		};
+		2C0029192A0C6428006909AD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2C00291A2A0C6428006909AD /* cc-visa@2x.png */,
+				2C00291B2A0C6428006909AD /* cc-discover.png */,
+				2C00291C2A0C6428006909AD /* cc-maestro.png */,
+				2C00291D2A0C6428006909AD /* cc-visa@3x.png */,
+				2C00291E2A0C6428006909AD /* cc-jcb@3x.png */,
+				2C00291F2A0C6428006909AD /* cc-cvc@2x.png */,
+				2C0029202A0C6428006909AD /* cc-discover@3x.png */,
+				2C0029212A0C6428006909AD /* cc-dinner@3x.png */,
+				2C0029222A0C6428006909AD /* cc-maestro@3x.png */,
+				2C0029232A0C6428006909AD /* cc-master@2x.png */,
+				2C0029242A0C6428006909AD /* .gitkeep */,
+				2C0029252A0C6428006909AD /* cc-generic@3x.png */,
+				2C0029262A0C6428006909AD /* cc-amex.png */,
+				2C0029272A0C6428006909AD /* cc-generic@2x.png */,
+				2C0029282A0C6428006909AD /* cc-cvc.png */,
+				2C0029292A0C6428006909AD /* cc-master@3x.png */,
+				2C00292A2A0C6428006909AD /* cc-dinner@2x.png */,
+				2C00292B2A0C6428006909AD /* cc-maestro@2x.png */,
+				2C00292C2A0C6428006909AD /* cc-cvc@3x.png */,
+				2C00292D2A0C6428006909AD /* cc-discover@2x.png */,
+				2C00292E2A0C6428006909AD /* cc-jcb@2x.png */,
+				2C00292F2A0C6428006909AD /* cc-amex@2x.png */,
+				2C0029302A0C6428006909AD /* cc-amex@3x.png */,
+				2C0029312A0C6428006909AD /* cc-dinner.png */,
+				2C0029322A0C6428006909AD /* cc-bcglobal.png */,
+				2C0029332A0C6428006909AD /* cc-unionpay@2x.png */,
+				2C0029342A0C6428006909AD /* cc-unionpay.png */,
+				2C0029352A0C6428006909AD /* cc-bcglobal@3x.png */,
+				2C0029362A0C6428006909AD /* cc-bcglobal@2x.png */,
+				2C0029372A0C6428006909AD /* cc-visa.png */,
+				2C0029382A0C6428006909AD /* cc-master.png */,
+				2C0029392A0C6428006909AD /* cc-unionpay@3x.png */,
+				2C00293A2A0C6428006909AD /* cc-generic.png */,
+				2C00293B2A0C6428006909AD /* cc-jcb.png */,
+			);
+			name = Assets;
+			path = GrubPaySDK/Assets;
+			sourceTree = "<group>";
+		};
+		2C90200A2A0333BC00DADC09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2C90200B2A0333BC00DADC09 /* Localizable.strings */,
+			);
+			name = Resources;
+			path = GrubPaySDK/Resources;
+			sourceTree = "<group>";
+		};
+		2C9020392A04349A00DADC09 /* GPInput */ = {
+			isa = PBXGroup;
+			children = (
+				2C901FA62A01B61D00DADC09 /* GPExpiryPicker.swift */,
+				2CA89EAC2A04352200DA5850 /* GPInput.swift */,
+				2C00290F2A0487E1006909AD /* GPInputStyle.swift */,
+				2C0029112A0996ED006909AD /* GPInput+Card.swift */,
+				2C0029132A09B9AF006909AD /* GPInput+Expiry.swift */,
+				2C0029152A09C205006909AD /* GPInput+CVV.swift */,
+				2C0029172A09C3A2006909AD /* GPInput+HolderName.swift */,
+				2C00295E2A0D8892006909AD /* GPInput+Country.swift */,
+				2C0029602A0D8CBB006909AD /* GPCountryPicker.swift */,
+			);
+			name = GPInput;
+			path = GrubPaySDK/Classes/GPInput;
+			sourceTree = "<group>";
+		};
+		460A15B64B60726A4F9A0FC46AAA0AE4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBE27FAC012A9732BE80ADD751C0F281 /* Pods-GrubPaySDK_Example */,
+				FF397D0FF76BF5F0CEFCD772ABB9E4F3 /* Pods-GrubPaySDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */,
+				277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */,
+				88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */,
+				6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */,
+				AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */,
+				7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */,
+				99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */,
+				0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */,
+				656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */,
+				235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */,
+				96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */,
+				4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */,
+				284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */,
+				D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		999C66DDE00AE7DAF210ACCCB3085D54 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2785C96E28E439E5C9F58FF709F8044 /* GrubPaySDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */,
+				1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */,
+				B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */,
+				D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */,
+				8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */,
+				9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */,
+				4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				4BA2479549DD918290454B1CDCD0B92B /* Core */,
+				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
+				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
+			);
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		C268AC9D070F1A0B71902BB8D6C44C70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
+				128A5887E805EEA192A51CE2FBE9CD06 /* GrubPaySDK.framework */,
+				38485DE0886557EE3B1B79CB4FAC51DD /* Pods-GrubPaySDK_Example */,
+				033293CA61A3BBCB97BCAD59CFE6F536 /* Pods-GrubPaySDK_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				999C66DDE00AE7DAF210ACCCB3085D54 /* Development Pods */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				E81A37DBDE41E671312C56736544E2FA /* Pods */,
+				C268AC9D070F1A0B71902BB8D6C44C70 /* Products */,
+				460A15B64B60726A4F9A0FC46AAA0AE4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2785C96E28E439E5C9F58FF709F8044 /* GrubPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				2C0029192A0C6428006909AD /* Assets */,
+				2C9020392A04349A00DADC09 /* GPInput */,
+				2C90200A2A0333BC00DADC09 /* Resources */,
+				2C5A8C3729FB4BB10038D3C1 /* Enums.swift */,
+				D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubpayElement.swift */,
+				2C0029662A0EC118006909AD /* GPCardForm.swift */,
+				EAEE3CD907F5D6B9ED60CA2ABC464280 /* Pod */,
+				2716BE7EC212C47230FEE74C92C03ABC /* Support Files */,
+			);
+			name = GrubPaySDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAEE3CD907F5D6B9ED60CA2ABC464280 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				340E331FAF01259372786724B8B26A08 /* GrubPaySDK.podspec */,
+				F1B355655FB3FE2639D5FD62EABA67F5 /* LICENSE */,
+				3B31372B494D4D7C7A41CF9DCF4E776F /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EBE27FAC012A9732BE80ADD751C0F281 /* Pods-GrubPaySDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				33AE0FBD3614E812B518FE92A70C37EF /* Pods-GrubPaySDK_Example.modulemap */,
+				909A56D5D4C4773119EC411A0F6FB7B4 /* Pods-GrubPaySDK_Example-acknowledgements.markdown */,
+				B517B2236F49FADC155A120AFCD0DE27 /* Pods-GrubPaySDK_Example-acknowledgements.plist */,
+				438A476FF009CD43B560951370079D94 /* Pods-GrubPaySDK_Example-dummy.m */,
+				72CD73CBA3D08331D503F9F34A3CA6F4 /* Pods-GrubPaySDK_Example-frameworks.sh */,
+				FD1AA09B6E84D0C573610E7946AB4996 /* Pods-GrubPaySDK_Example-Info.plist */,
+				124BE762C46BF8B57919DDA18DE9F124 /* Pods-GrubPaySDK_Example-umbrella.h */,
+				D0E68BF2FF67BE3C3A60C1305E728560 /* Pods-GrubPaySDK_Example.debug.xcconfig */,
+				547F7A29C95B277B1F8EB99F52AC80E5 /* Pods-GrubPaySDK_Example.release.xcconfig */,
+			);
+			name = "Pods-GrubPaySDK_Example";
+			path = "Target Support Files/Pods-GrubPaySDK_Example";
+			sourceTree = "<group>";
+		};
+		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */,
+				3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */,
+				1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */,
+				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FF397D0FF76BF5F0CEFCD772ABB9E4F3 /* Pods-GrubPaySDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5852E8AEEBA3F6F789509ECA08D55B1E /* Pods-GrubPaySDK_Tests.modulemap */,
+				3FC2ED9F6D9E5F89B73D18C6319C0F7F /* Pods-GrubPaySDK_Tests-acknowledgements.markdown */,
+				5FBE7DFE389A77FB2CEBA82452311BFD /* Pods-GrubPaySDK_Tests-acknowledgements.plist */,
+				9F317602BF41007CD2C92141BA5E8AF4 /* Pods-GrubPaySDK_Tests-dummy.m */,
+				254DE6CDBA97A51BA245006AA8A97C3E /* Pods-GrubPaySDK_Tests-frameworks.sh */,
+				87C9CEB3B3942612BEF6386C64CB829E /* Pods-GrubPaySDK_Tests-Info.plist */,
+				6ABFB724C989A5462683BCD0361AE421 /* Pods-GrubPaySDK_Tests-umbrella.h */,
+				36D2F1C2CC9E742BDA398C9C239A30B7 /* Pods-GrubPaySDK_Tests.debug.xcconfig */,
+				A660C3C3BE4292EA0A04B251F616B032 /* Pods-GrubPaySDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-GrubPaySDK_Tests";
+			path = "Target Support Files/Pods-GrubPaySDK_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4E4CC80444F704B0B8211C55B057F5F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22AD34B23ED2AE2CE4C0E9EC4A0096F1 /* GrubPaySDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E6C604C80FB6FBD9A71565D5A86CA5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33DFFB2FF6E320468B348B485DD45D7E /* Pods-GrubPaySDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC859F4732C6278E634F13DAC41BFCDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81B693D616BE8545304F1E98719BDCC /* Pods-GrubPaySDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CF7A53AFE8275DDE075747E8245F97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */,
+				1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */,
+				2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */,
+				5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */,
+				8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */,
+				67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */,
+				373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09E4C5858883F6FE8266A0901DA28C83 /* Pods-GrubPaySDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418931485A72E74FDDC4D3AD47703A01 /* Build configuration list for PBXNativeTarget "Pods-GrubPaySDK_Tests" */;
+			buildPhases = (
+				CC859F4732C6278E634F13DAC41BFCDB /* Headers */,
+				068AA221B288FDDF0626CEBB6EEF004E /* Sources */,
+				8021F2A0C41D0D997C15656663983B38 /* Frameworks */,
+				6AD2E76F61915F0268667A3CA1401913 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A811296A9866E50E289C9723F73B3D7 /* PBXTargetDependency */,
+				20176383043073CE02F845001C06AAC4 /* PBXTargetDependency */,
+			);
+			name = "Pods-GrubPaySDK_Tests";
+			productName = Pods_GrubPaySDK_Tests;
+			productReference = 033293CA61A3BBCB97BCAD59CFE6F536 /* Pods-GrubPaySDK_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B78181CEE004200C39D588BF34625D1 /* GrubPaySDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7CD39CA819B69F0AC4ABFD51D62D26A /* Build configuration list for PBXNativeTarget "GrubPaySDK" */;
+			buildPhases = (
+				4E4CC80444F704B0B8211C55B057F5F2 /* Headers */,
+				E3C2EAABA577ECC6D07E65FA05F55A63 /* Sources */,
+				21B0B087672E090B5F1B46A40CF464E6 /* Frameworks */,
+				AC525322541A7434E91647088B4B4095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrubPaySDK;
+			productName = GrubPaySDK;
+			productReference = 128A5887E805EEA192A51CE2FBE9CD06 /* GrubPaySDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				D4CF7A53AFE8275DDE075747E8245F97 /* Headers */,
+				EE210BFC37CDBA0645C09C3819F41723 /* Sources */,
+				E3B880388FF17A336FBF90E30E537508 /* Frameworks */,
+				194C9DCC4899F62F4FB7DDF15C987499 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CAFFCBAA1A04555DBB657BEFB92BECFD /* Pods-GrubPaySDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDB2FBE2AE89FC0B280FD809DC8F19AF /* Build configuration list for PBXNativeTarget "Pods-GrubPaySDK_Example" */;
+			buildPhases = (
+				8E6C604C80FB6FBD9A71565D5A86CA5E /* Headers */,
+				632FF31E1DB28F770EB3EB19C42E6BA1 /* Sources */,
+				A67C55AD534677D8992B6C85C846018E /* Frameworks */,
+				16DF19DCBB5B991A7EC17C8D001F2FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D211A3C397D57D3CBEBFEBEF9EFD6ED3 /* PBXTargetDependency */,
+			);
+			name = "Pods-GrubPaySDK_Example";
+			productName = Pods_GrubPaySDK_Example;
+			productReference = 38485DE0886557EE3B1B79CB4FAC51DD /* Pods-GrubPaySDK_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				de,
+				he,
+				en_AU,
+				ar,
+				el,
+				"zh-Hans",
+				ja,
+				"zh-TW",
+				uk,
+				"zh-HK",
+				es_419,
+				es,
+				pt_BR,
+				da,
+				it,
+				sk,
+				pt_PT,
+				ms,
+				sv,
+				cs,
+				ko,
+				"zh-Hant",
+				no,
+				nb,
+				hu,
+				tr,
+				pl,
+				en_GB,
+				vi,
+				ru,
+				"zh-CN",
+				fr_CA,
+				fr,
+				fi,
+				id,
+				nl,
+				th,
+				ro,
+				hr,
+				hi,
+				ca,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C268AC9D070F1A0B71902BB8D6C44C70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
+				7B78181CEE004200C39D588BF34625D1 /* GrubPaySDK */,
+				CAFFCBAA1A04555DBB657BEFB92BECFD /* Pods-GrubPaySDK_Example */,
+				09E4C5858883F6FE8266A0901DA28C83 /* Pods-GrubPaySDK_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16DF19DCBB5B991A7EC17C8D001F2FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		194C9DCC4899F62F4FB7DDF15C987499 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD2E76F61915F0268667A3CA1401913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC525322541A7434E91647088B4B4095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C00295D2A0C6428006909AD /* cc-jcb.png in Resources */,
+				2C0029582A0C6428006909AD /* cc-bcglobal@2x.png in Resources */,
+				2C9020352A0333BC00DADC09 /* Localizable.strings in Resources */,
+				2C00294F2A0C6428006909AD /* cc-discover@2x.png in Resources */,
+				2C0029572A0C6428006909AD /* cc-bcglobal@3x.png in Resources */,
+				2C0029592A0C6428006909AD /* cc-visa.png in Resources */,
+				2C0029472A0C6428006909AD /* cc-generic@3x.png in Resources */,
+				2C00294E2A0C6428006909AD /* cc-cvc@3x.png in Resources */,
+				2C0029432A0C6428006909AD /* cc-dinner@3x.png in Resources */,
+				2C0029512A0C6428006909AD /* cc-amex@2x.png in Resources */,
+				2C00294D2A0C6428006909AD /* cc-maestro@2x.png in Resources */,
+				2C0029452A0C6428006909AD /* cc-master@2x.png in Resources */,
+				2C0029462A0C6428006909AD /* .gitkeep in Resources */,
+				2C00294B2A0C6428006909AD /* cc-master@3x.png in Resources */,
+				2C00293F2A0C6428006909AD /* cc-visa@3x.png in Resources */,
+				2C0029422A0C6428006909AD /* cc-discover@3x.png in Resources */,
+				2C00293D2A0C6428006909AD /* cc-discover.png in Resources */,
+				2C00293C2A0C6428006909AD /* cc-visa@2x.png in Resources */,
+				2C0029532A0C6428006909AD /* cc-dinner.png in Resources */,
+				2C00295B2A0C6428006909AD /* cc-unionpay@3x.png in Resources */,
+				2C00295C2A0C6428006909AD /* cc-generic.png in Resources */,
+				2C00294C2A0C6428006909AD /* cc-dinner@2x.png in Resources */,
+				2C0029562A0C6428006909AD /* cc-unionpay.png in Resources */,
+				2C0029412A0C6428006909AD /* cc-cvc@2x.png in Resources */,
+				2C0029542A0C6428006909AD /* cc-bcglobal.png in Resources */,
+				2C00293E2A0C6428006909AD /* cc-maestro.png in Resources */,
+				2C0029502A0C6428006909AD /* cc-jcb@2x.png in Resources */,
+				2C0029522A0C6428006909AD /* cc-amex@3x.png in Resources */,
+				2C0029402A0C6428006909AD /* cc-jcb@3x.png in Resources */,
+				2C00294A2A0C6428006909AD /* cc-cvc.png in Resources */,
+				2C0029482A0C6428006909AD /* cc-amex.png in Resources */,
+				2C0029442A0C6428006909AD /* cc-maestro@3x.png in Resources */,
+				2C0029492A0C6428006909AD /* cc-generic@2x.png in Resources */,
+				2C0029552A0C6428006909AD /* cc-unionpay@2x.png in Resources */,
+				2C00295A2A0C6428006909AD /* cc-master.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		068AA221B288FDDF0626CEBB6EEF004E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4A5BAE661D648534426CA2FC202274 /* Pods-GrubPaySDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632FF31E1DB28F770EB3EB19C42E6BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745E528729EE7401745CAF4A737F8FA8 /* Pods-GrubPaySDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C2EAABA577ECC6D07E65FA05F55A63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0029102A0487E1006909AD /* GPInputStyle.swift in Sources */,
+				2C0029122A0996ED006909AD /* GPInput+Card.swift in Sources */,
+				2C0029142A09B9AF006909AD /* GPInput+Expiry.swift in Sources */,
+				2CA89EAD2A04352200DA5850 /* GPInput.swift in Sources */,
+				2C901FA72A01B61D00DADC09 /* GPExpiryPicker.swift in Sources */,
+				2C0029162A09C205006909AD /* GPInput+CVV.swift in Sources */,
+				2C0029672A0EC118006909AD /* GPCardForm.swift in Sources */,
+				2C0029182A09C3A2006909AD /* GPInput+HolderName.swift in Sources */,
+				4A82A6F80E805E824B4D9FDF8BD3E264 /* GrubPaySDK-dummy.m in Sources */,
+				2C00295F2A0D8892006909AD /* GPInput+Country.swift in Sources */,
+				2C0029612A0D8CBB006909AD /* GPCountryPicker.swift in Sources */,
+				2C5A8C3829FB4BB10038D3C1 /* Enums.swift in Sources */,
+				F43CD14F0A971A19E762A3F8082A1C15 /* GrubpayElement.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE210BFC37CDBA0645C09C3819F41723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */,
+				5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */,
+				30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */,
+				C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */,
+				2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */,
+				74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */,
+				B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */,
+				CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */,
+				2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20176383043073CE02F845001C06AAC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GrubPaySDK_Example";
+			target = CAFFCBAA1A04555DBB657BEFB92BECFD /* Pods-GrubPaySDK_Example */;
+			targetProxy = 841FF93C7413C9AE5E9EB651D26EB174 /* PBXContainerItemProxy */;
+		};
+		2A811296A9866E50E289C9723F73B3D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 12FF64385CFAACCB7612AB8868CFC0AC /* PBXContainerItemProxy */;
+		};
+		D211A3C397D57D3CBEBFEBEF9EFD6ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GrubPaySDK;
+			target = 7B78181CEE004200C39D588BF34625D1 /* GrubPaySDK */;
+			targetProxy = 1A5EC94A8F43A915B59A6E780B4A6380 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C90200B2A0333BC00DADC09 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C90200C2A0333BC00DADC09 /* de */,
+				2C90200D2A0333BC00DADC09 /* he */,
+				2C90200E2A0333BC00DADC09 /* en_AU */,
+				2C90200F2A0333BC00DADC09 /* ar */,
+				2C9020102A0333BC00DADC09 /* el */,
+				2C9020112A0333BC00DADC09 /* zh-Hans */,
+				2C9020122A0333BC00DADC09 /* ja */,
+				2C9020132A0333BC00DADC09 /* zh-TW */,
+				2C9020142A0333BC00DADC09 /* en */,
+				2C9020152A0333BC00DADC09 /* uk */,
+				2C9020162A0333BC00DADC09 /* zh-HK */,
+				2C9020172A0333BC00DADC09 /* es_419 */,
+				2C9020182A0333BC00DADC09 /* es */,
+				2C9020192A0333BC00DADC09 /* pt_BR */,
+				2C90201A2A0333BC00DADC09 /* da */,
+				2C90201B2A0333BC00DADC09 /* it */,
+				2C90201C2A0333BC00DADC09 /* sk */,
+				2C90201D2A0333BC00DADC09 /* pt_PT */,
+				2C90201E2A0333BC00DADC09 /* ms */,
+				2C90201F2A0333BC00DADC09 /* sv */,
+				2C9020202A0333BC00DADC09 /* cs */,
+				2C9020212A0333BC00DADC09 /* ko */,
+				2C9020222A0333BC00DADC09 /* zh-Hant */,
+				2C9020232A0333BC00DADC09 /* no */,
+				2C9020242A0333BC00DADC09 /* hu */,
+				2C9020252A0333BC00DADC09 /* tr */,
+				2C9020262A0333BC00DADC09 /* pl */,
+				2C9020272A0333BC00DADC09 /* en_GB */,
+				2C9020282A0333BC00DADC09 /* vi */,
+				2C9020292A0333BC00DADC09 /* ru */,
+				2C90202A2A0333BC00DADC09 /* zh-CN */,
+				2C90202B2A0333BC00DADC09 /* fr_CA */,
+				2C90202C2A0333BC00DADC09 /* fr */,
+				2C90202D2A0333BC00DADC09 /* fi */,
+				2C90202E2A0333BC00DADC09 /* id */,
+				2C90202F2A0333BC00DADC09 /* nl */,
+				2C9020302A0333BC00DADC09 /* th */,
+				2C9020312A0333BC00DADC09 /* ro */,
+				2C9020322A0333BC00DADC09 /* hr */,
+				2C9020332A0333BC00DADC09 /* hi */,
+				2C9020342A0333BC00DADC09 /* ca */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06C06CDF9BF41BD3AC02BAF853900603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36D2F1C2CC9E742BDA398C9C239A30B7 /* Pods-GrubPaySDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GrubPaySDK_Tests/Pods-GrubPaySDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GrubPaySDK_Tests/Pods-GrubPaySDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0CF977E736A9F0297ED689DCD07C3E1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE5E61BCCF17177134E6FAFBF8405C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A660C3C3BE4292EA0A04B251F616B032 /* Pods-GrubPaySDK_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GrubPaySDK_Tests/Pods-GrubPaySDK_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GrubPaySDK_Tests/Pods-GrubPaySDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E1B8C7FBC4E44D38A73048801140608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB2C1815F4700F31894EB4D1E5D91B1 /* GrubPaySDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GrubPaySDK/GrubPaySDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK.modulemap";
+				PRODUCT_MODULE_NAME = GrubPaySDK;
+				PRODUCT_NAME = GrubPaySDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9CEA79E13F298696C8641A4759CBB2EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0E68BF2FF67BE3C3A60C1305E728560 /* Pods-GrubPaySDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GrubPaySDK_Example/Pods-GrubPaySDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GrubPaySDK_Example/Pods-GrubPaySDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D42610636D993C826A96F9B4A4ED994E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 547F7A29C95B277B1F8EB99F52AC80E5 /* Pods-GrubPaySDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GrubPaySDK_Example/Pods-GrubPaySDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GrubPaySDK_Example/Pods-GrubPaySDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D56E1BACBC64415C74D0E48FE243FD51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 873E9165995F2BD81A4824EEFB978257 /* GrubPaySDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GrubPaySDK/GrubPaySDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK.modulemap";
+				PRODUCT_MODULE_NAME = GrubPaySDK;
+				PRODUCT_NAME = GrubPaySDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */,
+				0CF977E736A9F0297ED689DCD07C3E1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418931485A72E74FDDC4D3AD47703A01 /* Build configuration list for PBXNativeTarget "Pods-GrubPaySDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C06CDF9BF41BD3AC02BAF853900603 /* Debug */,
+				4BE5E61BCCF17177134E6FAFBF8405C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7CD39CA819B69F0AC4ABFD51D62D26A /* Build configuration list for PBXNativeTarget "GrubPaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56E1BACBC64415C74D0E48FE243FD51 /* Debug */,
+				6E1B8C7FBC4E44D38A73048801140608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDB2FBE2AE89FC0B280FD809DC8F19AF /* Build configuration list for PBXNativeTarget "Pods-GrubPaySDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CEA79E13F298696C8641A4759CBB2EC /* Debug */,
+				D42610636D993C826A96F9B4A4ED994E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
