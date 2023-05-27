@@ -105,7 +105,7 @@ public class GPLabelStyle {
 
 public extension GPLabelStyle {
     static func floating(
-        color: UIColor = GPInputStyle.getAdaptiveColor(light: UIColor.black, dark: UIColor.white).withAlphaComponent(0.4),
+        color: UIColor = GPInputStyle.getAdaptiveColor(light: UIColor.black.withAlphaComponent(0.4), dark: UIColor.white.withAlphaComponent(0.6)),
         font: UIFont = UIFont.systemFont(ofSize: 12.0),
         activeColor: UIColor? = UIColor.systemBlue
     ) -> GPLabelStyle {
@@ -144,6 +144,7 @@ public extension GPLabelStyle {
 }
 
 public class GPInputStyle {
+    let accentColor: UIColor
     let padding: UIEdgeInsets
     let color: UIColor
     let font: UIFont
@@ -156,28 +157,38 @@ public class GPInputStyle {
     let verticalGap: CGFloat
     let horizontalGap: CGFloat
 
-    init(
+    let dotSize: CGFloat
+
+    public init(
+        accentColor: UIColor = UIColor.systemBlue,
         padding: UIEdgeInsets = UIEdgeInsets(top: 4, left: 8, bottom: 4, right: 8),
         color: UIColor = getAdaptiveColor(light: UIColor.black, dark: UIColor.white),
         font: UIFont = UIFont.systemFont(ofSize: 16.0),
-        placeholderColor: UIColor = getAdaptiveColor(light: UIColor.black, dark: UIColor.white).withAlphaComponent(0.2),
+        placeholderColor: UIColor = getAdaptiveColor(light: UIColor.black.withAlphaComponent(0.2), dark: UIColor.white.withAlphaComponent(0.3)),
         backgroundColor: UIColor = UIColor.clear,
         errorColor: UIColor = UIColor.red,
-        borderStyle: GPBorderStyle = GPBorderStyle.underline(),
-        labelStyle: GPLabelStyle = GPLabelStyle.floating(),
-        verticalGap: CGFloat = 8,
-        horizontalGap: CGFloat = 8
+        borderStyle: GPBorderStyle? = nil,
+        labelStyle: GPLabelStyle? = nil,
+        verticalGap: CGFloat = 8.0,
+        horizontalGap: CGFloat = 8.0,
+        dotSize: CGFloat = 20.0
     ) {
+        self.accentColor = accentColor
         self.padding = padding
         self.color = color
         self.font = font
         self.placeholderColor = placeholderColor
         self.backgroundColor = backgroundColor
         self.errorColor = errorColor
-        self.borderStyle = borderStyle
-        self.labelStyle = labelStyle
+        self.borderStyle = borderStyle ?? GPBorderStyle.underline(
+            activeColor: accentColor
+        )
+        self.labelStyle = labelStyle ?? GPLabelStyle.floating(
+            activeColor: accentColor
+        )
         self.verticalGap = verticalGap
         self.horizontalGap = horizontalGap
+        self.dotSize = dotSize
     }
 }
 

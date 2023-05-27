@@ -11,19 +11,33 @@ import UIKit
 class GPInput: UITextField {
     // MARK: Properties
 
+    let controller: GPFormController!
+
+    func onEditChange() {
+        if errorMessage != nil {
+            errorMessage = nil
+        }
+        controller.notifyFieldChange()
+    }
+
+    @objc func onTextChange() {
+        onEditChange()
+    }
+
+    override var text: String? {
+        didSet {
+            onEditChange()
+        }
+    }
+
     open var errorMessage: String? {
         didSet {
             updateAllStyles()
         }
     }
 
-    open var gpInputStyle: GPInputStyle = .init(
-        //        borderStyle: GPBorderStyle.underline(),
-//        labelStyle: GPLabelStyle.noLabel()
-    ) {
-        didSet {
-            updateAllStyles()
-        }
+    var gpInputStyle: GPInputStyle {
+        return controller.style
     }
 
     open var titleText: String = "" {
@@ -141,9 +155,6 @@ class GPInput: UITextField {
         if !floated {
             return UIColor.clear
         }
-        if hasError {
-            return gpInputStyle.errorColor.withAlphaComponent(0.2)
-        }
         return gpInputStyle.placeholderColor
     }
 
@@ -220,14 +231,6 @@ class GPInput: UITextField {
     }
 
     fileprivate func updatePlaceholder() {
-//        print("updatePlaceholder")
-//        let placeholder = placeholder
-//        print("hasLabel")
-//        print(hasLabel)
-//        print("isEditing")
-//        print(isEditing)
-//        print(placeholder)
-//        print(super.placeholder)
         #if swift(>=4.2)
             attributedPlaceholder = NSAttributedString(
                 string: placeholder,
@@ -311,7 +314,9 @@ class GPInput: UITextField {
         return lineView
     }()
 
-    fileprivate func insertExtraViews() {
+    fileprivate func commonInit() {
+        controller.addField(self)
+        isEnabled = !controller.isLoading
         insertSubview(borderView, at: 0)
         borderView.addSubview(lineView)
         addSubview(titleLabel)
@@ -319,14 +324,21 @@ class GPInput: UITextField {
 
     // MARK: Overrides
 
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-        insertExtraViews()
+    public init(controller: GPFormController) {
+        self.controller = controller
+        super.init(frame: .zero)
+        addTarget(self, action: #selector(onTextChange), for: .editingChanged)
+        commonInit()
     }
 
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        insertExtraViews()
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    deinit {
+        print("GPField Deinit -----------------------------------------")
+        controller.removeObs(self)
     }
 
     // MARK: Getters
@@ -443,6 +455,7 @@ class GPInput: UITextField {
 
     override open func layoutSubviews() {
         super.layoutSubviews()
+
         updateAllStyles(_layedOut)
         if !_layedOut {
             _layedOut = true
@@ -465,5 +478,26 @@ class GPInput: UITextField {
 
     override open var intrinsicContentSize: CGSize {
         return CGSize(width: bounds.size.width, height: viewHeight)
+    }
+}
+
+extension GPInput: GPFormObs {
+    func countryDidChange() {
+        updateAllStyles()
+    }
+
+    func doValidate(
+        onSuccess: @escaping ([String: Any]) -> Void,
+        onError: @escaping (String) -> Void
+    ) {
+        onError("Not implemented")
+    }
+
+    var valid: Bool {
+        return false
+    }
+
+    func loadingDidChange() {
+        isEnabled = !controller.isLoading
     }
 }

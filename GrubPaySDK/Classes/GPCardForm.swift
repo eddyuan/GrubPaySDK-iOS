@@ -10,66 +10,27 @@ import Foundation
 import UIKit
 
 class GPCardForm: UIStackView {
-    open var requireName: Bool = false {
-        didSet {
-            print(requireName)
-        }
-    }
-
-    // MARK: Passthrough
+    let controller: GPFormController!
 
     open var inputStyle: GPInputStyle {
-        get {
-            return allFields[0].gpInputStyle
-        }
-        set {
-            for field in allFields {
-                field.gpInputStyle = newValue
-            }
-        }
+        return controller.style
     }
 
-    open var isEnabled: Bool {
-        get {
-            return allFields[0].isEnabled
-        }
-        set {
-            for field in allFields {
-                field.isEnabled = newValue
-            }
-        }
-    }
-
-    // MARK: Fields
-
-    private var allFields: [GPInput] {
-        return [
-            cardNumberField,
-            cardholderField,
-            expiryField,
-            cvvField
-        ]
-    }
-
-    private lazy var cardNumberField: GPInput = {
-        let textField = GPInputCard()
+    private lazy var nameField: GPInputName = {
+        let textField = GPInputName(controller: controller)
+        textField.titleText = NSLocalizedString(
+            "Name on card",
+            bundle: Bundle(for: type(of: self)),
+            comment: ""
+        )
         return textField
     }()
 
-    private lazy var cardholderField: GPInput = {
-        let textField = GPInputHolderName()
-        return textField
-    }()
-
-    private lazy var expiryField: GPInput = {
-        let textField = GPInputExpiry()
-        return textField
-    }()
-
-    private lazy var cvvField: GPInput = {
-        let textField = GPInputCVV()
-        return textField
-    }()
+    private lazy var cardField: GPInputCard = .init(controller: controller)
+    private lazy var expiryField: GPInputExpiry = .init(controller: controller)
+    private lazy var cvvField: GPInputCVV = .init(controller: controller)
+    private lazy var countryField: GPInputCountry = .init(controller: controller)
+    private lazy var zipField: GPInputZip = .init(controller: controller)
 
     private lazy var cvvExpiryRow: UIStackView = {
         let sv = UIStackView()
@@ -82,11 +43,6 @@ class GPCardForm: UIStackView {
         return sv
     }()
 
-    private lazy var countryField: GPInput = {
-        let textField = GPInputCountry()
-        return textField
-    }()
-
     private lazy var zipRow: UIStackView = {
         let sv = UIStackView()
         sv.axis = .horizontal
@@ -94,7 +50,7 @@ class GPCardForm: UIStackView {
         sv.spacing = inputStyle.horizontalGap
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.addArrangedSubview(countryField)
-        sv.addArrangedSubview(countryField)
+        sv.addArrangedSubview(zipField)
         return sv
     }()
 
@@ -103,49 +59,29 @@ class GPCardForm: UIStackView {
     private func setupHierarchy() {
         axis = .vertical
         alignment = .fill
+        distribution = .fill
         spacing = inputStyle.verticalGap
         translatesAutoresizingMaskIntoConstraints = false
-        if requireName {
-            addArrangedSubview(cardholderField)
-        }
-        addArrangedSubview(cardNumberField)
+        addArrangedSubview(nameField)
+        addArrangedSubview(cardField)
         addArrangedSubview(cvvExpiryRow)
         addArrangedSubview(zipRow)
     }
 
-    private func setupLayout() {
-        if let superview = superview ?? window {
-            NSLayoutConstraint.activate([
-                leadingAnchor.constraint(equalTo: superview.leadingAnchor),
-                trailingAnchor.constraint(equalTo: superview.trailingAnchor),
-                topAnchor.constraint(equalTo: superview.topAnchor),
-                bottomAnchor.constraint(equalTo: superview.bottomAnchor)
-            ])
-        }
+    private func initView() {
+        setupHierarchy()
     }
 
     // MARK: Overrides
 
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-        setupHierarchy()
-        setupLayout()
+    public init(controller: GPFormController) {
+        self.controller = controller
+        super.init(frame: .zero)
+        initView()
     }
 
     @available(*, unavailable)
     required init(coder: NSCoder) {
-        super.init(coder: coder)
-        setupHierarchy()
-        setupLayout()
-    }
-
-    override open func layoutSubviews() {
-        super.layoutSubviews()
-        setupLayout()
-    }
-
-    override func didMoveToSuperview() {
-        super.didMoveToSuperview()
-        setupLayout()
+        fatalError("init(coder:) has not been implemented")
     }
 }

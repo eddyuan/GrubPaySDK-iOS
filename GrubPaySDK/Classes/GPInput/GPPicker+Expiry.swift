@@ -9,7 +9,7 @@
 import UIKit
 
 /// A control for the inputting of month and year values in a view that uses a spinning-wheel or slot-machine metaphor.
-class GPExpiryPicker: UIPickerView {
+class GPPickerExpiry: UIPickerView {
     private var calendar = Calendar(identifier: .gregorian)
     private var _maximumDate: Date?
     private var _minimumDate: Date?
@@ -202,7 +202,7 @@ class GPExpiryPicker: UIPickerView {
     }
 }
 
-extension GPExpiryPicker: UIPickerViewDelegate, UIPickerViewDataSource {
+extension GPPickerExpiry: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
     }

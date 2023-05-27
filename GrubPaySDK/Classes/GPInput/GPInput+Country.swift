@@ -8,6 +8,19 @@
 import Foundation
 
 class GPInputCountry: GPInput {
+    var country: GPCountry {
+        get {
+            return super.controller.country
+        }
+        set {
+            super.controller.country = newValue
+        }
+    }
+
+    private func updateTexts() {
+        super.text = country.name
+    }
+
     override func caretRect(for position: UITextPosition) -> CGRect {
         return .zero
     }
@@ -16,17 +29,12 @@ class GPInputCountry: GPInput {
         return false
     }
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(controller: GPFormController) {
+        super.init(controller: controller)
         initField()
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        initField()
-    }
-
-    private var pickerView = GPCountryPicker()
+    private var pickerView = GPPickerCountry()
 
     private func initField() {
         super.delegate = self
@@ -35,11 +43,10 @@ class GPInputCountry: GPInput {
             bundle: Bundle(for: type(of: self)),
             comment: ""
         )
-        super.keyboardType = .decimalPad
+        super.keyboardType = .numberPad
         super.inputView = pickerView
         super.autocorrectionType = .no
         super.autocapitalizationType = .none
-        super.text = "US"
 
         let toolBar = UIToolbar()
         toolBar.barStyle = .default
@@ -66,22 +73,46 @@ class GPInputCountry: GPInput {
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         super.inputAccessoryView = toolBar
+        updateTexts()
     }
 
     @objc func doneClick() {
-        let country = pickerView.country
-        super.text = country
+        country = pickerView.country
         super.resignFirstResponder()
     }
 
     @objc func cancelClick() {
-        print(NSLocale.current)
         super.resignFirstResponder()
+    }
+
+    override func becomeFirstResponder() -> Bool {
+        let superResult = super.becomeFirstResponder()
+        country = pickerView.country
+        return superResult
+    }
+
+    // MARK: For GPFormObs
+
+    override func countryDidChange() {
+        updateTexts()
     }
 }
 
 extension GPInputCountry: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return false
+    }
+}
+
+extension GPInputCountry {
+    override var valid: Bool {
+        return true
+    }
+
+    override func doValidate(
+        onSuccess: @escaping ([String: Any]) -> Void,
+        onError: @escaping (String) -> Void
+    ) {
+        onSuccess([:])
     }
 }

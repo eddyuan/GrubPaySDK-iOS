@@ -1,13 +1,13 @@
 //
-//  GPInput+CVC.swift
+//  GPInput+Account.swift
 //  GrubPaySDK
 //
-//  Created by Edward Yuan on 2023-05-08.
+//  Created by Edward Yuan on 2023-05-16.
 //
 
 import Foundation
 
-class GPInputCVV: GPInput {
+class GPInputAccount: GPInput {
     // MARK: Validators
 
     var cleanText: String {
@@ -29,25 +29,25 @@ class GPInputCVV: GPInput {
 
     // MARK: Initializers
 
-    override init(controller: GPFormController) {
-        super.init(controller: controller)
-        initField()
-    }
-
     private func initField() {
         super.delegate = self
-        super.titleText = "CVC"
-        super.placeholder = "123"
+        super.titleText = "Account Number"
+        super.placeholder = "000123456789"
         super.autocorrectionType = .no
         super.autocapitalizationType = .none
         super.keyboardType = .numberPad
     }
+
+    override init(controller: GPFormController) {
+        super.init(controller: controller)
+        initField()
+    }
 }
 
-extension GPInputCVV: UITextFieldDelegate {
+extension GPInputAccount: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return GPInputUtil.maskInput(
-            mask: "####",
+            mask: "############",
             textField: textField,
             shouldChangeCharactersIn: range,
             replacementString: string,
@@ -57,11 +57,10 @@ extension GPInputCVV: UITextFieldDelegate {
 }
 
 // Validator for controller
-extension GPInputCVV {
+extension GPInputAccount {
     override var valid: Bool {
-        if controller.config?.mode == .card {
-            let trimmedStr = super.text ?? ""
-            return trimmedStr.count > 2
+        if controller.config?.mode == .ach {
+            return (super.text ?? "").count > 3
         }
         return true
     }
@@ -70,15 +69,15 @@ extension GPInputCVV {
         onSuccess: @escaping ([String: Any]) -> Void,
         onError: @escaping (String) -> Void
     ) {
-        if controller.config?.mode != .card {
+        if controller.config?.mode != .ach {
             onSuccess([:])
             return
         }
         updateErrorState()
         if valid {
-            onSuccess(["cvv": cleanText])
+            onSuccess(["accountNum": cleanText])
         } else {
-            onError("CVV")
+            onError("Account Number")
         }
     }
 }

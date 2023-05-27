@@ -7,13 +7,6 @@
 
 import Foundation
 
-private enum CPCardCountry: String {
-    case us,
-         ca,
-         uk,
-         others
-}
-
 enum GPCardType: String {
     case unknown,
          amex,

@@ -8,6 +8,66 @@
 import Foundation
 
 class GPInputExpiry: GPInput {
+    // MARK: Validators
+
+    var dateString: String? {
+        let trimmedStr = super.text ?? ""
+        if trimmedStr.count != 5 {
+            return nil
+        }
+        let components = trimmedStr.split(separator: "/")
+        guard components.count == 2 else {
+            return nil
+        }
+        let monthString = String(components[0])
+        let yearShortString = String(components[1])
+        let yearString = "20" + yearShortString
+
+        guard let month = Int(monthString), let year = Int(yearString) else {
+            return nil
+        }
+
+        let currentDate = Date()
+        let calendar = Calendar.current
+        let currentMonth: Int = calendar.component(.month, from: currentDate)
+        let currentYear: Int = calendar.component(.year, from: currentDate)
+
+        if year < currentYear {
+            return nil
+        }
+
+        if year == currentYear {
+            if month < currentMonth {
+                return nil
+            }
+        }
+
+        if month < 1 || month > 12 {
+            return nil
+        }
+
+        return monthString + yearShortString
+    }
+
+    var cleanText: String {
+        return dateString ?? ""
+    }
+
+    func updateErrorState() {
+        let targetErr: String? = valid ? nil : "Error"
+        if super.errorMessage != targetErr {
+            super.errorMessage = targetErr
+        }
+    }
+
+    @discardableResult
+    override open func resignFirstResponder() -> Bool {
+        updateErrorState()
+        return super.resignFirstResponder()
+    }
+
+    // MARK: Initializers
+
     override func caretRect(for position: UITextPosition) -> CGRect {
         return .zero
     }
@@ -16,17 +76,12 @@ class GPInputExpiry: GPInput {
         return false
     }
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(controller: GPFormController) {
+        super.init(controller: controller)
         initField()
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        initField()
-    }
-
-    private let expiryPicker = GPExpiryPicker()
+    private let expiryPicker = GPPickerExpiry()
 
     private func initField() {
         super.delegate = self
@@ -78,5 +133,31 @@ class GPInputExpiry: GPInput {
 extension GPInputExpiry: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return false
+    }
+}
+
+// Validator for controller
+extension GPInputExpiry {
+    override var valid: Bool {
+        if controller.config?.mode == .card {
+            return dateString != nil
+        }
+        return true
+    }
+
+    override func doValidate(
+        onSuccess: @escaping ([String: Any]) -> Void,
+        onError: @escaping (String) -> Void
+    ) {
+        if controller.config?.mode != .card {
+            onSuccess([:])
+            return
+        }
+        updateErrorState()
+        if valid {
+            onSuccess(["expiryDate": cleanText])
+        } else {
+            onError("Expiry Date")
+        }
     }
 }

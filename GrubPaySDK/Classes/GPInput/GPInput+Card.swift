@@ -8,7 +8,35 @@
 import Foundation
 
 class GPInputCard: GPInput {
-    var onChanged: ((_ valid: Bool, _ cardType: GPCardType?) -> Void)?
+    // MARK: Validators
+
+    var cleanText: String {
+        return super.text?.replacingOccurrences(
+            of: "[^0-9]",
+            with: "",
+            options: .regularExpression
+        ) ?? ""
+    }
+
+    override func onEditChange() {
+        super.onEditChange()
+        setCardBrand()
+    }
+
+    func updateErrorState() {
+        let targetErr: String? = valid ? nil : "Error"
+        if super.errorMessage != targetErr {
+            super.errorMessage = targetErr
+        }
+    }
+
+    @discardableResult
+    override open func resignFirstResponder() -> Bool {
+        updateErrorState()
+        return super.resignFirstResponder()
+    }
+
+    // MARK: Datas
 
     private var cardType: GPCardType = .unknown {
         didSet {
@@ -27,25 +55,10 @@ class GPInputCard: GPInput {
         }
     }
 
-    var valid: Bool = false {
-        didSet {
-            if valid && super.errorMessage != nil {
-                super.errorMessage = nil
-            }
-            onChanged?(valid, cardType)
-        }
-    }
-
-    @objc func textFieldDidChange() {
-        validateCreditCardFormat()
-        super.errorMessage = nil
-    }
-
-    private func validateCreditCardFormat() {
+    private func setCardBrand() {
         let cardNumber = super.text
         guard cardNumber != nil else {
             cardType = .unknown
-            valid = false
             return
         }
 
@@ -55,30 +68,16 @@ class GPInputCard: GPInput {
             options: .regularExpression
         )
 
-        var type: GPCardType = .unknown
-
         for card in GPCardType.allCards {
             if matchesRegex(
                 regex: card.regex,
                 text: numberOnly
             ) {
-                type = card
-                break
+                cardType = card
+                return
             }
         }
-
-        let validatorRegex = "^(?:(4[0-9]{12}(?:[0-9]{3})?)|(5[1-5][0-9]{14})|(6(?:011|5[0-9]{2})[0-9]{12})|(3[47][0-9]{13})|(3(?:0[0-5]|[68][0-9])[0-9]{11})|((?:2131|1800|35[0-9]{3})[0-9]{11})|(62[0-9]{14}))$"
-        let defaultValid = numberOnly.count > 13 && numberOnly.count < 17
-
-        cardType = type
-        valid = matchesRegex(
-            regex: validatorRegex,
-            text: numberOnly,
-            defaultVal: defaultValid
-        )
-
-        print(cardType)
-        print(valid)
+        cardType = .unknown
     }
 
     private func matchesRegex(
@@ -110,15 +109,15 @@ class GPInputCard: GPInput {
             bundle: Bundle(for: type(of: self)),
             comment: ""
         )
-        super.placeholder = "#### #### #### ####"
+        super.placeholder = "1234 5678 9012 3456"
         super.autocorrectionType = .no
         super.autocapitalizationType = .none
         super.keyboardType = .numberPad
-        super.addTarget(
-            self,
-            action: #selector(textFieldDidChange),
-            for: .editingChanged
-        )
+//        super.addTarget(
+//            self,
+//            action: #selector(textFieldDidChange),
+//            for: .editingChanged
+//        )
         super.addSubview(cardImage)
     }
 
@@ -147,125 +146,74 @@ class GPInputCard: GPInput {
 
     // MARK: Overrides
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(controller: GPFormController) {
+        super.init(controller: controller)
         initField()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        initField()
-    }
-
-    override var text: String? {
-        didSet {
-            textFieldDidChange()
-        }
     }
 
     override open func layoutSubviews() {
         super.layoutSubviews()
         layoutCardImage()
     }
-
-    @discardableResult
-    override open func resignFirstResponder() -> Bool {
-        let result = super.resignFirstResponder()
-        super.errorMessage = valid ? nil : "Error"
-        super.text = super.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        return result
-    }
-}
-
-private extension String {
-    func formatAsCreditCardNumber(pattern: String = "#### #### #### ####", replacmentCharacter: Character = "#") -> String {
-        var pureNumber = replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression)
-        for index in 0 ..< pattern.count {
-            guard index < pureNumber.count else { return pureNumber }
-            let stringIndex = String.Index(encodedOffset: index)
-            let patternCharacter = pattern[stringIndex]
-            guard patternCharacter != replacmentCharacter else { continue }
-            pureNumber.insert(patternCharacter, at: stringIndex)
-        }
-        return pureNumber
-    }
 }
 
 extension GPInputCard: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        var replacementNumbers = string.replacingOccurrences(
+    func textField(
+        _ textField: UITextField,
+        shouldChangeCharactersIn range: NSRange,
+        replacementString string: String
+    ) -> Bool {
+        return GPInputUtil.maskInput(
+            mask: "#### #### #### ####",
+            textField: textField,
+            shouldChangeCharactersIn: range,
+            replacementString: string,
+            allowMix: false
+        )
+    }
+}
+
+// This is for form controller
+extension GPInputCard {
+    override var valid: Bool {
+        if controller.config?.mode == .ach {
+            return true
+        }
+
+        let cardNumber = super.text
+        guard cardNumber != nil else {
+            return false
+        }
+
+        let numberOnly = cardNumber!.replacingOccurrences(
             of: "[^0-9]",
             with: "",
             options: .regularExpression
         )
 
-        guard CharacterSet(charactersIn: "0123456789").isSuperset(
-            of: CharacterSet(charactersIn: replacementNumbers)
-        ) else {
-            return false
+        let validatorRegex = "^(?:(4[0-9]{12}(?:[0-9]{3})?)|(5[1-5][0-9]{14})|(6(?:011|5[0-9]{2})[0-9]{12})|(3[47][0-9]{13})|(3(?:0[0-5]|[68][0-9])[0-9]{11})|((?:2131|1800|35[0-9]{3})[0-9]{11})|(62[0-9]{14}))$"
+        let defaultValid = numberOnly.count > 13 && numberOnly.count < 17
+
+        return matchesRegex(
+            regex: validatorRegex,
+            text: numberOnly,
+            defaultVal: defaultValid
+        )
+    }
+
+    override func doValidate(
+        onSuccess: @escaping (_ param: [String: Any]) -> Void,
+        onError: @escaping (String) -> Void
+    ) {
+        if controller.config?.mode != .card {
+            onSuccess([:])
+            return
         }
-
-        let maxNumberLength = 16
-
-        var userSelectedRangeLength = 0
-
-        if let selectedRange = textField.selectedTextRange {
-            userSelectedRangeLength = textField.offset(
-                from: selectedRange.start,
-                to: selectedRange.end
-            )
+        updateErrorState()
+        if valid {
+            onSuccess(["cardNum": cleanText])
+        } else {
+            onError("Card Number")
         }
-
-        var trueStart = range.lowerBound - Int(floor(Double(range.lowerBound / 5)))
-        let trueEnd = range.upperBound - Int(floor(Double(range.upperBound / 5)))
-
-        // If power of 5 and is deleting 1 but not selected by user, unshift 1 space
-        // This is when deleting on position 5, 10, 15 right after the space
-        // 如果正好是第五的倍数且是删除1个操作且不是用户选择的，那么向前移动一个
-        if range.length == 1 && (range.lowerBound + 1) % 5 == 0 && string == "" && userSelectedRangeLength != 1 {
-            trueStart -= 1
-        }
-
-        // This is the true selected range unmasked
-        let trueRange = NSRange(location: trueStart, length: trueEnd - trueStart)
-
-        // This is the current textField text unmaksed
-        let currentNumber = (textField.text ?? "").replacingOccurrences(of: "[^0-9]", with: "", options: .regularExpression) as NSString
-
-        // Calculate the available length with unmasked
-        let availableLength = maxNumberLength - currentNumber.length + trueRange.length
-
-        // If there's no more space left for new characters
-        guard availableLength > 0 else {
-            return false
-        }
-
-        // Cut the length of the pasting string
-        if replacementNumbers.count > availableLength {
-            replacementNumbers = String(replacementNumbers.prefix(availableLength))
-        }
-
-        let updatedNumber = currentNumber.replacingCharacters(in: trueRange, with: replacementNumbers)
-        let updatedFormatted = updatedNumber.formatAsCreditCardNumber()
-
-        // Update the text as early as possible
-        textField.text = updatedFormatted
-
-        let targetEndPositionBeforeFormat = trueRange.lowerBound + replacementNumbers.count
-        let targetEndPosition = min(targetEndPositionBeforeFormat + Int(floor(Double(targetEndPositionBeforeFormat / 4))), updatedFormatted.count)
-
-        // Update the cursor position
-        if let newPosition = textField.position(from: textField.beginningOfDocument, offset: targetEndPosition) {
-            // Give it a few moment to update the textfield if it's from pasting, otherwise cursor won't update correctly
-            if string.count > 1 {
-                DispatchQueue.main.async {
-                    textField.selectedTextRange = textField.textRange(from: newPosition, to: newPosition)
-                }
-            } else {
-                // Regular input does not need delay
-                textField.selectedTextRange = textField.textRange(from: newPosition, to: newPosition)
-            }
-        }
-        return false
     }
 }
