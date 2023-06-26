@@ -89,19 +89,15 @@ class ViewController: UIViewController {
     }
 
     @objc func onSubmitButton() {
-        grubpayElement.submit(
-            saveCard: true,
-            completion: {
-                result in
-                switch result {
-                case .success:
-                    print("success")
-                case .failure(let error):
-                    print(error.type)
-                    print(error.message)
-                }
+        grubpayElement.submit(saveCard: true) {
+            [weak self] result in
+            switch result {
+            case .success(let response):
+                self?.handleResponse(response)
+            case .failure(let error):
+                self?.handleError(error)
             }
-        )
+        }
     }
 
     private lazy var mountButton: UIButton = {
@@ -137,7 +133,12 @@ class ViewController: UIViewController {
     }
 
     func launchGrubPay(_ secureId: String) {
-        GrubPay.launch(secureId, viewController: self) {
+        GrubPay.launch(
+            secureId,
+            saveCard: false,
+            inputStyle: GPInputStyle(),
+            viewController: self
+        ) {
             [weak self] result in
             switch result {
             case .success(let response):
