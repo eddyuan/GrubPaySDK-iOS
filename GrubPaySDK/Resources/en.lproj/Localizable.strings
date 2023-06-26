@@ -5,3 +5,6 @@
 "Done" = "Done";
 "Cancel" = "Cancel";
 "Country" = "Country";
+"Center your card until the fields are recognized" = "Center your card until the fields are recognized";
+"Touch a recognized value to delete the value and try again" = "Touch a recognized value to delete the value and try again";
+"Confirm" = "Confirm";

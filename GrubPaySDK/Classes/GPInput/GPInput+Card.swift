@@ -10,7 +10,7 @@ import Foundation
 class GPInputCard: GPInput {
     // MARK: Validators
 
-    var cleanText: String {
+    private var cleanText: String {
         return super.text?.replacingOccurrences(
             of: "[^0-9]",
             with: "",
@@ -18,9 +18,33 @@ class GPInputCard: GPInput {
         ) ?? ""
     }
 
+    private var isCardNumberFromScan = false
+
     override func onEditChange() {
         super.onEditChange()
         setCardBrand()
+        if text?.count == 19 {
+            if !isCardNumberFromScan && valid {
+                onFinishField()
+            }
+        } else {
+            isCardNumberFromScan = false
+        }
+    }
+
+    override func didScan(_ cardNumber: String?, _ expiryDate: String?) {
+        if let cardNumber = cardNumber {
+            DispatchQueue.main.async {
+                [weak self] in
+                self?.isCardNumberFromScan = true
+                self?.text = cardNumber.mask(mask: "#### #### #### ####")
+            }
+        } else {
+            DispatchQueue.main.async {
+                [weak self] in
+                let _ = self?.becomeFirstResponder()
+            }
+        }
     }
 
     func updateErrorState() {
@@ -38,10 +62,11 @@ class GPInputCard: GPInput {
 
     // MARK: Datas
 
-    private var cardType: GPCardType = .unknown {
+    private var cardBrand: GrubPayCardBrand = .unknown {
         didSet {
+            toggleCameraButton()
             let img = UIImage(
-                named: cardType.imageName,
+                named: cardBrand.imageName,
                 in: Bundle(for: type(of: self)),
                 compatibleWith: nil
             )
@@ -52,53 +77,44 @@ class GPInputCard: GPInput {
             ) {
                 self.cardImage.image = img
             }
+            controller.cardBrand = cardBrand
+        }
+    }
+
+    private func toggleCameraButton() {
+        if #available(iOS 13.0, *), cardBrand == .unknown {
+            scanButton.isHidden = false
+            cardImage.isHidden = true
+        } else {
+            scanButton.isHidden = true
+            cardImage.isHidden = false
         }
     }
 
     private func setCardBrand() {
-        let cardNumber = super.text
-        guard cardNumber != nil else {
-            cardType = .unknown
-            return
-        }
-
-        let numberOnly = cardNumber!.replacingOccurrences(
-            of: "[^0-9]",
-            with: "",
-            options: .regularExpression
-        )
-
-        for card in GPCardType.allCards {
-            if matchesRegex(
-                regex: card.regex,
-                text: numberOnly
-            ) {
-                cardType = card
+        DispatchQueue.main.async {
+            [weak self] in
+            let cardNumber = self?.text
+            guard cardNumber != nil else {
+                self?.cardBrand = .unknown
                 return
             }
-        }
-        cardType = .unknown
-    }
 
-    private func matchesRegex(
-        regex: String,
-        text: String,
-        defaultVal: Bool = false
-    ) -> Bool {
-        do {
-            let regex = try NSRegularExpression(
-                pattern: regex,
-                options: [.caseInsensitive]
-            )
-            let nsString = text as NSString
-            let match = regex.firstMatch(
-                in: text,
-                options: [],
-                range: NSMakeRange(0, nsString.length)
-            )
-            return (match != nil)
-        } catch {
-            return defaultVal
+            let numberOnly = cardNumber?.replacingOccurrences(
+                of: "[^0-9]",
+                with: "",
+                options: .regularExpression
+            ) ?? ""
+
+            for card in GrubPayCardBrand.allCards {
+                if numberOnly.matchesRegex(
+                    regex: card.regex
+                ) {
+                    self?.cardBrand = card
+                    return
+                }
+            }
+            self?.cardBrand = .unknown
         }
     }
 
@@ -113,17 +129,38 @@ class GPInputCard: GPInput {
         super.autocorrectionType = .no
         super.autocapitalizationType = .none
         super.keyboardType = .numberPad
-//        super.addTarget(
-//            self,
-//            action: #selector(textFieldDidChange),
-//            for: .editingChanged
-//        )
+        super.returnKeyType = .next
         super.addSubview(cardImage)
+        super.addSubview(scanButton)
+        toggleCameraButton()
     }
+
+    @objc func scanCard() {
+        controller.scanCard()
+    }
+
+    private lazy var cameraImage: UIImage? = {
+        if #available(iOS 13.0, *) {
+            let img = UIImage(systemName: "camera")
+            let symbolConfiguration = UIImage.SymbolConfiguration(pointSize: 20)
+            let resizedImage = img?.withRenderingMode(.alwaysOriginal).applyingSymbolConfiguration(symbolConfiguration)?.withTintColor(controller.style.accentColor)
+            return resizedImage
+        }
+        return nil
+    }()
+
+    private lazy var scanButton: UIButton = {
+        let b = UIButton()
+        b.setImage(cameraImage, for: .normal)
+        b.setTitleColor(UIColor.systemBlue, for: .normal)
+        b.setTitleColor(UIColor.systemBlue.withAlphaComponent(0.5), for: .highlighted)
+        b.addTarget(self, action: #selector(scanCard), for: .touchUpInside)
+        return b
+    }()
 
     private lazy var cardImage: UIImageView = {
         let img = UIImage(
-            named: cardType.imageName,
+            named: cardBrand.imageName,
             in: Bundle(for: type(of: self)),
             compatibleWith: nil
         )
@@ -137,6 +174,12 @@ class GPInputCard: GPInput {
         let x = bounds.width - w - pr
         super.trailingWidth = w + 6
         cardImage.frame = CGRect(
+            x: x,
+            y: t,
+            width: w,
+            height: h
+        )
+        scanButton.frame = CGRect(
             x: x,
             y: t,
             width: w,
@@ -163,20 +206,24 @@ extension GPInputCard: UITextFieldDelegate {
         shouldChangeCharactersIn range: NSRange,
         replacementString string: String
     ) -> Bool {
-        return GPInputUtil.maskInput(
+        return textField.maskInput(
             mask: "#### #### #### ####",
-            textField: textField,
             shouldChangeCharactersIn: range,
             replacementString: string,
             allowMix: false
         )
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        onFinishField()
+        return true
     }
 }
 
 // This is for form controller
 extension GPInputCard {
     override var valid: Bool {
-        if controller.config?.mode == .ach {
+        if controller.config?.channel == .ach {
             return true
         }
 
@@ -191,12 +238,9 @@ extension GPInputCard {
             options: .regularExpression
         )
 
-        let validatorRegex = "^(?:(4[0-9]{12}(?:[0-9]{3})?)|(5[1-5][0-9]{14})|(6(?:011|5[0-9]{2})[0-9]{12})|(3[47][0-9]{13})|(3(?:0[0-5]|[68][0-9])[0-9]{11})|((?:2131|1800|35[0-9]{3})[0-9]{11})|(62[0-9]{14}))$"
         let defaultValid = numberOnly.count > 13 && numberOnly.count < 17
-
-        return matchesRegex(
-            regex: validatorRegex,
-            text: numberOnly,
+        return numberOnly.matchesRegex(
+            regex: kCardRegex,
             defaultVal: defaultValid
         )
     }
@@ -205,7 +249,7 @@ extension GPInputCard {
         onSuccess: @escaping (_ param: [String: Any]) -> Void,
         onError: @escaping (String) -> Void
     ) {
-        if controller.config?.mode != .card {
+        if controller.config?.channel != .card {
             onSuccess([:])
             return
         }
@@ -214,6 +258,19 @@ extension GPInputCard {
             onSuccess(["cardNum": cleanText])
         } else {
             onError("Card Number")
+        }
+    }
+
+    private func onFinishField() {
+        controller.onFinishField(GPInputType.card)
+    }
+
+    override func didFinishField(_ val: Int) {
+        if GPInputType(rawValue: val) == .name {
+            DispatchQueue.main.async {
+                [weak self] in
+                let _ = self?.becomeFirstResponder()
+            }
         }
     }
 }

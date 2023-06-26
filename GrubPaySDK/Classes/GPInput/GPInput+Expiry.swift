@@ -10,50 +10,15 @@ import Foundation
 class GPInputExpiry: GPInput {
     // MARK: Validators
 
-    var dateString: String? {
-        let trimmedStr = super.text ?? ""
-        if trimmedStr.count != 5 {
-            return nil
-        }
-        let components = trimmedStr.split(separator: "/")
-        guard components.count == 2 else {
-            return nil
-        }
-        let monthString = String(components[0])
-        let yearShortString = String(components[1])
-        let yearString = "20" + yearShortString
-
-        guard let month = Int(monthString), let year = Int(yearString) else {
-            return nil
-        }
-
-        let currentDate = Date()
-        let calendar = Calendar.current
-        let currentMonth: Int = calendar.component(.month, from: currentDate)
-        let currentYear: Int = calendar.component(.year, from: currentDate)
-
-        if year < currentYear {
-            return nil
-        }
-
-        if year == currentYear {
-            if month < currentMonth {
-                return nil
-            }
-        }
-
-        if month < 1 || month > 12 {
-            return nil
-        }
-
-        return monthString + yearShortString
+    private var dateString: String? {
+        return text?.toValidDateStringOrNil()
     }
 
-    var cleanText: String {
+    private var cleanText: String {
         return dateString ?? ""
     }
 
-    func updateErrorState() {
+    private func updateErrorState() {
         let targetErr: String? = valid ? nil : "Error"
         if super.errorMessage != targetErr {
             super.errorMessage = targetErr
@@ -116,17 +81,22 @@ class GPInputExpiry: GPInput {
     }
 
     @objc func doneClick() {
-        let month = expiryPicker.month
-        let year = expiryPicker.year
-        let string = String(format: "%02d/%02d", month, year % 100)
-        print(string)
-        super.text = string
+        let string = expiryPicker.dateString
+        DispatchQueue.main.async {
+            [weak self] in
+            self?.text = string
+        }
         super.resignFirstResponder()
+        onFinishField()
     }
 
     @objc func cancelClick() {
-        print(NSLocale.current)
         super.resignFirstResponder()
+    }
+
+    override func becomeFirstResponder() -> Bool {
+        expiryPicker.dateString = text ?? ""
+        return super.becomeFirstResponder()
     }
 }
 
@@ -139,7 +109,7 @@ extension GPInputExpiry: UITextFieldDelegate {
 // Validator for controller
 extension GPInputExpiry {
     override var valid: Bool {
-        if controller.config?.mode == .card {
+        if controller.config?.channel == .card {
             return dateString != nil
         }
         return true
@@ -149,7 +119,7 @@ extension GPInputExpiry {
         onSuccess: @escaping ([String: Any]) -> Void,
         onError: @escaping (String) -> Void
     ) {
-        if controller.config?.mode != .card {
+        if controller.config?.channel != .card {
             onSuccess([:])
             return
         }
@@ -158,6 +128,34 @@ extension GPInputExpiry {
             onSuccess(["expiryDate": cleanText])
         } else {
             onError("Expiry Date")
+        }
+    }
+
+    override func didScan(_ cardNumber: String?, _ expiryDate: String?) {
+        if let expiryDate = expiryDate {
+            DispatchQueue.main.async {
+                [weak self] in
+                self?.text = expiryDate
+                self?.expiryPicker.dateString = expiryDate
+            }
+        } else if cardNumber != nil {
+            DispatchQueue.main.async {
+                [weak self] in
+                let _ = self?.becomeFirstResponder()
+            }
+        }
+    }
+
+    private func onFinishField() {
+        controller.onFinishField(GPInputType.expiry)
+    }
+
+    override func didFinishField(_ val: Int) {
+        if GPInputType(rawValue: val) == .card {
+            DispatchQueue.main.async {
+                [weak self] in
+                let _ = self?.becomeFirstResponder()
+            }
         }
     }
 }

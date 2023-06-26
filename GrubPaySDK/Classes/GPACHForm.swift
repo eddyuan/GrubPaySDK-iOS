@@ -38,7 +38,9 @@ class GPACHForm: UIStackView {
 
     private func createFields() {
         routingField = .init(controller: controller)
-        nameField = .init(controller: controller)
+        if controller.config?.requireName ?? false {
+            nameField = .init(controller: controller)
+        }
         accountField = .init(controller: controller)
         accountTypeField = .init(controller: controller)
         agreementField = .init(controller: controller)
@@ -50,8 +52,10 @@ class GPACHForm: UIStackView {
         distribution = .fill
         spacing = inputStyle.verticalGap
         translatesAutoresizingMaskIntoConstraints = false
+        if controller.config?.requireName ?? false && nameField != nil {
+            addArrangedSubview(nameField!)
+        }
 
-        addArrangedSubview(nameField!)
         addArrangedSubview(routingField!)
         addArrangedSubview(accountField!)
         addArrangedSubview(accountTypeField!)

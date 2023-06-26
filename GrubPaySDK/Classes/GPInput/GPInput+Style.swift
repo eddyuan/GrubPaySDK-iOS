@@ -15,7 +15,7 @@ public class GPBorderStyle {
     let radius: CGFloat
     let underline: Bool
 
-    fileprivate init(
+    private init(
         color: UIColor,
         width: CGFloat,
         activeColor: UIColor,
@@ -88,7 +88,7 @@ public class GPLabelStyle {
     let activeColor: UIColor
     let noLabel: Bool
 
-    fileprivate init(
+    private init(
         floating: Bool,
         color: UIColor,
         font: UIFont,
@@ -157,7 +157,19 @@ public class GPInputStyle {
     let verticalGap: CGFloat
     let horizontalGap: CGFloat
 
+    // Size of radio dot
     let dotSize: CGFloat
+
+    var invertedColor: UIColor {
+        guard let components = color.cgColor.components else {
+            return UIColor.white
+        }
+        let red = components[0]
+        let green = components[1]
+        let blue = components[2]
+        let brightness = ((red * 299) + (green * 587) + (blue * 114)) / 1000
+        return (brightness > 0.5) ? UIColor.black : UIColor.white
+    }
 
     public init(
         accentColor: UIColor = UIColor.systemBlue,
@@ -205,4 +217,6 @@ public extension GPInputStyle {
             return currentStyle == .default ? light : dark
         }
     }
+
+    internal static let defaultDarkBg: UIColor = .init(red: 0.15, green: 0.15, blue: 0.15, alpha: 1.0)
 }

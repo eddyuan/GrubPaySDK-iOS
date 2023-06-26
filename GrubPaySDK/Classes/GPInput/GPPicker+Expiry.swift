@@ -59,6 +59,44 @@ class GPPickerExpiry: UIPickerView {
         }
     }
     
+    var dateString: String {
+        set {
+            let trimmedStr = newValue.replacingOccurrences(of: " ", with: "")
+            if trimmedStr.count != 5 {
+                return
+            }
+            let components = trimmedStr.split(separator: "/")
+            guard components.count == 2 else {
+                return
+            }
+            let monthString = String(components[0])
+            let yearShortString = String(components[1])
+            let yearString: String!
+            if yearShortString.count < 3 {
+                yearString = "20" + yearShortString
+            } else {
+                yearString = yearShortString
+            }
+
+            guard let month = Int(monthString), let year = Int(yearString) else {
+                return
+            }
+            var dateComponents = DateComponents()
+            dateComponents.month = month
+            dateComponents.year = year
+            dateComponents.day = 1
+            let calendar = Calendar.current
+            if let date = calendar.date(from: dateComponents) {
+                self.date = date
+            }
+        }
+        get {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "MM/yy"
+            return dateFormatter.string(from: date)
+        }
+    }
+    
     /// The month displayed by the picker.
     ///
     /// Use this property to get the current month in the Gregorian calendar starting from `1` for _January_ through to `12` for _December_.

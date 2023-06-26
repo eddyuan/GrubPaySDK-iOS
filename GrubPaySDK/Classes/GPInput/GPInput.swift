@@ -17,7 +17,7 @@ class GPInput: UITextField {
         if errorMessage != nil {
             errorMessage = nil
         }
-        controller.notifyFieldChange()
+        controller.onEditChange()
     }
 
     @objc func onTextChange() {
@@ -316,7 +316,7 @@ class GPInput: UITextField {
 
     fileprivate func commonInit() {
         controller.addField(self)
-        isEnabled = !controller.isLoading
+        isEnabled = controller.isEnabled
         insertSubview(borderView, at: 0)
         borderView.addSubview(lineView)
         addSubview(titleLabel)
@@ -482,9 +482,13 @@ class GPInput: UITextField {
 }
 
 extension GPInput: GPFormObs {
-    func countryDidChange() {
-        updateAllStyles()
+    func configDidChange() {
+        DispatchQueue.main.async {
+            self.updateAllStyles()
+        }
     }
+
+    func countryDidChange() {}
 
     func doValidate(
         onSuccess: @escaping ([String: Any]) -> Void,
@@ -497,7 +501,13 @@ extension GPInput: GPFormObs {
         return false
     }
 
-    func loadingDidChange() {
-        isEnabled = !controller.isLoading
+    func isEnabledDidChange(_ isEnabled: Bool) {
+        DispatchQueue.main.async {
+            [weak self] in
+            self?.isEnabled = isEnabled
+        }
     }
+
+    func didScan(_ cardNumber: String?, _ expiryDate: String?) {}
+    func didFinishField(_ val: Int) {}
 }

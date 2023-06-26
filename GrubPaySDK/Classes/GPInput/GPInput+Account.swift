@@ -46,20 +46,23 @@ class GPInputAccount: GPInput {
 
 extension GPInputAccount: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return GPInputUtil.maskInput(
+        return textField.maskInput(
             mask: "############",
-            textField: textField,
             shouldChangeCharactersIn: range,
             replacementString: string,
             allowMix: false
         )
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return true
     }
 }
 
 // Validator for controller
 extension GPInputAccount {
     override var valid: Bool {
-        if controller.config?.mode == .ach {
+        if controller.config?.channel == .ach {
             return (super.text ?? "").count > 3
         }
         return true
@@ -69,7 +72,7 @@ extension GPInputAccount {
         onSuccess: @escaping ([String: Any]) -> Void,
         onError: @escaping (String) -> Void
     ) {
-        if controller.config?.mode != .ach {
+        if controller.config?.channel != .ach {
             onSuccess([:])
             return
         }

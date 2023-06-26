@@ -18,7 +18,10 @@ class GPInputCountry: GPInput {
     }
 
     private func updateTexts() {
-        super.text = country.name
+        DispatchQueue.main.async {
+            [weak self] in
+            self?.text = self?.country.rawValue
+        }
     }
 
     override func caretRect(for position: UITextPosition) -> CGRect {
@@ -79,6 +82,7 @@ class GPInputCountry: GPInput {
     @objc func doneClick() {
         country = pickerView.country
         super.resignFirstResponder()
+        onFinishField()
     }
 
     @objc func cancelClick() {
@@ -86,15 +90,8 @@ class GPInputCountry: GPInput {
     }
 
     override func becomeFirstResponder() -> Bool {
-        let superResult = super.becomeFirstResponder()
-        country = pickerView.country
-        return superResult
-    }
-
-    // MARK: For GPFormObs
-
-    override func countryDidChange() {
-        updateTexts()
+        pickerView.country = country
+        return super.becomeFirstResponder()
     }
 }
 
@@ -103,6 +100,8 @@ extension GPInputCountry: UITextFieldDelegate {
         return false
     }
 }
+
+// MARK: For GPFormObs
 
 extension GPInputCountry {
     override var valid: Bool {
@@ -114,5 +113,22 @@ extension GPInputCountry {
         onError: @escaping (String) -> Void
     ) {
         onSuccess([:])
+    }
+
+    override func didFinishField(_ val: Int) {
+        if GPInputType(rawValue: val) == .cvc {
+            DispatchQueue.main.async {
+                [weak self] in
+                let _ = self?.becomeFirstResponder()
+            }
+        }
+    }
+
+    override func countryDidChange() {
+        updateTexts()
+    }
+
+    func onFinishField() {
+        controller.onFinishField(GPInputType.country)
     }
 }

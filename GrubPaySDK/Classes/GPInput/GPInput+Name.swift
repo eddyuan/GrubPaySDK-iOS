@@ -10,11 +10,11 @@ import Foundation
 class GPInputName: GPInput {
     // MARK: Validators
 
-    var cleanText: String {
+    private var cleanText: String {
         return super.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
     }
 
-    func updateErrorState() {
+    private func updateErrorState() {
         let targetErr: String? = valid ? nil : "Error"
         if super.errorMessage != targetErr {
             super.errorMessage = targetErr
@@ -33,13 +33,15 @@ class GPInputName: GPInput {
     private func initField() {
         super.delegate = self
         super.titleText = NSLocalizedString(
-            "Name",
+            controller.config?.channel == .card ? "Name on card" : "Name",
             bundle: Bundle(for: type(of: self)),
             comment: ""
         )
         super.placeholder = "John Smith"
         super.autocorrectionType = .no
         super.autocapitalizationType = .none
+        super.keyboardType = .default
+        super.returnKeyType = .next
     }
 
     // MARK: Overrides
@@ -47,6 +49,10 @@ class GPInputName: GPInput {
     override init(controller: GPFormController) {
         super.init(controller: controller)
         initField()
+    }
+
+    private func onFinishField() {
+        controller.onFinishField(GPInputType.name)
     }
 }
 
@@ -77,11 +83,16 @@ extension GPInputName: UITextFieldDelegate {
         // If all characters are allowed, perform the change
         return true
     }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        onFinishField()
+        return true
+    }
 }
 
 extension GPInputName {
     override var valid: Bool {
-        if controller.config?.requireName == true || controller.config?.mode == .ach {
+        if controller.config?.requireName == true {
             let trimmedStr = super.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
             return trimmedStr.count > 2
         }
@@ -94,7 +105,7 @@ extension GPInputName {
     ) {
         updateErrorState()
         if valid {
-            if controller.config?.requireName == false && controller.config?.mode == .card {
+            if controller.config?.requireName == false {
                 onSuccess([:])
             } else {
                 onSuccess(["name": cleanText])

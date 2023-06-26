@@ -53,20 +53,13 @@ class GPInputZip: GPInput {
             super.placeholder = country.zipPh
             super.keyboardType = country.keyboardType
             super.isHidden = false
-            let mask = super.controller.country.inputMask
-            if mask != nil {
-                let maskedText = GPInputUtil.mask(super.text ?? "", mask: mask!)
+            if let mask = super.controller.country.inputMask, let superText = super.text {
+                let maskedText = superText.mask(mask: mask)
                 if super.text != maskedText {
                     super.text = ""
                 }
             }
         }
-    }
-
-    // MARK: for GPFormObs
-
-    override func countryDidChange() {
-        updateTexts()
     }
 }
 
@@ -76,25 +69,29 @@ extension GPInputZip: UITextFieldDelegate {
         shouldChangeCharactersIn range: NSRange,
         replacementString string: String
     ) -> Bool {
-        let mask = super.controller.country.inputMask
-        if mask != nil {
-            return GPInputUtil.maskInput(
-                mask: mask!,
-                textField: textField,
+        if let mask = super.controller.country.inputMask {
+            return textField.maskInput(
+                mask: mask,
                 shouldChangeCharactersIn: range,
                 replacementString: string,
                 capitalize: true,
                 allowMix: false
             )
         }
+
+        return true
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return true
     }
 }
 
-// Validator for controller
+// MARK: for GPFormObs
+
 extension GPInputZip {
     override var valid: Bool {
-        if controller.config?.requireZip == true && controller.config?.mode == .card {
+        if controller.config?.requireZip == true && controller.config?.channel == .card {
             let validText = super.text ?? ""
             return country.validateText(validText)
         }
@@ -105,7 +102,7 @@ extension GPInputZip {
         onSuccess: @escaping ([String: Any]) -> Void,
         onError: @escaping (String) -> Void
     ) {
-        if controller.config?.mode != .card {
+        if controller.config?.channel != .card {
             onSuccess([:])
             return
         }
@@ -114,6 +111,23 @@ extension GPInputZip {
             onSuccess(["zip": cleanText])
         } else {
             onError("Zip")
+        }
+    }
+
+    override func countryDidChange() {
+        updateTexts()
+    }
+
+    private func onFinishField() {
+        controller.onFinishField(GPInputType.zip)
+    }
+
+    override func didFinishField(_ val: Int) {
+        if GPInputType(rawValue: val) == .country {
+            DispatchQueue.main.async {
+                [weak self] in
+                let _ = self?.becomeFirstResponder()
+            }
         }
     }
 }

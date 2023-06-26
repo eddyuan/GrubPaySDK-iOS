@@ -7,25 +7,11 @@
 
 import Foundation
 
-enum GPACHAccountType: String {
-    case ECHK,
-         ESAV
-    
-    var code: String {
-        switch self {
-        case .ECHK:
-            return "ECHK"
-        case .ESAV:
-            return "ESAV"
-        }
-    }
-}
-
 class GPRadioAccountType: UIStackView {
     var onChanged: (() -> Void)?
     
     let controller: GPFormController!
-    private var currentType: GPACHAccountType = .ECHK {
+    private var currentType: GrubPayACHAccountType = .ECHK {
         didSet {
             checkingButton.isSelected = (currentType == .ECHK)
             savingButton.isSelected = (currentType == .ESAV)
@@ -41,7 +27,7 @@ class GPRadioAccountType: UIStackView {
             for: .touchUpInside
         )
         b.isSelected = (currentType == .ECHK)
-        b.isEnabled = !controller.isLoading
+        b.isEnabled = controller.isEnabled
         return b
     }()
     
@@ -54,7 +40,7 @@ class GPRadioAccountType: UIStackView {
             for: .touchUpInside
         )
         b.isSelected = (currentType == .ESAV)
-        b.isEnabled = !controller.isLoading
+        b.isEnabled = controller.isEnabled
         return b
     }()
     
@@ -114,15 +100,18 @@ extension GPRadioAccountType: GPFormObs {
         onSuccess: @escaping ([String: Any]) -> Void,
         onError: @escaping (String) -> Void
     ) {
-        if controller.config?.mode != .card {
+        if controller.config?.channel == .card {
             onSuccess([:])
             return
         }
-        onSuccess(["accountType": currentType.code])
+        onSuccess(["accountType": currentType.rawValue])
     }
     
-    func loadingDidChange() {
-        checkingButton.isEnabled = !controller.isLoading
-        savingButton.isEnabled = !controller.isLoading
+    func isEnabledDidChange(_ isEnabled: Bool) {
+        DispatchQueue.main.async {
+            [weak self] in
+            self?.checkingButton.isEnabled = isEnabled
+            self?.savingButton.isEnabled = isEnabled
+        }
     }
 }

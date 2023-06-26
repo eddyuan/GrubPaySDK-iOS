@@ -56,6 +56,18 @@
 		2C0029692A0EC33B006909AD /* GPInput+Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029682A0EC33B006909AD /* GPInput+Zip.swift */; };
 		2C00296B2A0EF26D006909AD /* GPFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00296A2A0EF26D006909AD /* GPFormController.swift */; };
 		2C00296D2A0F063F006909AD /* GPInput+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00296C2A0F063F006909AD /* GPInput+Util.swift */; };
+		2C03366E2A4505FD00E4B103 /* GrubPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336692A4505FD00E4B103 /* GrubPay.swift */; };
+		2C03366F2A4505FD00E4B103 /* GrubPayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03366A2A4505FD00E4B103 /* GrubPayVC.swift */; };
+		2C0336702A4505FD00E4B103 /* GPUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03366B2A4505FD00E4B103 /* GPUtil.swift */; };
+		2C0336712A4505FD00E4B103 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03366C2A4505FD00E4B103 /* Enums.swift */; };
+		2C0336722A4505FD00E4B103 /* GrubPayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03366D2A4505FD00E4B103 /* GrubPayError.swift */; };
+		2C03367B2A45062300E4B103 /* GPCardAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336742A45062300E4B103 /* GPCardAnalyzer.swift */; };
+		2C03367C2A45062300E4B103 /* CameraAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336752A45062300E4B103 /* CameraAccess.swift */; };
+		2C03367D2A45062300E4B103 /* GPScannerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336762A45062300E4B103 /* GPScannerConfig.swift */; };
+		2C03367F2A45062300E4B103 /* GPScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336782A45062300E4B103 /* GPScannerView.swift */; };
+		2C0336802A45062300E4B103 /* GPCardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336792A45062300E4B103 /* GPCardOverlay.swift */; };
+		2C0336812A45062300E4B103 /* GPCardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03367A2A45062300E4B103 /* GPCardScanner.swift */; };
+		2C0336832A466E4F00E4B103 /* GrubPayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336822A466E4E00E4B103 /* GrubPayButton.swift */; };
 		2C0608A52A13FEF5005663CC /* GPACHForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608A42A13FEF5005663CC /* GPACHForm.swift */; };
 		2C0608A72A13FF6C005663CC /* GPInput+Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608A62A13FF6C005663CC /* GPInput+Routing.swift */; };
 		2C0608A92A140A1B005663CC /* GPInput+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608A82A140A1B005663CC /* GPInput+Account.swift */; };
@@ -63,9 +75,8 @@
 		2C0608AD2A14183F005663CC /* GPRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608AC2A14183F005663CC /* GPRadioButton.swift */; };
 		2C0608AF2A1443DF005663CC /* GPSwitch+ACHAgreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608AE2A1443DF005663CC /* GPSwitch+ACHAgreement.swift */; };
 		2C0608B12A1543CD005663CC /* GPRadioDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608B02A1543CD005663CC /* GPRadioDot.swift */; };
-		2C0608B32A159D98005663CC /* GPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608B22A159D98005663CC /* GPRequest.swift */; };
+		2C0608B32A159D98005663CC /* GPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608B22A159D98005663CC /* GPServer.swift */; };
 		2C0608B52A16A5ED005663CC /* GrubPayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608B42A16A5ED005663CC /* GrubPayResponse.swift */; };
-		2C5A8C3829FB4BB10038D3C1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5A8C3729FB4BB10038D3C1 /* Enums.swift */; };
 		2C901FA72A01B61D00DADC09 /* GPPicker+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C901FA62A01B61D00DADC09 /* GPPicker+Expiry.swift */; };
 		2C9020352A0333BC00DADC09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C90200B2A0333BC00DADC09 /* Localizable.strings */; };
 		2CA89EAD2A04352200DA5850 /* GPInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA89EAC2A04352200DA5850 /* GPInput.swift */; };
@@ -93,7 +104,7 @@
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		E0A2ADE63A9999671AC6190FA88D153D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		F43CD14F0A971A19E762A3F8082A1C15 /* GrubpayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubpayElement.swift */; };
+		F43CD14F0A971A19E762A3F8082A1C15 /* GrubPayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubPayElement.swift */; };
 		F63933AE089493BC1FA943CD54FF6F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -178,6 +189,18 @@
 		2C0029682A0EC33B006909AD /* GPInput+Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Zip.swift"; sourceTree = "<group>"; };
 		2C00296A2A0EF26D006909AD /* GPFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GPFormController.swift; path = GrubPaySDK/Classes/GPFormController.swift; sourceTree = "<group>"; };
 		2C00296C2A0F063F006909AD /* GPInput+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Util.swift"; sourceTree = "<group>"; };
+		2C0336692A4505FD00E4B103 /* GrubPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrubPay.swift; path = GrubPaySDK/Classes/GrubPay.swift; sourceTree = "<group>"; };
+		2C03366A2A4505FD00E4B103 /* GrubPayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrubPayVC.swift; path = GrubPaySDK/Classes/GrubPayVC.swift; sourceTree = "<group>"; };
+		2C03366B2A4505FD00E4B103 /* GPUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPUtil.swift; path = GrubPaySDK/Classes/GPUtil.swift; sourceTree = "<group>"; };
+		2C03366C2A4505FD00E4B103 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = GrubPaySDK/Classes/Enums.swift; sourceTree = "<group>"; };
+		2C03366D2A4505FD00E4B103 /* GrubPayError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrubPayError.swift; path = GrubPaySDK/Classes/GrubPayError.swift; sourceTree = "<group>"; };
+		2C0336742A45062300E4B103 /* GPCardAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardAnalyzer.swift; sourceTree = "<group>"; };
+		2C0336752A45062300E4B103 /* CameraAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraAccess.swift; sourceTree = "<group>"; };
+		2C0336762A45062300E4B103 /* GPScannerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPScannerConfig.swift; sourceTree = "<group>"; };
+		2C0336782A45062300E4B103 /* GPScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPScannerView.swift; sourceTree = "<group>"; };
+		2C0336792A45062300E4B103 /* GPCardOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardOverlay.swift; sourceTree = "<group>"; };
+		2C03367A2A45062300E4B103 /* GPCardScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardScanner.swift; sourceTree = "<group>"; };
+		2C0336822A466E4E00E4B103 /* GrubPayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrubPayButton.swift; sourceTree = "<group>"; };
 		2C0608A42A13FEF5005663CC /* GPACHForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GPACHForm.swift; path = GrubPaySDK/Classes/GPACHForm.swift; sourceTree = "<group>"; };
 		2C0608A62A13FF6C005663CC /* GPInput+Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Routing.swift"; sourceTree = "<group>"; };
 		2C0608A82A140A1B005663CC /* GPInput+Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Account.swift"; sourceTree = "<group>"; };
@@ -185,9 +208,8 @@
 		2C0608AC2A14183F005663CC /* GPRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPRadioButton.swift; sourceTree = "<group>"; };
 		2C0608AE2A1443DF005663CC /* GPSwitch+ACHAgreement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPSwitch+ACHAgreement.swift"; sourceTree = "<group>"; };
 		2C0608B02A1543CD005663CC /* GPRadioDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPRadioDot.swift; sourceTree = "<group>"; };
-		2C0608B22A159D98005663CC /* GPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GPRequest.swift; path = GrubPaySDK/Classes/GPRequest.swift; sourceTree = "<group>"; };
+		2C0608B22A159D98005663CC /* GPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GPServer.swift; path = GrubPaySDK/Classes/GPServer.swift; sourceTree = "<group>"; };
 		2C0608B42A16A5ED005663CC /* GrubPayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GrubPayResponse.swift; path = GrubPaySDK/Classes/GrubPayResponse.swift; sourceTree = "<group>"; };
-		2C5A8C3729FB4BB10038D3C1 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		2C901FA62A01B61D00DADC09 /* GPPicker+Expiry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPPicker+Expiry.swift"; sourceTree = "<group>"; };
 		2C90200C2A0333BC00DADC09 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2C90200D2A0333BC00DADC09 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -274,7 +296,7 @@
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D0E68BF2FF67BE3C3A60C1305E728560 /* Pods-GrubPaySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubpayElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrubpayElement.swift; path = GrubPaySDK/Classes/GrubpayElement.swift; sourceTree = "<group>"; };
+		D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubPayElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrubPayElement.swift; path = GrubPaySDK/Classes/GrubPayElement.swift; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F1B355655FB3FE2639D5FD62EABA67F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -379,6 +401,20 @@
 			path = GrubPaySDK/Assets;
 			sourceTree = "<group>";
 		};
+		2C0336732A45062300E4B103 /* GPCardScanner */ = {
+			isa = PBXGroup;
+			children = (
+				2C0336742A45062300E4B103 /* GPCardAnalyzer.swift */,
+				2C0336752A45062300E4B103 /* CameraAccess.swift */,
+				2C0336762A45062300E4B103 /* GPScannerConfig.swift */,
+				2C0336782A45062300E4B103 /* GPScannerView.swift */,
+				2C0336792A45062300E4B103 /* GPCardOverlay.swift */,
+				2C03367A2A45062300E4B103 /* GPCardScanner.swift */,
+			);
+			name = GPCardScanner;
+			path = GrubPaySDK/Classes/GPCardScanner;
+			sourceTree = "<group>";
+		};
 		2C90200A2A0333BC00DADC09 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +444,7 @@
 				2C0608B02A1543CD005663CC /* GPRadioDot.swift */,
 				2C0608AC2A14183F005663CC /* GPRadioButton.swift */,
 				2C0608AE2A1443DF005663CC /* GPSwitch+ACHAgreement.swift */,
+				2C0336822A466E4E00E4B103 /* GrubPayButton.swift */,
 			);
 			name = GPInput;
 			path = GrubPaySDK/Classes/GPInput;
@@ -518,16 +555,21 @@
 		E2785C96E28E439E5C9F58FF709F8044 /* GrubPaySDK */ = {
 			isa = PBXGroup;
 			children = (
-				2C0029192A0C6428006909AD /* Assets */,
-				2C9020392A04349A00DADC09 /* GPInput */,
+				2C0336732A45062300E4B103 /* GPCardScanner */,
 				2C90200A2A0333BC00DADC09 /* Resources */,
-				2C5A8C3729FB4BB10038D3C1 /* Enums.swift */,
-				D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubpayElement.swift */,
+				2C9020392A04349A00DADC09 /* GPInput */,
+				2C0029192A0C6428006909AD /* Assets */,
+				D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubPayElement.swift */,
+				2C03366C2A4505FD00E4B103 /* Enums.swift */,
+				2C03366B2A4505FD00E4B103 /* GPUtil.swift */,
+				2C0336692A4505FD00E4B103 /* GrubPay.swift */,
+				2C03366D2A4505FD00E4B103 /* GrubPayError.swift */,
+				2C03366A2A4505FD00E4B103 /* GrubPayVC.swift */,
 				2C0608B42A16A5ED005663CC /* GrubPayResponse.swift */,
 				2C0608A42A13FEF5005663CC /* GPACHForm.swift */,
 				2C0029662A0EC118006909AD /* GPCardForm.swift */,
 				2C00296A2A0EF26D006909AD /* GPFormController.swift */,
-				2C0608B22A159D98005663CC /* GPRequest.swift */,
+				2C0608B22A159D98005663CC /* GPServer.swift */,
 				EAEE3CD907F5D6B9ED60CA2ABC464280 /* Pod */,
 				2716BE7EC212C47230FEE74C92C03ABC /* Support Files */,
 			);
@@ -876,30 +918,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0336832A466E4F00E4B103 /* GrubPayButton.swift in Sources */,
 				2C0029102A0487E1006909AD /* GPInput+Style.swift in Sources */,
 				2C0029692A0EC33B006909AD /* GPInput+Zip.swift in Sources */,
+				2C03367B2A45062300E4B103 /* GPCardAnalyzer.swift in Sources */,
+				2C03366E2A4505FD00E4B103 /* GrubPay.swift in Sources */,
 				2C0029122A0996ED006909AD /* GPInput+Card.swift in Sources */,
+				2C03366F2A4505FD00E4B103 /* GrubPayVC.swift in Sources */,
+				2C03367F2A45062300E4B103 /* GPScannerView.swift in Sources */,
 				2C0608B12A1543CD005663CC /* GPRadioDot.swift in Sources */,
+				2C03367D2A45062300E4B103 /* GPScannerConfig.swift in Sources */,
 				2C0029142A09B9AF006909AD /* GPInput+Expiry.swift in Sources */,
 				2CA89EAD2A04352200DA5850 /* GPInput.swift in Sources */,
 				2C901FA72A01B61D00DADC09 /* GPPicker+Expiry.swift in Sources */,
+				2C03367C2A45062300E4B103 /* CameraAccess.swift in Sources */,
 				2C0029162A09C205006909AD /* GPInput+CVV.swift in Sources */,
 				2C0608A92A140A1B005663CC /* GPInput+Account.swift in Sources */,
 				2C0029672A0EC118006909AD /* GPCardForm.swift in Sources */,
-				2C0608B32A159D98005663CC /* GPRequest.swift in Sources */,
+				2C0336702A4505FD00E4B103 /* GPUtil.swift in Sources */,
+				2C0336802A45062300E4B103 /* GPCardOverlay.swift in Sources */,
+				2C0608B32A159D98005663CC /* GPServer.swift in Sources */,
 				2C0608A72A13FF6C005663CC /* GPInput+Routing.swift in Sources */,
 				2C0029182A09C3A2006909AD /* GPInput+Name.swift in Sources */,
 				4A82A6F80E805E824B4D9FDF8BD3E264 /* GrubPaySDK-dummy.m in Sources */,
 				2C00295F2A0D8892006909AD /* GPInput+Country.swift in Sources */,
 				2C0029612A0D8CBB006909AD /* GPPicker+Country.swift in Sources */,
 				2C0608A52A13FEF5005663CC /* GPACHForm.swift in Sources */,
-				2C5A8C3829FB4BB10038D3C1 /* Enums.swift in Sources */,
 				2C0608AD2A14183F005663CC /* GPRadioButton.swift in Sources */,
 				2C0608AB2A14142D005663CC /* GPRadio+AccountType.swift in Sources */,
 				2C0608B52A16A5ED005663CC /* GrubPayResponse.swift in Sources */,
+				2C0336722A4505FD00E4B103 /* GrubPayError.swift in Sources */,
 				2C0608AF2A1443DF005663CC /* GPSwitch+ACHAgreement.swift in Sources */,
 				2C00296D2A0F063F006909AD /* GPInput+Util.swift in Sources */,
-				F43CD14F0A971A19E762A3F8082A1C15 /* GrubpayElement.swift in Sources */,
+				2C0336712A4505FD00E4B103 /* Enums.swift in Sources */,
+				F43CD14F0A971A19E762A3F8082A1C15 /* GrubPayElement.swift in Sources */,
+				2C0336812A45062300E4B103 /* GPCardScanner.swift in Sources */,
 				2C00296B2A0EF26D006909AD /* GPFormController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

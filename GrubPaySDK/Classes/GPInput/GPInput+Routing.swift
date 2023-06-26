@@ -10,11 +10,11 @@ import Foundation
 class GPInputRouting: GPInput {
     // MARK: Validators
 
-    var cleanText: String {
+    private var cleanText: String {
         return super.text ?? ""
     }
 
-    func updateErrorState() {
+    private func updateErrorState() {
         let targetErr: String? = valid ? nil : "Error"
         if super.errorMessage != targetErr {
             super.errorMessage = targetErr
@@ -36,30 +36,48 @@ class GPInputRouting: GPInput {
         super.autocorrectionType = .no
         super.autocapitalizationType = .none
         super.keyboardType = .numberPad
+        super.returnKeyType = .next
     }
 
     override init(controller: GPFormController) {
         super.init(controller: controller)
         initField()
     }
+
+    private func onFinishField() {
+        controller.onFinishField(GPInputType.routing)
+    }
+
+    override func didFinishField(_ val: Int) {
+        if GPInputType(rawValue: val) == .name {
+            DispatchQueue.main.async {
+                [weak self] in
+                let _ = self?.becomeFirstResponder()
+            }
+        }
+    }
 }
 
 extension GPInputRouting: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return GPInputUtil.maskInput(
+        return textField.maskInput(
             mask: "#########",
-            textField: textField,
             shouldChangeCharactersIn: range,
             replacementString: string,
             allowMix: false
         )
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        onFinishField()
+        return true
     }
 }
 
 // Validator for controller
 extension GPInputRouting {
     override var valid: Bool {
-        if controller.config?.mode == .ach {
+        if controller.config?.channel == .ach {
             return (super.text ?? "").count == 9
         }
         return true
@@ -69,7 +87,7 @@ extension GPInputRouting {
         onSuccess: @escaping ([String: Any]) -> Void,
         onError: @escaping (String) -> Void
     ) {
-        if controller.config?.mode != .ach {
+        if controller.config?.channel != .ach {
             onSuccess([:])
             return
         }

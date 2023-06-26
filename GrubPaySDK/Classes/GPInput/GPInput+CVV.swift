@@ -10,11 +10,11 @@ import Foundation
 class GPInputCVV: GPInput {
     // MARK: Validators
 
-    var cleanText: String {
+    private var cleanText: String {
         return super.text ?? ""
     }
 
-    func updateErrorState() {
+    private func updateErrorState() {
         let targetErr: String? = valid ? nil : "Error"
         if super.errorMessage != targetErr {
             super.errorMessage = targetErr
@@ -41,25 +41,52 @@ class GPInputCVV: GPInput {
         super.autocorrectionType = .no
         super.autocapitalizationType = .none
         super.keyboardType = .numberPad
+        super.returnKeyType = .next
+    }
+
+    override func didScan(_ cardNumber: String?, _ expiryDate: String?) {
+        if cardNumber != nil && expiryDate != nil {
+            DispatchQueue.main.async {
+                [weak self] in
+                let _ = self?.becomeFirstResponder()
+            }
+        }
+    }
+
+    private func onFinishField() {
+        controller.onFinishField(GPInputType.cvc)
+    }
+
+    override func didFinishField(_ val: Int) {
+        if GPInputType(rawValue: val) == .expiry {
+            DispatchQueue.main.async {
+                [weak self] in
+                let _ = self?.becomeFirstResponder()
+            }
+        }
     }
 }
 
 extension GPInputCVV: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        return GPInputUtil.maskInput(
+        return textField.maskInput(
             mask: "####",
-            textField: textField,
             shouldChangeCharactersIn: range,
             replacementString: string,
             allowMix: false
         )
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        onFinishField()
+        return true
     }
 }
 
 // Validator for controller
 extension GPInputCVV {
     override var valid: Bool {
-        if controller.config?.mode == .card {
+        if controller.config?.channel == .card {
             let trimmedStr = super.text ?? ""
             return trimmedStr.count > 2
         }
@@ -70,7 +97,7 @@ extension GPInputCVV {
         onSuccess: @escaping ([String: Any]) -> Void,
         onError: @escaping (String) -> Void
     ) {
-        if controller.config?.mode != .card {
+        if controller.config?.channel != .card {
             onSuccess([:])
             return
         }

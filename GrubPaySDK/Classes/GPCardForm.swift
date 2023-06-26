@@ -16,45 +16,44 @@ class GPCardForm: UIStackView {
         return controller.style
     }
 
-    private lazy var nameField: GPInputName = {
-        let textField = GPInputName(controller: controller)
-        textField.titleText = NSLocalizedString(
-            "Name on card",
-            bundle: Bundle(for: type(of: self)),
-            comment: ""
-        )
-        return textField
-    }()
-
-    private lazy var cardField: GPInputCard = .init(controller: controller)
-    private lazy var expiryField: GPInputExpiry = .init(controller: controller)
-    private lazy var cvvField: GPInputCVV = .init(controller: controller)
-    private lazy var countryField: GPInputCountry = .init(controller: controller)
-    private lazy var zipField: GPInputZip = .init(controller: controller)
-
-    private lazy var cvvExpiryRow: UIStackView = {
-        let sv = UIStackView()
-        sv.axis = .horizontal
-        sv.distribution = .fillEqually
-        sv.spacing = inputStyle.horizontalGap
-        sv.translatesAutoresizingMaskIntoConstraints = false
-        sv.addArrangedSubview(expiryField)
-        sv.addArrangedSubview(cvvField)
-        return sv
-    }()
-
-    private lazy var zipRow: UIStackView = {
-        let sv = UIStackView()
-        sv.axis = .horizontal
-        sv.distribution = .fillEqually
-        sv.spacing = inputStyle.horizontalGap
-        sv.translatesAutoresizingMaskIntoConstraints = false
-        sv.addArrangedSubview(countryField)
-        sv.addArrangedSubview(zipField)
-        return sv
-    }()
+    private var nameField: GPInputName?
+    private var cardField: GPInputCard?
+    private var expiryField: GPInputExpiry?
+    private var cvvField: GPInputCVV?
+    private var countryField: GPInputCountry?
+    private var zipField: GPInputZip?
+    private var cvvExpiryRow: UIStackView?
+    private var zipRow: UIStackView?
 
     // MARK: Setups
+
+    private func createFields() {
+        if controller.config?.requireName ?? false {
+            nameField = .init(controller: controller)
+        }
+        cardField = .init(controller: controller)
+        expiryField = .init(controller: controller)
+        cvvField = .init(controller: controller)
+        cvvExpiryRow = UIStackView()
+        cvvExpiryRow!.axis = .horizontal
+        cvvExpiryRow!.distribution = .fillEqually
+        cvvExpiryRow!.spacing = inputStyle.horizontalGap
+        cvvExpiryRow!.translatesAutoresizingMaskIntoConstraints = false
+        cvvExpiryRow!.addArrangedSubview(expiryField!)
+        cvvExpiryRow!.addArrangedSubview(cvvField!)
+
+        if controller.config?.requireZip ?? false {
+            countryField = .init(controller: controller)
+            zipField = .init(controller: controller)
+            zipRow = UIStackView()
+            zipRow!.axis = .horizontal
+            zipRow!.distribution = .fillEqually
+            zipRow!.spacing = inputStyle.horizontalGap
+            zipRow!.translatesAutoresizingMaskIntoConstraints = false
+            zipRow!.addArrangedSubview(countryField!)
+            zipRow!.addArrangedSubview(zipField!)
+        }
+    }
 
     private func setupHierarchy() {
         axis = .vertical
@@ -62,13 +61,18 @@ class GPCardForm: UIStackView {
         distribution = .fill
         spacing = inputStyle.verticalGap
         translatesAutoresizingMaskIntoConstraints = false
-        addArrangedSubview(nameField)
-        addArrangedSubview(cardField)
-        addArrangedSubview(cvvExpiryRow)
-        addArrangedSubview(zipRow)
+        if controller.config?.requireName ?? false && nameField != nil {
+            addArrangedSubview(nameField!)
+        }
+        addArrangedSubview(cardField!)
+        addArrangedSubview(cvvExpiryRow!)
+        if controller.config?.requireZip ?? false && zipRow != nil {
+            addArrangedSubview(zipRow!)
+        }
     }
 
     private func initView() {
+        createFields()
         setupHierarchy()
     }
 

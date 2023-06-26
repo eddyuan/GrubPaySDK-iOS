@@ -43,23 +43,18 @@ private extension UITapGestureRecognizer {
 class GPSwitchACHAgreement: UIView {
     let controller: GPFormController!
 
-    var isEnabled: Bool {
-        return !controller.isLoading
+    private var isEnabled: Bool {
+        return controller.isEnabled
     }
 
-    var isSelected: Bool {
-        get {
-            return gpRadioDot.isSelected
-        }
-        set {
-            gpRadioDot.isSelected = newValue
-        }
+    private var agreeToAch: Bool {
+        return controller.agreeToAch
     }
 
     private lazy var gpRadioDot: GPRadioDot = {
         let d = GPRadioDot(style: controller.style)
         d.useCheck = true
-        d.isSelected = false
+        d.isSelected = agreeToAch
         d.isEnabled = isEnabled
         return d
     }()
@@ -83,68 +78,17 @@ class GPSwitchACHAgreement: UIView {
             label: titleLabel,
             inRange: tasRange
         ) {
-            showTas()
+            controller.showAchAgreement()
         } else {
             toggleSelect()
         }
-    }
-
-    private func showTas(
-        _ completion: @escaping (_ success: Bool) -> Void = { _ in }
-    ) {
-        guard let keyWindow = UIApplication.shared.windows.first(
-            where: { $0.isKeyWindow }
-        ) else {
-            completion(isSelected)
-            return
-        }
-
-        let storeName = controller.config!.merchantName
-
-        let storeNames = storeName + "'" + (storeName.hasSuffix("s") ? "" : "s")
-
-        let message = "By accepting this agreement, you authorize \(storeName) to debit the bank account specified above for any amount owed for charges arising from your use of \(storeNames) services and/or purchase of products from \(storeName), pursuant to \(storeNames) website and terms, until this authorization is revoked. You may amend or cancel this authorization at any time by providing notice to \(storeName) with 30 (thirty) days notice."
-
-        let alertController = UIAlertController(
-            title: "ACH Agreement",
-            message: message,
-            preferredStyle: .alert
-        )
-        if isSelected {
-            alertController.addAction(
-                UIAlertAction(title: "OK", style: .default) {
-                    _ in
-                    completion(self.isSelected)
-                }
-            )
-        } else {
-            alertController.addAction(
-                UIAlertAction(title: "Disagree", style: .default) {
-                    _ in
-                    completion(self.isSelected)
-                }
-            )
-            alertController.addAction(
-                UIAlertAction(title: "Agree", style: .default) {
-                    _ in
-                    self.isSelected = true
-                    completion(self.isSelected)
-                }
-            )
-        }
-
-        keyWindow.rootViewController?.present(
-            alertController,
-            animated: true,
-            completion: nil
-        )
     }
 
     private func toggleSelect() {
         if !isEnabled {
             return
         }
-        isSelected = !isSelected
+        controller.agreeToAch = !controller.agreeToAch
     }
 
     private lazy var titleLabel = {
@@ -160,7 +104,7 @@ class GPSwitchACHAgreement: UIView {
         return label
     }()
 
-    func updateLabelTextColor() {
+    private func updateLabelTextColor() {
         titleLabel.textColor = isEnabled ? controller.style.color : controller.style.placeholderColor
         let underlineAttriString = NSMutableAttributedString(string: text)
         underlineAttriString.addAttribute(
@@ -240,34 +184,31 @@ class GPSwitchACHAgreement: UIView {
 
 extension GPSwitchACHAgreement: GPFormObs {
     var valid: Bool {
-        return isSelected || controller.config?.mode != .ach
+        return true
     }
 
     func doValidate(
         onSuccess: @escaping ([String: Any]) -> Void,
         onError: @escaping (String) -> Void
     ) {
-        if valid {
-            onSuccess([:])
-        } else {
-            showTas {
-                success in
-                if success {
-                    onSuccess([:])
-                } else {
-                    onError("ACH Agreement")
-                }
-            }
+        onSuccess([:])
+    }
+
+    func isEnabledDidChange(_ isEnabled: Bool) {
+        DispatchQueue.main.async {
+            self.updateLabelTextColor()
+            self.gpRadioDot.isEnabled = self.isEnabled
         }
     }
 
-    func loadingDidChange() {
-        updateLabelTextColor()
-        gpRadioDot.isEnabled = isEnabled
+    func styleDidChange() {
+        DispatchQueue.main.async {
+            self.updateLabelTextColor()
+            self.gpRadioDot.style = self.controller.style
+        }
     }
 
-    func styleDidChange() {
-        updateLabelTextColor()
-        gpRadioDot.style = controller.style
+    func didChangeAchAgree(_ val: Bool) {
+        gpRadioDot.isSelected = val
     }
 }
