@@ -12,10 +12,6 @@ import UIKit
 class GPACHForm: UIStackView {
     let controller: GPFormController!
 
-//    var allValid: Bool {
-//        return routingField.valid && nameField.valid && accountField.valid && accountTypeField.valid
-//    }
-
     var onChange: (() -> Void)?
 
     private func _fieldChange() {
@@ -78,9 +74,5 @@ class GPACHForm: UIStackView {
     @available(*, unavailable)
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    deinit {
-        print("deinit of ach form")
     }
 }

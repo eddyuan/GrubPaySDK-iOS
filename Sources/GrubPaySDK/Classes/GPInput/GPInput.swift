@@ -213,7 +213,7 @@ class GPInput: UITextField {
                 UIView.transition(
                     with: titleLabel,
                     duration: targetDuration,
-                    options: .transitionCrossDissolve
+                    options: .curveEaseInOut
                 ) {
                     self.titleLabel.textColor = self._labelColor
                 }
@@ -337,7 +337,6 @@ class GPInput: UITextField {
     }
 
     deinit {
-        print("GPField Deinit -----------------------------------------")
         controller.removeObs(self)
     }
 

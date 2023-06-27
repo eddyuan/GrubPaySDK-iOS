@@ -11,74 +11,76 @@
 		22AD34B23ED2AE2CE4C0E9EC4A0096F1 /* GrubPaySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3466ED50989FDFEE6EAD75B5F288D6B5 /* GrubPaySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
 		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C0029102A0487E1006909AD /* GPInput+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00290F2A0487E1006909AD /* GPInput+Style.swift */; };
-		2C0029122A0996ED006909AD /* GPInput+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029112A0996ED006909AD /* GPInput+Card.swift */; };
-		2C0029142A09B9AF006909AD /* GPInput+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029132A09B9AF006909AD /* GPInput+Expiry.swift */; };
-		2C0029162A09C205006909AD /* GPInput+CVV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029152A09C205006909AD /* GPInput+CVV.swift */; };
-		2C0029182A09C3A2006909AD /* GPInput+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029172A09C3A2006909AD /* GPInput+Name.swift */; };
-		2C00293C2A0C6428006909AD /* cc-visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291A2A0C6428006909AD /* cc-visa@2x.png */; };
-		2C00293D2A0C6428006909AD /* cc-discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291B2A0C6428006909AD /* cc-discover.png */; };
-		2C00293E2A0C6428006909AD /* cc-maestro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291C2A0C6428006909AD /* cc-maestro.png */; };
-		2C00293F2A0C6428006909AD /* cc-visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291D2A0C6428006909AD /* cc-visa@3x.png */; };
-		2C0029402A0C6428006909AD /* cc-jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291E2A0C6428006909AD /* cc-jcb@3x.png */; };
-		2C0029412A0C6428006909AD /* cc-cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00291F2A0C6428006909AD /* cc-cvc@2x.png */; };
-		2C0029422A0C6428006909AD /* cc-discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029202A0C6428006909AD /* cc-discover@3x.png */; };
-		2C0029432A0C6428006909AD /* cc-dinner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029212A0C6428006909AD /* cc-dinner@3x.png */; };
-		2C0029442A0C6428006909AD /* cc-maestro@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029222A0C6428006909AD /* cc-maestro@3x.png */; };
-		2C0029452A0C6428006909AD /* cc-master@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029232A0C6428006909AD /* cc-master@2x.png */; };
-		2C0029462A0C6428006909AD /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029242A0C6428006909AD /* .gitkeep */; };
-		2C0029472A0C6428006909AD /* cc-generic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029252A0C6428006909AD /* cc-generic@3x.png */; };
-		2C0029482A0C6428006909AD /* cc-amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029262A0C6428006909AD /* cc-amex.png */; };
-		2C0029492A0C6428006909AD /* cc-generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029272A0C6428006909AD /* cc-generic@2x.png */; };
-		2C00294A2A0C6428006909AD /* cc-cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029282A0C6428006909AD /* cc-cvc.png */; };
-		2C00294B2A0C6428006909AD /* cc-master@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029292A0C6428006909AD /* cc-master@3x.png */; };
-		2C00294C2A0C6428006909AD /* cc-dinner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292A2A0C6428006909AD /* cc-dinner@2x.png */; };
-		2C00294D2A0C6428006909AD /* cc-maestro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292B2A0C6428006909AD /* cc-maestro@2x.png */; };
-		2C00294E2A0C6428006909AD /* cc-cvc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292C2A0C6428006909AD /* cc-cvc@3x.png */; };
-		2C00294F2A0C6428006909AD /* cc-discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292D2A0C6428006909AD /* cc-discover@2x.png */; };
-		2C0029502A0C6428006909AD /* cc-jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292E2A0C6428006909AD /* cc-jcb@2x.png */; };
-		2C0029512A0C6428006909AD /* cc-amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00292F2A0C6428006909AD /* cc-amex@2x.png */; };
-		2C0029522A0C6428006909AD /* cc-amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029302A0C6428006909AD /* cc-amex@3x.png */; };
-		2C0029532A0C6428006909AD /* cc-dinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029312A0C6428006909AD /* cc-dinner.png */; };
-		2C0029542A0C6428006909AD /* cc-bcglobal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029322A0C6428006909AD /* cc-bcglobal.png */; };
-		2C0029552A0C6428006909AD /* cc-unionpay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029332A0C6428006909AD /* cc-unionpay@2x.png */; };
-		2C0029562A0C6428006909AD /* cc-unionpay.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029342A0C6428006909AD /* cc-unionpay.png */; };
-		2C0029572A0C6428006909AD /* cc-bcglobal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029352A0C6428006909AD /* cc-bcglobal@3x.png */; };
-		2C0029582A0C6428006909AD /* cc-bcglobal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029362A0C6428006909AD /* cc-bcglobal@2x.png */; };
-		2C0029592A0C6428006909AD /* cc-visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029372A0C6428006909AD /* cc-visa.png */; };
-		2C00295A2A0C6428006909AD /* cc-master.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029382A0C6428006909AD /* cc-master.png */; };
-		2C00295B2A0C6428006909AD /* cc-unionpay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0029392A0C6428006909AD /* cc-unionpay@3x.png */; };
-		2C00295C2A0C6428006909AD /* cc-generic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00293A2A0C6428006909AD /* cc-generic.png */; };
-		2C00295D2A0C6428006909AD /* cc-jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C00293B2A0C6428006909AD /* cc-jcb.png */; };
-		2C00295F2A0D8892006909AD /* GPInput+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00295E2A0D8892006909AD /* GPInput+Country.swift */; };
-		2C0029612A0D8CBB006909AD /* GPPicker+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029602A0D8CBB006909AD /* GPPicker+Country.swift */; };
-		2C0029672A0EC118006909AD /* GPCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029662A0EC118006909AD /* GPCardForm.swift */; };
-		2C0029692A0EC33B006909AD /* GPInput+Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0029682A0EC33B006909AD /* GPInput+Zip.swift */; };
-		2C00296B2A0EF26D006909AD /* GPFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00296A2A0EF26D006909AD /* GPFormController.swift */; };
-		2C00296D2A0F063F006909AD /* GPInput+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C00296C2A0F063F006909AD /* GPInput+Util.swift */; };
-		2C03366E2A4505FD00E4B103 /* GrubPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336692A4505FD00E4B103 /* GrubPay.swift */; };
-		2C03366F2A4505FD00E4B103 /* GrubPayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03366A2A4505FD00E4B103 /* GrubPayVC.swift */; };
-		2C0336702A4505FD00E4B103 /* GPUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03366B2A4505FD00E4B103 /* GPUtil.swift */; };
-		2C0336712A4505FD00E4B103 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03366C2A4505FD00E4B103 /* Enums.swift */; };
-		2C0336722A4505FD00E4B103 /* GrubPayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03366D2A4505FD00E4B103 /* GrubPayError.swift */; };
-		2C03367B2A45062300E4B103 /* GPCardAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336742A45062300E4B103 /* GPCardAnalyzer.swift */; };
-		2C03367C2A45062300E4B103 /* CameraAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336752A45062300E4B103 /* CameraAccess.swift */; };
-		2C03367D2A45062300E4B103 /* GPScannerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336762A45062300E4B103 /* GPScannerConfig.swift */; };
-		2C03367F2A45062300E4B103 /* GPScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336782A45062300E4B103 /* GPScannerView.swift */; };
-		2C0336802A45062300E4B103 /* GPCardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336792A45062300E4B103 /* GPCardOverlay.swift */; };
-		2C0336812A45062300E4B103 /* GPCardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03367A2A45062300E4B103 /* GPCardScanner.swift */; };
-		2C0336832A466E4F00E4B103 /* GrubPayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336822A466E4E00E4B103 /* GrubPayButton.swift */; };
-		2C0608A52A13FEF5005663CC /* GPACHForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608A42A13FEF5005663CC /* GPACHForm.swift */; };
-		2C0608A72A13FF6C005663CC /* GPInput+Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608A62A13FF6C005663CC /* GPInput+Routing.swift */; };
-		2C0608A92A140A1B005663CC /* GPInput+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608A82A140A1B005663CC /* GPInput+Account.swift */; };
-		2C0608AB2A14142D005663CC /* GPRadio+AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608AA2A14142D005663CC /* GPRadio+AccountType.swift */; };
-		2C0608AD2A14183F005663CC /* GPRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608AC2A14183F005663CC /* GPRadioButton.swift */; };
-		2C0608AF2A1443DF005663CC /* GPSwitch+ACHAgreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608AE2A1443DF005663CC /* GPSwitch+ACHAgreement.swift */; };
-		2C0608B12A1543CD005663CC /* GPRadioDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608B02A1543CD005663CC /* GPRadioDot.swift */; };
-		2C0608B52A16A5ED005663CC /* GrubPayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608B42A16A5ED005663CC /* GrubPayResponse.swift */; };
-		2C901FA72A01B61D00DADC09 /* GPPicker+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C901FA62A01B61D00DADC09 /* GPPicker+Expiry.swift */; };
-		2C9020352A0333BC00DADC09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C90200B2A0333BC00DADC09 /* Localizable.strings */; };
-		2CA89EAD2A04352200DA5850 /* GPInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA89EAC2A04352200DA5850 /* GPInput.swift */; };
+		2C0337692A4B66AE00E4B103 /* GrubPayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F42A4B66AE00E4B103 /* GrubPayError.swift */; };
+		2C03376A2A4B66AE00E4B103 /* GPFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F52A4B66AE00E4B103 /* GPFormController.swift */; };
+		2C03376B2A4B66AE00E4B103 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F62A4B66AE00E4B103 /* Localization.swift */; };
+		2C03376C2A4B66AE00E4B103 /* GrubPayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F72A4B66AE00E4B103 /* GrubPayElement.swift */; };
+		2C03376D2A4B66AE00E4B103 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F82A4B66AE00E4B103 /* Enums.swift */; };
+		2C03376E2A4B66AE00E4B103 /* GrubPayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F92A4B66AE00E4B103 /* GrubPayResponse.swift */; };
+		2C03376F2A4B66AE00E4B103 /* GrubPayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336FA2A4B66AE00E4B103 /* GrubPayVC.swift */; };
+		2C0337712A4B66AE00E4B103 /* GPCardAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336FD2A4B66AE00E4B103 /* GPCardAnalyzer.swift */; };
+		2C0337722A4B66AE00E4B103 /* CameraAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336FE2A4B66AE00E4B103 /* CameraAccess.swift */; };
+		2C0337732A4B66AE00E4B103 /* GPScannerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336FF2A4B66AE00E4B103 /* GPScannerConfig.swift */; };
+		2C0337742A4B66AE00E4B103 /* GPScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337002A4B66AE00E4B103 /* GPScannerView.swift */; };
+		2C0337752A4B66AE00E4B103 /* GPCardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337012A4B66AE00E4B103 /* GPCardOverlay.swift */; };
+		2C0337762A4B66AE00E4B103 /* GPCardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337022A4B66AE00E4B103 /* GPCardScanner.swift */; };
+		2C0337772A4B66AE00E4B103 /* GPACHForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337032A4B66AE00E4B103 /* GPACHForm.swift */; };
+		2C0337782A4B66AE00E4B103 /* GPUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337042A4B66AE00E4B103 /* GPUtil.swift */; };
+		2C0337792A4B66AE00E4B103 /* GrubPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337052A4B66AE00E4B103 /* GrubPay.swift */; };
+		2C03377A2A4B66AE00E4B103 /* GPCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337062A4B66AE00E4B103 /* GPCardForm.swift */; };
+		2C03377B2A4B66AE00E4B103 /* GPRadioDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337082A4B66AE00E4B103 /* GPRadioDot.swift */; };
+		2C03377C2A4B66AE00E4B103 /* GPInput+Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337092A4B66AE00E4B103 /* GPInput+Zip.swift */; };
+		2C03377D2A4B66AE00E4B103 /* GPInput+CVV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370A2A4B66AE00E4B103 /* GPInput+CVV.swift */; };
+		2C03377E2A4B66AE00E4B103 /* GPInput+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370B2A4B66AE00E4B103 /* GPInput+Card.swift */; };
+		2C03377F2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370C2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift */; };
+		2C0337802A4B66AE00E4B103 /* GrubPayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370D2A4B66AE00E4B103 /* GrubPayButton.swift */; };
+		2C0337812A4B66AE00E4B103 /* GPInput+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370E2A4B66AE00E4B103 /* GPInput+Style.swift */; };
+		2C0337822A4B66AE00E4B103 /* GPInput+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370F2A4B66AE00E4B103 /* GPInput+Expiry.swift */; };
+		2C0337832A4B66AE00E4B103 /* GPRadio+AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337102A4B66AE00E4B103 /* GPRadio+AccountType.swift */; };
+		2C0337842A4B66AE00E4B103 /* GPPicker+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337112A4B66AE00E4B103 /* GPPicker+Expiry.swift */; };
+		2C0337852A4B66AE00E4B103 /* GPInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337122A4B66AE00E4B103 /* GPInput.swift */; };
+		2C0337862A4B66AE00E4B103 /* GPInput+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337132A4B66AE00E4B103 /* GPInput+Account.swift */; };
+		2C0337872A4B66AE00E4B103 /* GPPicker+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337142A4B66AE00E4B103 /* GPPicker+Country.swift */; };
+		2C0337882A4B66AE00E4B103 /* GPInput+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337152A4B66AE00E4B103 /* GPInput+Util.swift */; };
+		2C0337892A4B66AE00E4B103 /* GPRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337162A4B66AE00E4B103 /* GPRadioButton.swift */; };
+		2C03378A2A4B66AE00E4B103 /* GPInput+Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337172A4B66AE00E4B103 /* GPInput+Routing.swift */; };
+		2C03378B2A4B66AE00E4B103 /* GPInput+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337182A4B66AE00E4B103 /* GPInput+Name.swift */; };
+		2C03378C2A4B66AE00E4B103 /* GPInput+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337192A4B66AE00E4B103 /* GPInput+Country.swift */; };
+		2C03378E2A4B66AE00E4B103 /* cc-visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03371C2A4B66AE00E4B103 /* cc-visa@2x.png */; };
+		2C03378F2A4B66AE00E4B103 /* cc-discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03371D2A4B66AE00E4B103 /* cc-discover.png */; };
+		2C0337902A4B66AE00E4B103 /* cc-maestro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03371E2A4B66AE00E4B103 /* cc-maestro.png */; };
+		2C0337912A4B66AE00E4B103 /* cc-visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03371F2A4B66AE00E4B103 /* cc-visa@3x.png */; };
+		2C0337922A4B66AE00E4B103 /* cc-jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337202A4B66AE00E4B103 /* cc-jcb@3x.png */; };
+		2C0337932A4B66AE00E4B103 /* cc-cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337212A4B66AE00E4B103 /* cc-cvc@2x.png */; };
+		2C0337942A4B66AE00E4B103 /* cc-discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337222A4B66AE00E4B103 /* cc-discover@3x.png */; };
+		2C0337952A4B66AE00E4B103 /* cc-dinner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337232A4B66AE00E4B103 /* cc-dinner@3x.png */; };
+		2C0337962A4B66AE00E4B103 /* cc-maestro@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337242A4B66AE00E4B103 /* cc-maestro@3x.png */; };
+		2C0337972A4B66AE00E4B103 /* cc-master@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337252A4B66AE00E4B103 /* cc-master@2x.png */; };
+		2C0337982A4B66AE00E4B103 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337262A4B66AE00E4B103 /* .gitkeep */; };
+		2C0337992A4B66AE00E4B103 /* cc-generic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337272A4B66AE00E4B103 /* cc-generic@3x.png */; };
+		2C03379A2A4B66AE00E4B103 /* cc-amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337282A4B66AE00E4B103 /* cc-amex.png */; };
+		2C03379B2A4B66AE00E4B103 /* cc-generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337292A4B66AE00E4B103 /* cc-generic@2x.png */; };
+		2C03379C2A4B66AE00E4B103 /* cc-cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372A2A4B66AE00E4B103 /* cc-cvc.png */; };
+		2C03379D2A4B66AE00E4B103 /* cc-master@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372B2A4B66AE00E4B103 /* cc-master@3x.png */; };
+		2C03379E2A4B66AE00E4B103 /* cc-dinner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372C2A4B66AE00E4B103 /* cc-dinner@2x.png */; };
+		2C03379F2A4B66AE00E4B103 /* cc-maestro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372D2A4B66AE00E4B103 /* cc-maestro@2x.png */; };
+		2C0337A02A4B66AE00E4B103 /* cc-cvc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372E2A4B66AE00E4B103 /* cc-cvc@3x.png */; };
+		2C0337A12A4B66AE00E4B103 /* cc-discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372F2A4B66AE00E4B103 /* cc-discover@2x.png */; };
+		2C0337A22A4B66AE00E4B103 /* cc-jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337302A4B66AE00E4B103 /* cc-jcb@2x.png */; };
+		2C0337A32A4B66AE00E4B103 /* cc-amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337312A4B66AE00E4B103 /* cc-amex@2x.png */; };
+		2C0337A42A4B66AE00E4B103 /* cc-amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337322A4B66AE00E4B103 /* cc-amex@3x.png */; };
+		2C0337A52A4B66AE00E4B103 /* cc-dinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337332A4B66AE00E4B103 /* cc-dinner.png */; };
+		2C0337A62A4B66AE00E4B103 /* cc-bcglobal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337342A4B66AE00E4B103 /* cc-bcglobal.png */; };
+		2C0337A72A4B66AE00E4B103 /* cc-unionpay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337352A4B66AE00E4B103 /* cc-unionpay@2x.png */; };
+		2C0337A82A4B66AE00E4B103 /* cc-unionpay.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337362A4B66AE00E4B103 /* cc-unionpay.png */; };
+		2C0337A92A4B66AE00E4B103 /* cc-bcglobal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337372A4B66AE00E4B103 /* cc-bcglobal@3x.png */; };
+		2C0337AA2A4B66AE00E4B103 /* cc-bcglobal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337382A4B66AE00E4B103 /* cc-bcglobal@2x.png */; };
+		2C0337AB2A4B66AE00E4B103 /* cc-visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337392A4B66AE00E4B103 /* cc-visa.png */; };
+		2C0337AC2A4B66AE00E4B103 /* cc-master.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373A2A4B66AE00E4B103 /* cc-master.png */; };
+		2C0337AD2A4B66AE00E4B103 /* cc-unionpay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373B2A4B66AE00E4B103 /* cc-unionpay@3x.png */; };
+		2C0337AE2A4B66AE00E4B103 /* cc-generic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373C2A4B66AE00E4B103 /* cc-generic.png */; };
+		2C0337AF2A4B66AE00E4B103 /* cc-jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373D2A4B66AE00E4B103 /* cc-jcb.png */; };
+		2C0337B02A4B66AE00E4B103 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373F2A4B66AE00E4B103 /* Localizable.strings */; };
 		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
 		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
@@ -103,7 +105,6 @@
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		E0A2ADE63A9999671AC6190FA88D153D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		F43CD14F0A971A19E762A3F8082A1C15 /* GrubPayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubPayElement.swift */; };
 		F63933AE089493BC1FA943CD54FF6F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -143,114 +144,116 @@
 		254DE6CDBA97A51BA245006AA8A97C3E /* Pods-GrubPaySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrubPaySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		2C00290F2A0487E1006909AD /* GPInput+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Style.swift"; sourceTree = "<group>"; };
-		2C0029112A0996ED006909AD /* GPInput+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Card.swift"; sourceTree = "<group>"; };
-		2C0029132A09B9AF006909AD /* GPInput+Expiry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Expiry.swift"; sourceTree = "<group>"; };
-		2C0029152A09C205006909AD /* GPInput+CVV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+CVV.swift"; sourceTree = "<group>"; };
-		2C0029172A09C3A2006909AD /* GPInput+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Name.swift"; sourceTree = "<group>"; };
-		2C00291A2A0C6428006909AD /* cc-visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa@2x.png"; sourceTree = "<group>"; };
-		2C00291B2A0C6428006909AD /* cc-discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover.png"; sourceTree = "<group>"; };
-		2C00291C2A0C6428006909AD /* cc-maestro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro.png"; sourceTree = "<group>"; };
-		2C00291D2A0C6428006909AD /* cc-visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa@3x.png"; sourceTree = "<group>"; };
-		2C00291E2A0C6428006909AD /* cc-jcb@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb@3x.png"; sourceTree = "<group>"; };
-		2C00291F2A0C6428006909AD /* cc-cvc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc@2x.png"; sourceTree = "<group>"; };
-		2C0029202A0C6428006909AD /* cc-discover@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover@3x.png"; sourceTree = "<group>"; };
-		2C0029212A0C6428006909AD /* cc-dinner@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner@3x.png"; sourceTree = "<group>"; };
-		2C0029222A0C6428006909AD /* cc-maestro@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro@3x.png"; sourceTree = "<group>"; };
-		2C0029232A0C6428006909AD /* cc-master@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master@2x.png"; sourceTree = "<group>"; };
-		2C0029242A0C6428006909AD /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		2C0029252A0C6428006909AD /* cc-generic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic@3x.png"; sourceTree = "<group>"; };
-		2C0029262A0C6428006909AD /* cc-amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex.png"; sourceTree = "<group>"; };
-		2C0029272A0C6428006909AD /* cc-generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic@2x.png"; sourceTree = "<group>"; };
-		2C0029282A0C6428006909AD /* cc-cvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc.png"; sourceTree = "<group>"; };
-		2C0029292A0C6428006909AD /* cc-master@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master@3x.png"; sourceTree = "<group>"; };
-		2C00292A2A0C6428006909AD /* cc-dinner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner@2x.png"; sourceTree = "<group>"; };
-		2C00292B2A0C6428006909AD /* cc-maestro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro@2x.png"; sourceTree = "<group>"; };
-		2C00292C2A0C6428006909AD /* cc-cvc@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc@3x.png"; sourceTree = "<group>"; };
-		2C00292D2A0C6428006909AD /* cc-discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover@2x.png"; sourceTree = "<group>"; };
-		2C00292E2A0C6428006909AD /* cc-jcb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb@2x.png"; sourceTree = "<group>"; };
-		2C00292F2A0C6428006909AD /* cc-amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex@2x.png"; sourceTree = "<group>"; };
-		2C0029302A0C6428006909AD /* cc-amex@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex@3x.png"; sourceTree = "<group>"; };
-		2C0029312A0C6428006909AD /* cc-dinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner.png"; sourceTree = "<group>"; };
-		2C0029322A0C6428006909AD /* cc-bcglobal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal.png"; sourceTree = "<group>"; };
-		2C0029332A0C6428006909AD /* cc-unionpay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay@2x.png"; sourceTree = "<group>"; };
-		2C0029342A0C6428006909AD /* cc-unionpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay.png"; sourceTree = "<group>"; };
-		2C0029352A0C6428006909AD /* cc-bcglobal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal@3x.png"; sourceTree = "<group>"; };
-		2C0029362A0C6428006909AD /* cc-bcglobal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal@2x.png"; sourceTree = "<group>"; };
-		2C0029372A0C6428006909AD /* cc-visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa.png"; sourceTree = "<group>"; };
-		2C0029382A0C6428006909AD /* cc-master.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master.png"; sourceTree = "<group>"; };
-		2C0029392A0C6428006909AD /* cc-unionpay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay@3x.png"; sourceTree = "<group>"; };
-		2C00293A2A0C6428006909AD /* cc-generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic.png"; sourceTree = "<group>"; };
-		2C00293B2A0C6428006909AD /* cc-jcb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb.png"; sourceTree = "<group>"; };
-		2C00295E2A0D8892006909AD /* GPInput+Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Country.swift"; sourceTree = "<group>"; };
-		2C0029602A0D8CBB006909AD /* GPPicker+Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPPicker+Country.swift"; sourceTree = "<group>"; };
-		2C0029662A0EC118006909AD /* GPCardForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPCardForm.swift; path = GrubPaySDK/Classes/GPCardForm.swift; sourceTree = "<group>"; };
-		2C0029682A0EC33B006909AD /* GPInput+Zip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Zip.swift"; sourceTree = "<group>"; };
-		2C00296A2A0EF26D006909AD /* GPFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GPFormController.swift; path = GrubPaySDK/Classes/GPFormController.swift; sourceTree = "<group>"; };
-		2C00296C2A0F063F006909AD /* GPInput+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Util.swift"; sourceTree = "<group>"; };
-		2C0336692A4505FD00E4B103 /* GrubPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrubPay.swift; path = GrubPaySDK/Classes/GrubPay.swift; sourceTree = "<group>"; };
-		2C03366A2A4505FD00E4B103 /* GrubPayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrubPayVC.swift; path = GrubPaySDK/Classes/GrubPayVC.swift; sourceTree = "<group>"; };
-		2C03366B2A4505FD00E4B103 /* GPUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GPUtil.swift; path = GrubPaySDK/Classes/GPUtil.swift; sourceTree = "<group>"; };
-		2C03366C2A4505FD00E4B103 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = GrubPaySDK/Classes/Enums.swift; sourceTree = "<group>"; };
-		2C03366D2A4505FD00E4B103 /* GrubPayError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GrubPayError.swift; path = GrubPaySDK/Classes/GrubPayError.swift; sourceTree = "<group>"; };
-		2C0336742A45062300E4B103 /* GPCardAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardAnalyzer.swift; sourceTree = "<group>"; };
-		2C0336752A45062300E4B103 /* CameraAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraAccess.swift; sourceTree = "<group>"; };
-		2C0336762A45062300E4B103 /* GPScannerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPScannerConfig.swift; sourceTree = "<group>"; };
-		2C0336782A45062300E4B103 /* GPScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPScannerView.swift; sourceTree = "<group>"; };
-		2C0336792A45062300E4B103 /* GPCardOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardOverlay.swift; sourceTree = "<group>"; };
-		2C03367A2A45062300E4B103 /* GPCardScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardScanner.swift; sourceTree = "<group>"; };
-		2C0336822A466E4E00E4B103 /* GrubPayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrubPayButton.swift; sourceTree = "<group>"; };
-		2C0608A42A13FEF5005663CC /* GPACHForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GPACHForm.swift; path = GrubPaySDK/Classes/GPACHForm.swift; sourceTree = "<group>"; };
-		2C0608A62A13FF6C005663CC /* GPInput+Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Routing.swift"; sourceTree = "<group>"; };
-		2C0608A82A140A1B005663CC /* GPInput+Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPInput+Account.swift"; sourceTree = "<group>"; };
-		2C0608AA2A14142D005663CC /* GPRadio+AccountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPRadio+AccountType.swift"; sourceTree = "<group>"; };
-		2C0608AC2A14183F005663CC /* GPRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPRadioButton.swift; sourceTree = "<group>"; };
-		2C0608AE2A1443DF005663CC /* GPSwitch+ACHAgreement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPSwitch+ACHAgreement.swift"; sourceTree = "<group>"; };
-		2C0608B02A1543CD005663CC /* GPRadioDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPRadioDot.swift; sourceTree = "<group>"; };
-		2C0608B42A16A5ED005663CC /* GrubPayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GrubPayResponse.swift; path = GrubPaySDK/Classes/GrubPayResponse.swift; sourceTree = "<group>"; };
-		2C901FA62A01B61D00DADC09 /* GPPicker+Expiry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPPicker+Expiry.swift"; sourceTree = "<group>"; };
-		2C90200C2A0333BC00DADC09 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90200D2A0333BC00DADC09 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90200E2A0333BC00DADC09 /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_AU; path = en_AU.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90200F2A0333BC00DADC09 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020102A0333BC00DADC09 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020112A0333BC00DADC09 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C9020122A0333BC00DADC09 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020132A0333BC00DADC09 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C9020142A0333BC00DADC09 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020152A0333BC00DADC09 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020162A0333BC00DADC09 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C9020172A0333BC00DADC09 /* es_419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es_419; path = es_419.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020182A0333BC00DADC09 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020192A0333BC00DADC09 /* pt_BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_BR; path = pt_BR.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90201A2A0333BC00DADC09 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90201B2A0333BC00DADC09 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90201C2A0333BC00DADC09 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90201D2A0333BC00DADC09 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_PT; path = pt_PT.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90201E2A0333BC00DADC09 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90201F2A0333BC00DADC09 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020202A0333BC00DADC09 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020212A0333BC00DADC09 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020222A0333BC00DADC09 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C9020232A0333BC00DADC09 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020242A0333BC00DADC09 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020252A0333BC00DADC09 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020262A0333BC00DADC09 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020272A0333BC00DADC09 /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = en_GB.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020282A0333BC00DADC09 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020292A0333BC00DADC09 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90202A2A0333BC00DADC09 /* zh-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-CN"; path = "zh-CN.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C90202B2A0333BC00DADC09 /* fr_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_CA; path = fr_CA.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90202C2A0333BC00DADC09 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90202D2A0333BC00DADC09 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90202E2A0333BC00DADC09 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C90202F2A0333BC00DADC09 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020302A0333BC00DADC09 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020312A0333BC00DADC09 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020322A0333BC00DADC09 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020332A0333BC00DADC09 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C9020342A0333BC00DADC09 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2CA89EAC2A04352200DA5850 /* GPInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPInput.swift; sourceTree = "<group>"; };
+		2C0336F42A4B66AE00E4B103 /* GrubPayError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayError.swift; sourceTree = "<group>"; };
+		2C0336F52A4B66AE00E4B103 /* GPFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPFormController.swift; sourceTree = "<group>"; };
+		2C0336F62A4B66AE00E4B103 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		2C0336F72A4B66AE00E4B103 /* GrubPayElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayElement.swift; sourceTree = "<group>"; };
+		2C0336F82A4B66AE00E4B103 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		2C0336F92A4B66AE00E4B103 /* GrubPayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayResponse.swift; sourceTree = "<group>"; };
+		2C0336FA2A4B66AE00E4B103 /* GrubPayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayVC.swift; sourceTree = "<group>"; };
+		2C0336FD2A4B66AE00E4B103 /* GPCardAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardAnalyzer.swift; sourceTree = "<group>"; };
+		2C0336FE2A4B66AE00E4B103 /* CameraAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraAccess.swift; sourceTree = "<group>"; };
+		2C0336FF2A4B66AE00E4B103 /* GPScannerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPScannerConfig.swift; sourceTree = "<group>"; };
+		2C0337002A4B66AE00E4B103 /* GPScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPScannerView.swift; sourceTree = "<group>"; };
+		2C0337012A4B66AE00E4B103 /* GPCardOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardOverlay.swift; sourceTree = "<group>"; };
+		2C0337022A4B66AE00E4B103 /* GPCardScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardScanner.swift; sourceTree = "<group>"; };
+		2C0337032A4B66AE00E4B103 /* GPACHForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPACHForm.swift; sourceTree = "<group>"; };
+		2C0337042A4B66AE00E4B103 /* GPUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPUtil.swift; sourceTree = "<group>"; };
+		2C0337052A4B66AE00E4B103 /* GrubPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPay.swift; sourceTree = "<group>"; };
+		2C0337062A4B66AE00E4B103 /* GPCardForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardForm.swift; sourceTree = "<group>"; };
+		2C0337082A4B66AE00E4B103 /* GPRadioDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPRadioDot.swift; sourceTree = "<group>"; };
+		2C0337092A4B66AE00E4B103 /* GPInput+Zip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Zip.swift"; sourceTree = "<group>"; };
+		2C03370A2A4B66AE00E4B103 /* GPInput+CVV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+CVV.swift"; sourceTree = "<group>"; };
+		2C03370B2A4B66AE00E4B103 /* GPInput+Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Card.swift"; sourceTree = "<group>"; };
+		2C03370C2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPSwitch+ACHAgreement.swift"; sourceTree = "<group>"; };
+		2C03370D2A4B66AE00E4B103 /* GrubPayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayButton.swift; sourceTree = "<group>"; };
+		2C03370E2A4B66AE00E4B103 /* GPInput+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Style.swift"; sourceTree = "<group>"; };
+		2C03370F2A4B66AE00E4B103 /* GPInput+Expiry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Expiry.swift"; sourceTree = "<group>"; };
+		2C0337102A4B66AE00E4B103 /* GPRadio+AccountType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPRadio+AccountType.swift"; sourceTree = "<group>"; };
+		2C0337112A4B66AE00E4B103 /* GPPicker+Expiry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPPicker+Expiry.swift"; sourceTree = "<group>"; };
+		2C0337122A4B66AE00E4B103 /* GPInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPInput.swift; sourceTree = "<group>"; };
+		2C0337132A4B66AE00E4B103 /* GPInput+Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Account.swift"; sourceTree = "<group>"; };
+		2C0337142A4B66AE00E4B103 /* GPPicker+Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPPicker+Country.swift"; sourceTree = "<group>"; };
+		2C0337152A4B66AE00E4B103 /* GPInput+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Util.swift"; sourceTree = "<group>"; };
+		2C0337162A4B66AE00E4B103 /* GPRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPRadioButton.swift; sourceTree = "<group>"; };
+		2C0337172A4B66AE00E4B103 /* GPInput+Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Routing.swift"; sourceTree = "<group>"; };
+		2C0337182A4B66AE00E4B103 /* GPInput+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Name.swift"; sourceTree = "<group>"; };
+		2C0337192A4B66AE00E4B103 /* GPInput+Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Country.swift"; sourceTree = "<group>"; };
+		2C03371C2A4B66AE00E4B103 /* cc-visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa@2x.png"; sourceTree = "<group>"; };
+		2C03371D2A4B66AE00E4B103 /* cc-discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover.png"; sourceTree = "<group>"; };
+		2C03371E2A4B66AE00E4B103 /* cc-maestro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro.png"; sourceTree = "<group>"; };
+		2C03371F2A4B66AE00E4B103 /* cc-visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa@3x.png"; sourceTree = "<group>"; };
+		2C0337202A4B66AE00E4B103 /* cc-jcb@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb@3x.png"; sourceTree = "<group>"; };
+		2C0337212A4B66AE00E4B103 /* cc-cvc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc@2x.png"; sourceTree = "<group>"; };
+		2C0337222A4B66AE00E4B103 /* cc-discover@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover@3x.png"; sourceTree = "<group>"; };
+		2C0337232A4B66AE00E4B103 /* cc-dinner@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner@3x.png"; sourceTree = "<group>"; };
+		2C0337242A4B66AE00E4B103 /* cc-maestro@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro@3x.png"; sourceTree = "<group>"; };
+		2C0337252A4B66AE00E4B103 /* cc-master@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master@2x.png"; sourceTree = "<group>"; };
+		2C0337262A4B66AE00E4B103 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		2C0337272A4B66AE00E4B103 /* cc-generic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic@3x.png"; sourceTree = "<group>"; };
+		2C0337282A4B66AE00E4B103 /* cc-amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex.png"; sourceTree = "<group>"; };
+		2C0337292A4B66AE00E4B103 /* cc-generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic@2x.png"; sourceTree = "<group>"; };
+		2C03372A2A4B66AE00E4B103 /* cc-cvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc.png"; sourceTree = "<group>"; };
+		2C03372B2A4B66AE00E4B103 /* cc-master@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master@3x.png"; sourceTree = "<group>"; };
+		2C03372C2A4B66AE00E4B103 /* cc-dinner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner@2x.png"; sourceTree = "<group>"; };
+		2C03372D2A4B66AE00E4B103 /* cc-maestro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro@2x.png"; sourceTree = "<group>"; };
+		2C03372E2A4B66AE00E4B103 /* cc-cvc@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc@3x.png"; sourceTree = "<group>"; };
+		2C03372F2A4B66AE00E4B103 /* cc-discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover@2x.png"; sourceTree = "<group>"; };
+		2C0337302A4B66AE00E4B103 /* cc-jcb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb@2x.png"; sourceTree = "<group>"; };
+		2C0337312A4B66AE00E4B103 /* cc-amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex@2x.png"; sourceTree = "<group>"; };
+		2C0337322A4B66AE00E4B103 /* cc-amex@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex@3x.png"; sourceTree = "<group>"; };
+		2C0337332A4B66AE00E4B103 /* cc-dinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner.png"; sourceTree = "<group>"; };
+		2C0337342A4B66AE00E4B103 /* cc-bcglobal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal.png"; sourceTree = "<group>"; };
+		2C0337352A4B66AE00E4B103 /* cc-unionpay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay@2x.png"; sourceTree = "<group>"; };
+		2C0337362A4B66AE00E4B103 /* cc-unionpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay.png"; sourceTree = "<group>"; };
+		2C0337372A4B66AE00E4B103 /* cc-bcglobal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal@3x.png"; sourceTree = "<group>"; };
+		2C0337382A4B66AE00E4B103 /* cc-bcglobal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal@2x.png"; sourceTree = "<group>"; };
+		2C0337392A4B66AE00E4B103 /* cc-visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa.png"; sourceTree = "<group>"; };
+		2C03373A2A4B66AE00E4B103 /* cc-master.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master.png"; sourceTree = "<group>"; };
+		2C03373B2A4B66AE00E4B103 /* cc-unionpay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay@3x.png"; sourceTree = "<group>"; };
+		2C03373C2A4B66AE00E4B103 /* cc-generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic.png"; sourceTree = "<group>"; };
+		2C03373D2A4B66AE00E4B103 /* cc-jcb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb.png"; sourceTree = "<group>"; };
+		2C0337402A4B66AE00E4B103 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337412A4B66AE00E4B103 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337422A4B66AE00E4B103 /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_AU; path = en_AU.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337432A4B66AE00E4B103 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337442A4B66AE00E4B103 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337452A4B66AE00E4B103 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C0337462A4B66AE00E4B103 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337472A4B66AE00E4B103 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C0337482A4B66AE00E4B103 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337492A4B66AE00E4B103 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03374A2A4B66AE00E4B103 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C03374B2A4B66AE00E4B103 /* es_419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es_419; path = es_419.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03374C2A4B66AE00E4B103 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03374D2A4B66AE00E4B103 /* pt_BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_BR; path = pt_BR.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03374E2A4B66AE00E4B103 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03374F2A4B66AE00E4B103 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337502A4B66AE00E4B103 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337512A4B66AE00E4B103 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_PT; path = pt_PT.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337522A4B66AE00E4B103 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337532A4B66AE00E4B103 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337542A4B66AE00E4B103 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337552A4B66AE00E4B103 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337562A4B66AE00E4B103 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C0337572A4B66AE00E4B103 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337582A4B66AE00E4B103 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337592A4B66AE00E4B103 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03375A2A4B66AE00E4B103 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03375B2A4B66AE00E4B103 /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = en_GB.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03375C2A4B66AE00E4B103 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03375D2A4B66AE00E4B103 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C03375E2A4B66AE00E4B103 /* zh-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-CN"; path = "zh-CN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2C03375F2A4B66AE00E4B103 /* fr_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_CA; path = fr_CA.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337602A4B66AE00E4B103 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337612A4B66AE00E4B103 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337622A4B66AE00E4B103 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337632A4B66AE00E4B103 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337642A4B66AE00E4B103 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337652A4B66AE00E4B103 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337662A4B66AE00E4B103 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337672A4B66AE00E4B103 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2C0337682A4B66AE00E4B103 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		33AE0FBD3614E812B518FE92A70C37EF /* Pods-GrubPaySDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GrubPaySDK_Example.modulemap"; sourceTree = "<group>"; };
 		340E331FAF01259372786724B8B26A08 /* GrubPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GrubPaySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -294,7 +297,6 @@
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D0E68BF2FF67BE3C3A60C1305E728560 /* Pods-GrubPaySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubPayElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrubPayElement.swift; path = GrubPaySDK/Classes/GrubPayElement.swift; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F1B355655FB3FE2639D5FD62EABA67F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -357,95 +359,114 @@
 			path = "Example/Pods/Target Support Files/GrubPaySDK";
 			sourceTree = "<group>";
 		};
-		2C0029192A0C6428006909AD /* Assets */ = {
+		2C0336F32A4B66AE00E4B103 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2C00291A2A0C6428006909AD /* cc-visa@2x.png */,
-				2C00291B2A0C6428006909AD /* cc-discover.png */,
-				2C00291C2A0C6428006909AD /* cc-maestro.png */,
-				2C00291D2A0C6428006909AD /* cc-visa@3x.png */,
-				2C00291E2A0C6428006909AD /* cc-jcb@3x.png */,
-				2C00291F2A0C6428006909AD /* cc-cvc@2x.png */,
-				2C0029202A0C6428006909AD /* cc-discover@3x.png */,
-				2C0029212A0C6428006909AD /* cc-dinner@3x.png */,
-				2C0029222A0C6428006909AD /* cc-maestro@3x.png */,
-				2C0029232A0C6428006909AD /* cc-master@2x.png */,
-				2C0029242A0C6428006909AD /* .gitkeep */,
-				2C0029252A0C6428006909AD /* cc-generic@3x.png */,
-				2C0029262A0C6428006909AD /* cc-amex.png */,
-				2C0029272A0C6428006909AD /* cc-generic@2x.png */,
-				2C0029282A0C6428006909AD /* cc-cvc.png */,
-				2C0029292A0C6428006909AD /* cc-master@3x.png */,
-				2C00292A2A0C6428006909AD /* cc-dinner@2x.png */,
-				2C00292B2A0C6428006909AD /* cc-maestro@2x.png */,
-				2C00292C2A0C6428006909AD /* cc-cvc@3x.png */,
-				2C00292D2A0C6428006909AD /* cc-discover@2x.png */,
-				2C00292E2A0C6428006909AD /* cc-jcb@2x.png */,
-				2C00292F2A0C6428006909AD /* cc-amex@2x.png */,
-				2C0029302A0C6428006909AD /* cc-amex@3x.png */,
-				2C0029312A0C6428006909AD /* cc-dinner.png */,
-				2C0029322A0C6428006909AD /* cc-bcglobal.png */,
-				2C0029332A0C6428006909AD /* cc-unionpay@2x.png */,
-				2C0029342A0C6428006909AD /* cc-unionpay.png */,
-				2C0029352A0C6428006909AD /* cc-bcglobal@3x.png */,
-				2C0029362A0C6428006909AD /* cc-bcglobal@2x.png */,
-				2C0029372A0C6428006909AD /* cc-visa.png */,
-				2C0029382A0C6428006909AD /* cc-master.png */,
-				2C0029392A0C6428006909AD /* cc-unionpay@3x.png */,
-				2C00293A2A0C6428006909AD /* cc-generic.png */,
-				2C00293B2A0C6428006909AD /* cc-jcb.png */,
+				2C0337072A4B66AE00E4B103 /* GPInput */,
+				2C0336FC2A4B66AE00E4B103 /* GPCardScanner */,
+				2C0336F42A4B66AE00E4B103 /* GrubPayError.swift */,
+				2C0336F52A4B66AE00E4B103 /* GPFormController.swift */,
+				2C0336F62A4B66AE00E4B103 /* Localization.swift */,
+				2C0336F72A4B66AE00E4B103 /* GrubPayElement.swift */,
+				2C0336F82A4B66AE00E4B103 /* Enums.swift */,
+				2C0336F92A4B66AE00E4B103 /* GrubPayResponse.swift */,
+				2C0336FA2A4B66AE00E4B103 /* GrubPayVC.swift */,
+				2C0337032A4B66AE00E4B103 /* GPACHForm.swift */,
+				2C0337042A4B66AE00E4B103 /* GPUtil.swift */,
+				2C0337052A4B66AE00E4B103 /* GrubPay.swift */,
+				2C0337062A4B66AE00E4B103 /* GPCardForm.swift */,
+			);
+			name = Classes;
+			path = Sources/GrubPaySDK/Classes;
+			sourceTree = "<group>";
+		};
+		2C0336FC2A4B66AE00E4B103 /* GPCardScanner */ = {
+			isa = PBXGroup;
+			children = (
+				2C0336FD2A4B66AE00E4B103 /* GPCardAnalyzer.swift */,
+				2C0336FE2A4B66AE00E4B103 /* CameraAccess.swift */,
+				2C0336FF2A4B66AE00E4B103 /* GPScannerConfig.swift */,
+				2C0337002A4B66AE00E4B103 /* GPScannerView.swift */,
+				2C0337012A4B66AE00E4B103 /* GPCardOverlay.swift */,
+				2C0337022A4B66AE00E4B103 /* GPCardScanner.swift */,
+			);
+			path = GPCardScanner;
+			sourceTree = "<group>";
+		};
+		2C0337072A4B66AE00E4B103 /* GPInput */ = {
+			isa = PBXGroup;
+			children = (
+				2C0337082A4B66AE00E4B103 /* GPRadioDot.swift */,
+				2C0337092A4B66AE00E4B103 /* GPInput+Zip.swift */,
+				2C03370A2A4B66AE00E4B103 /* GPInput+CVV.swift */,
+				2C03370B2A4B66AE00E4B103 /* GPInput+Card.swift */,
+				2C03370C2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift */,
+				2C03370D2A4B66AE00E4B103 /* GrubPayButton.swift */,
+				2C03370E2A4B66AE00E4B103 /* GPInput+Style.swift */,
+				2C03370F2A4B66AE00E4B103 /* GPInput+Expiry.swift */,
+				2C0337102A4B66AE00E4B103 /* GPRadio+AccountType.swift */,
+				2C0337112A4B66AE00E4B103 /* GPPicker+Expiry.swift */,
+				2C0337122A4B66AE00E4B103 /* GPInput.swift */,
+				2C0337132A4B66AE00E4B103 /* GPInput+Account.swift */,
+				2C0337142A4B66AE00E4B103 /* GPPicker+Country.swift */,
+				2C0337152A4B66AE00E4B103 /* GPInput+Util.swift */,
+				2C0337162A4B66AE00E4B103 /* GPRadioButton.swift */,
+				2C0337172A4B66AE00E4B103 /* GPInput+Routing.swift */,
+				2C0337182A4B66AE00E4B103 /* GPInput+Name.swift */,
+				2C0337192A4B66AE00E4B103 /* GPInput+Country.swift */,
+			);
+			path = GPInput;
+			sourceTree = "<group>";
+		};
+		2C03371B2A4B66AE00E4B103 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2C03371C2A4B66AE00E4B103 /* cc-visa@2x.png */,
+				2C03371D2A4B66AE00E4B103 /* cc-discover.png */,
+				2C03371E2A4B66AE00E4B103 /* cc-maestro.png */,
+				2C03371F2A4B66AE00E4B103 /* cc-visa@3x.png */,
+				2C0337202A4B66AE00E4B103 /* cc-jcb@3x.png */,
+				2C0337212A4B66AE00E4B103 /* cc-cvc@2x.png */,
+				2C0337222A4B66AE00E4B103 /* cc-discover@3x.png */,
+				2C0337232A4B66AE00E4B103 /* cc-dinner@3x.png */,
+				2C0337242A4B66AE00E4B103 /* cc-maestro@3x.png */,
+				2C0337252A4B66AE00E4B103 /* cc-master@2x.png */,
+				2C0337262A4B66AE00E4B103 /* .gitkeep */,
+				2C0337272A4B66AE00E4B103 /* cc-generic@3x.png */,
+				2C0337282A4B66AE00E4B103 /* cc-amex.png */,
+				2C0337292A4B66AE00E4B103 /* cc-generic@2x.png */,
+				2C03372A2A4B66AE00E4B103 /* cc-cvc.png */,
+				2C03372B2A4B66AE00E4B103 /* cc-master@3x.png */,
+				2C03372C2A4B66AE00E4B103 /* cc-dinner@2x.png */,
+				2C03372D2A4B66AE00E4B103 /* cc-maestro@2x.png */,
+				2C03372E2A4B66AE00E4B103 /* cc-cvc@3x.png */,
+				2C03372F2A4B66AE00E4B103 /* cc-discover@2x.png */,
+				2C0337302A4B66AE00E4B103 /* cc-jcb@2x.png */,
+				2C0337312A4B66AE00E4B103 /* cc-amex@2x.png */,
+				2C0337322A4B66AE00E4B103 /* cc-amex@3x.png */,
+				2C0337332A4B66AE00E4B103 /* cc-dinner.png */,
+				2C0337342A4B66AE00E4B103 /* cc-bcglobal.png */,
+				2C0337352A4B66AE00E4B103 /* cc-unionpay@2x.png */,
+				2C0337362A4B66AE00E4B103 /* cc-unionpay.png */,
+				2C0337372A4B66AE00E4B103 /* cc-bcglobal@3x.png */,
+				2C0337382A4B66AE00E4B103 /* cc-bcglobal@2x.png */,
+				2C0337392A4B66AE00E4B103 /* cc-visa.png */,
+				2C03373A2A4B66AE00E4B103 /* cc-master.png */,
+				2C03373B2A4B66AE00E4B103 /* cc-unionpay@3x.png */,
+				2C03373C2A4B66AE00E4B103 /* cc-generic.png */,
+				2C03373D2A4B66AE00E4B103 /* cc-jcb.png */,
 			);
 			name = Assets;
-			path = GrubPaySDK/Assets;
+			path = Sources/GrubPaySDK/Assets;
 			sourceTree = "<group>";
 		};
-		2C0336732A45062300E4B103 /* GPCardScanner */ = {
+		2C03373E2A4B66AE00E4B103 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2C0336742A45062300E4B103 /* GPCardAnalyzer.swift */,
-				2C0336752A45062300E4B103 /* CameraAccess.swift */,
-				2C0336762A45062300E4B103 /* GPScannerConfig.swift */,
-				2C0336782A45062300E4B103 /* GPScannerView.swift */,
-				2C0336792A45062300E4B103 /* GPCardOverlay.swift */,
-				2C03367A2A45062300E4B103 /* GPCardScanner.swift */,
-			);
-			name = GPCardScanner;
-			path = GrubPaySDK/Classes/GPCardScanner;
-			sourceTree = "<group>";
-		};
-		2C90200A2A0333BC00DADC09 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2C90200B2A0333BC00DADC09 /* Localizable.strings */,
+				2C03373F2A4B66AE00E4B103 /* Localizable.strings */,
 			);
 			name = Resources;
-			path = GrubPaySDK/Resources;
-			sourceTree = "<group>";
-		};
-		2C9020392A04349A00DADC09 /* GPInput */ = {
-			isa = PBXGroup;
-			children = (
-				2C901FA62A01B61D00DADC09 /* GPPicker+Expiry.swift */,
-				2C0029602A0D8CBB006909AD /* GPPicker+Country.swift */,
-				2CA89EAC2A04352200DA5850 /* GPInput.swift */,
-				2C00290F2A0487E1006909AD /* GPInput+Style.swift */,
-				2C0029112A0996ED006909AD /* GPInput+Card.swift */,
-				2C0029132A09B9AF006909AD /* GPInput+Expiry.swift */,
-				2C0029152A09C205006909AD /* GPInput+CVV.swift */,
-				2C0029172A09C3A2006909AD /* GPInput+Name.swift */,
-				2C00295E2A0D8892006909AD /* GPInput+Country.swift */,
-				2C0029682A0EC33B006909AD /* GPInput+Zip.swift */,
-				2C00296C2A0F063F006909AD /* GPInput+Util.swift */,
-				2C0608A62A13FF6C005663CC /* GPInput+Routing.swift */,
-				2C0608A82A140A1B005663CC /* GPInput+Account.swift */,
-				2C0608AA2A14142D005663CC /* GPRadio+AccountType.swift */,
-				2C0608B02A1543CD005663CC /* GPRadioDot.swift */,
-				2C0608AC2A14183F005663CC /* GPRadioButton.swift */,
-				2C0608AE2A1443DF005663CC /* GPSwitch+ACHAgreement.swift */,
-				2C0336822A466E4E00E4B103 /* GrubPayButton.swift */,
-			);
-			name = GPInput;
-			path = GrubPaySDK/Classes/GPInput;
+			path = Sources/GrubPaySDK/Resources;
 			sourceTree = "<group>";
 		};
 		460A15B64B60726A4F9A0FC46AAA0AE4 /* Targets Support Files */ = {
@@ -553,20 +574,9 @@
 		E2785C96E28E439E5C9F58FF709F8044 /* GrubPaySDK */ = {
 			isa = PBXGroup;
 			children = (
-				2C0336732A45062300E4B103 /* GPCardScanner */,
-				2C90200A2A0333BC00DADC09 /* Resources */,
-				2C9020392A04349A00DADC09 /* GPInput */,
-				2C0029192A0C6428006909AD /* Assets */,
-				D1BAB8574C84ECAF1AF51B7CFE289B43 /* GrubPayElement.swift */,
-				2C03366C2A4505FD00E4B103 /* Enums.swift */,
-				2C03366B2A4505FD00E4B103 /* GPUtil.swift */,
-				2C0336692A4505FD00E4B103 /* GrubPay.swift */,
-				2C03366D2A4505FD00E4B103 /* GrubPayError.swift */,
-				2C03366A2A4505FD00E4B103 /* GrubPayVC.swift */,
-				2C0608B42A16A5ED005663CC /* GrubPayResponse.swift */,
-				2C0608A42A13FEF5005663CC /* GPACHForm.swift */,
-				2C0029662A0EC118006909AD /* GPCardForm.swift */,
-				2C00296A2A0EF26D006909AD /* GPFormController.swift */,
+				2C03371B2A4B66AE00E4B103 /* Assets */,
+				2C0336F32A4B66AE00E4B103 /* Classes */,
+				2C03373E2A4B66AE00E4B103 /* Resources */,
 				EAEE3CD907F5D6B9ED60CA2ABC464280 /* Pod */,
 				2716BE7EC212C47230FEE74C92C03ABC /* Support Files */,
 			);
@@ -854,41 +864,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C00295D2A0C6428006909AD /* cc-jcb.png in Resources */,
-				2C0029582A0C6428006909AD /* cc-bcglobal@2x.png in Resources */,
-				2C9020352A0333BC00DADC09 /* Localizable.strings in Resources */,
-				2C00294F2A0C6428006909AD /* cc-discover@2x.png in Resources */,
-				2C0029572A0C6428006909AD /* cc-bcglobal@3x.png in Resources */,
-				2C0029592A0C6428006909AD /* cc-visa.png in Resources */,
-				2C0029472A0C6428006909AD /* cc-generic@3x.png in Resources */,
-				2C00294E2A0C6428006909AD /* cc-cvc@3x.png in Resources */,
-				2C0029432A0C6428006909AD /* cc-dinner@3x.png in Resources */,
-				2C0029512A0C6428006909AD /* cc-amex@2x.png in Resources */,
-				2C00294D2A0C6428006909AD /* cc-maestro@2x.png in Resources */,
-				2C0029452A0C6428006909AD /* cc-master@2x.png in Resources */,
-				2C0029462A0C6428006909AD /* .gitkeep in Resources */,
-				2C00294B2A0C6428006909AD /* cc-master@3x.png in Resources */,
-				2C00293F2A0C6428006909AD /* cc-visa@3x.png in Resources */,
-				2C0029422A0C6428006909AD /* cc-discover@3x.png in Resources */,
-				2C00293D2A0C6428006909AD /* cc-discover.png in Resources */,
-				2C00293C2A0C6428006909AD /* cc-visa@2x.png in Resources */,
-				2C0029532A0C6428006909AD /* cc-dinner.png in Resources */,
-				2C00295B2A0C6428006909AD /* cc-unionpay@3x.png in Resources */,
-				2C00295C2A0C6428006909AD /* cc-generic.png in Resources */,
-				2C00294C2A0C6428006909AD /* cc-dinner@2x.png in Resources */,
-				2C0029562A0C6428006909AD /* cc-unionpay.png in Resources */,
-				2C0029412A0C6428006909AD /* cc-cvc@2x.png in Resources */,
-				2C0029542A0C6428006909AD /* cc-bcglobal.png in Resources */,
-				2C00293E2A0C6428006909AD /* cc-maestro.png in Resources */,
-				2C0029502A0C6428006909AD /* cc-jcb@2x.png in Resources */,
-				2C0029522A0C6428006909AD /* cc-amex@3x.png in Resources */,
-				2C0029402A0C6428006909AD /* cc-jcb@3x.png in Resources */,
-				2C00294A2A0C6428006909AD /* cc-cvc.png in Resources */,
-				2C0029482A0C6428006909AD /* cc-amex.png in Resources */,
-				2C0029442A0C6428006909AD /* cc-maestro@3x.png in Resources */,
-				2C0029492A0C6428006909AD /* cc-generic@2x.png in Resources */,
-				2C0029552A0C6428006909AD /* cc-unionpay@2x.png in Resources */,
-				2C00295A2A0C6428006909AD /* cc-master.png in Resources */,
+				2C0337AF2A4B66AE00E4B103 /* cc-jcb.png in Resources */,
+				2C0337AA2A4B66AE00E4B103 /* cc-bcglobal@2x.png in Resources */,
+				2C0337A12A4B66AE00E4B103 /* cc-discover@2x.png in Resources */,
+				2C0337A92A4B66AE00E4B103 /* cc-bcglobal@3x.png in Resources */,
+				2C0337AB2A4B66AE00E4B103 /* cc-visa.png in Resources */,
+				2C0337992A4B66AE00E4B103 /* cc-generic@3x.png in Resources */,
+				2C0337A02A4B66AE00E4B103 /* cc-cvc@3x.png in Resources */,
+				2C0337952A4B66AE00E4B103 /* cc-dinner@3x.png in Resources */,
+				2C0337A32A4B66AE00E4B103 /* cc-amex@2x.png in Resources */,
+				2C03379F2A4B66AE00E4B103 /* cc-maestro@2x.png in Resources */,
+				2C0337972A4B66AE00E4B103 /* cc-master@2x.png in Resources */,
+				2C0337982A4B66AE00E4B103 /* .gitkeep in Resources */,
+				2C0337B02A4B66AE00E4B103 /* Localizable.strings in Resources */,
+				2C03379D2A4B66AE00E4B103 /* cc-master@3x.png in Resources */,
+				2C0337912A4B66AE00E4B103 /* cc-visa@3x.png in Resources */,
+				2C0337942A4B66AE00E4B103 /* cc-discover@3x.png in Resources */,
+				2C03378F2A4B66AE00E4B103 /* cc-discover.png in Resources */,
+				2C03378E2A4B66AE00E4B103 /* cc-visa@2x.png in Resources */,
+				2C0337A52A4B66AE00E4B103 /* cc-dinner.png in Resources */,
+				2C0337AD2A4B66AE00E4B103 /* cc-unionpay@3x.png in Resources */,
+				2C0337AE2A4B66AE00E4B103 /* cc-generic.png in Resources */,
+				2C03379E2A4B66AE00E4B103 /* cc-dinner@2x.png in Resources */,
+				2C0337A82A4B66AE00E4B103 /* cc-unionpay.png in Resources */,
+				2C0337932A4B66AE00E4B103 /* cc-cvc@2x.png in Resources */,
+				2C0337A62A4B66AE00E4B103 /* cc-bcglobal.png in Resources */,
+				2C0337902A4B66AE00E4B103 /* cc-maestro.png in Resources */,
+				2C0337A22A4B66AE00E4B103 /* cc-jcb@2x.png in Resources */,
+				2C0337A42A4B66AE00E4B103 /* cc-amex@3x.png in Resources */,
+				2C0337922A4B66AE00E4B103 /* cc-jcb@3x.png in Resources */,
+				2C03379C2A4B66AE00E4B103 /* cc-cvc.png in Resources */,
+				2C03379A2A4B66AE00E4B103 /* cc-amex.png in Resources */,
+				2C0337962A4B66AE00E4B103 /* cc-maestro@3x.png in Resources */,
+				2C03379B2A4B66AE00E4B103 /* cc-generic@2x.png in Resources */,
+				2C0337A72A4B66AE00E4B103 /* cc-unionpay@2x.png in Resources */,
+				2C0337AC2A4B66AE00E4B103 /* cc-master.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,41 +925,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0336832A466E4F00E4B103 /* GrubPayButton.swift in Sources */,
-				2C0029102A0487E1006909AD /* GPInput+Style.swift in Sources */,
-				2C0029692A0EC33B006909AD /* GPInput+Zip.swift in Sources */,
-				2C03367B2A45062300E4B103 /* GPCardAnalyzer.swift in Sources */,
-				2C03366E2A4505FD00E4B103 /* GrubPay.swift in Sources */,
-				2C0029122A0996ED006909AD /* GPInput+Card.swift in Sources */,
-				2C03366F2A4505FD00E4B103 /* GrubPayVC.swift in Sources */,
-				2C03367F2A45062300E4B103 /* GPScannerView.swift in Sources */,
-				2C0608B12A1543CD005663CC /* GPRadioDot.swift in Sources */,
-				2C03367D2A45062300E4B103 /* GPScannerConfig.swift in Sources */,
-				2C0029142A09B9AF006909AD /* GPInput+Expiry.swift in Sources */,
-				2CA89EAD2A04352200DA5850 /* GPInput.swift in Sources */,
-				2C901FA72A01B61D00DADC09 /* GPPicker+Expiry.swift in Sources */,
-				2C03367C2A45062300E4B103 /* CameraAccess.swift in Sources */,
-				2C0029162A09C205006909AD /* GPInput+CVV.swift in Sources */,
-				2C0608A92A140A1B005663CC /* GPInput+Account.swift in Sources */,
-				2C0029672A0EC118006909AD /* GPCardForm.swift in Sources */,
-				2C0336702A4505FD00E4B103 /* GPUtil.swift in Sources */,
-				2C0336802A45062300E4B103 /* GPCardOverlay.swift in Sources */,
-				2C0608A72A13FF6C005663CC /* GPInput+Routing.swift in Sources */,
-				2C0029182A09C3A2006909AD /* GPInput+Name.swift in Sources */,
+				2C0337792A4B66AE00E4B103 /* GrubPay.swift in Sources */,
 				4A82A6F80E805E824B4D9FDF8BD3E264 /* GrubPaySDK-dummy.m in Sources */,
-				2C00295F2A0D8892006909AD /* GPInput+Country.swift in Sources */,
-				2C0029612A0D8CBB006909AD /* GPPicker+Country.swift in Sources */,
-				2C0608A52A13FEF5005663CC /* GPACHForm.swift in Sources */,
-				2C0608AD2A14183F005663CC /* GPRadioButton.swift in Sources */,
-				2C0608AB2A14142D005663CC /* GPRadio+AccountType.swift in Sources */,
-				2C0608B52A16A5ED005663CC /* GrubPayResponse.swift in Sources */,
-				2C0336722A4505FD00E4B103 /* GrubPayError.swift in Sources */,
-				2C0608AF2A1443DF005663CC /* GPSwitch+ACHAgreement.swift in Sources */,
-				2C00296D2A0F063F006909AD /* GPInput+Util.swift in Sources */,
-				2C0336712A4505FD00E4B103 /* Enums.swift in Sources */,
-				F43CD14F0A971A19E762A3F8082A1C15 /* GrubPayElement.swift in Sources */,
-				2C0336812A45062300E4B103 /* GPCardScanner.swift in Sources */,
-				2C00296B2A0EF26D006909AD /* GPFormController.swift in Sources */,
+				2C03378B2A4B66AE00E4B103 /* GPInput+Name.swift in Sources */,
+				2C03376E2A4B66AE00E4B103 /* GrubPayResponse.swift in Sources */,
+				2C0337872A4B66AE00E4B103 /* GPPicker+Country.swift in Sources */,
+				2C03377F2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift in Sources */,
+				2C0337742A4B66AE00E4B103 /* GPScannerView.swift in Sources */,
+				2C03378A2A4B66AE00E4B103 /* GPInput+Routing.swift in Sources */,
+				2C0337712A4B66AE00E4B103 /* GPCardAnalyzer.swift in Sources */,
+				2C03377B2A4B66AE00E4B103 /* GPRadioDot.swift in Sources */,
+				2C03376A2A4B66AE00E4B103 /* GPFormController.swift in Sources */,
+				2C0337722A4B66AE00E4B103 /* CameraAccess.swift in Sources */,
+				2C0337852A4B66AE00E4B103 /* GPInput.swift in Sources */,
+				2C0337732A4B66AE00E4B103 /* GPScannerConfig.swift in Sources */,
+				2C0337862A4B66AE00E4B103 /* GPInput+Account.swift in Sources */,
+				2C0337892A4B66AE00E4B103 /* GPRadioButton.swift in Sources */,
+				2C03377A2A4B66AE00E4B103 /* GPCardForm.swift in Sources */,
+				2C0337812A4B66AE00E4B103 /* GPInput+Style.swift in Sources */,
+				2C0337762A4B66AE00E4B103 /* GPCardScanner.swift in Sources */,
+				2C0337802A4B66AE00E4B103 /* GrubPayButton.swift in Sources */,
+				2C03376B2A4B66AE00E4B103 /* Localization.swift in Sources */,
+				2C03376C2A4B66AE00E4B103 /* GrubPayElement.swift in Sources */,
+				2C03377C2A4B66AE00E4B103 /* GPInput+Zip.swift in Sources */,
+				2C0337832A4B66AE00E4B103 /* GPRadio+AccountType.swift in Sources */,
+				2C03376F2A4B66AE00E4B103 /* GrubPayVC.swift in Sources */,
+				2C03376D2A4B66AE00E4B103 /* Enums.swift in Sources */,
+				2C0337782A4B66AE00E4B103 /* GPUtil.swift in Sources */,
+				2C0337842A4B66AE00E4B103 /* GPPicker+Expiry.swift in Sources */,
+				2C0337822A4B66AE00E4B103 /* GPInput+Expiry.swift in Sources */,
+				2C0337752A4B66AE00E4B103 /* GPCardOverlay.swift in Sources */,
+				2C03378C2A4B66AE00E4B103 /* GPInput+Country.swift in Sources */,
+				2C0337692A4B66AE00E4B103 /* GrubPayError.swift in Sources */,
+				2C03377E2A4B66AE00E4B103 /* GPInput+Card.swift in Sources */,
+				2C0337882A4B66AE00E4B103 /* GPInput+Util.swift in Sources */,
+				2C0337772A4B66AE00E4B103 /* GPACHForm.swift in Sources */,
+				2C03377D2A4B66AE00E4B103 /* GPInput+CVV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,50 +1004,50 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C90200B2A0333BC00DADC09 /* Localizable.strings */ = {
+		2C03373F2A4B66AE00E4B103 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2C90200C2A0333BC00DADC09 /* de */,
-				2C90200D2A0333BC00DADC09 /* he */,
-				2C90200E2A0333BC00DADC09 /* en_AU */,
-				2C90200F2A0333BC00DADC09 /* ar */,
-				2C9020102A0333BC00DADC09 /* el */,
-				2C9020112A0333BC00DADC09 /* zh-Hans */,
-				2C9020122A0333BC00DADC09 /* ja */,
-				2C9020132A0333BC00DADC09 /* zh-TW */,
-				2C9020142A0333BC00DADC09 /* en */,
-				2C9020152A0333BC00DADC09 /* uk */,
-				2C9020162A0333BC00DADC09 /* zh-HK */,
-				2C9020172A0333BC00DADC09 /* es_419 */,
-				2C9020182A0333BC00DADC09 /* es */,
-				2C9020192A0333BC00DADC09 /* pt_BR */,
-				2C90201A2A0333BC00DADC09 /* da */,
-				2C90201B2A0333BC00DADC09 /* it */,
-				2C90201C2A0333BC00DADC09 /* sk */,
-				2C90201D2A0333BC00DADC09 /* pt_PT */,
-				2C90201E2A0333BC00DADC09 /* ms */,
-				2C90201F2A0333BC00DADC09 /* sv */,
-				2C9020202A0333BC00DADC09 /* cs */,
-				2C9020212A0333BC00DADC09 /* ko */,
-				2C9020222A0333BC00DADC09 /* zh-Hant */,
-				2C9020232A0333BC00DADC09 /* no */,
-				2C9020242A0333BC00DADC09 /* hu */,
-				2C9020252A0333BC00DADC09 /* tr */,
-				2C9020262A0333BC00DADC09 /* pl */,
-				2C9020272A0333BC00DADC09 /* en_GB */,
-				2C9020282A0333BC00DADC09 /* vi */,
-				2C9020292A0333BC00DADC09 /* ru */,
-				2C90202A2A0333BC00DADC09 /* zh-CN */,
-				2C90202B2A0333BC00DADC09 /* fr_CA */,
-				2C90202C2A0333BC00DADC09 /* fr */,
-				2C90202D2A0333BC00DADC09 /* fi */,
-				2C90202E2A0333BC00DADC09 /* id */,
-				2C90202F2A0333BC00DADC09 /* nl */,
-				2C9020302A0333BC00DADC09 /* th */,
-				2C9020312A0333BC00DADC09 /* ro */,
-				2C9020322A0333BC00DADC09 /* hr */,
-				2C9020332A0333BC00DADC09 /* hi */,
-				2C9020342A0333BC00DADC09 /* ca */,
+				2C0337402A4B66AE00E4B103 /* de */,
+				2C0337412A4B66AE00E4B103 /* he */,
+				2C0337422A4B66AE00E4B103 /* en_AU */,
+				2C0337432A4B66AE00E4B103 /* ar */,
+				2C0337442A4B66AE00E4B103 /* el */,
+				2C0337452A4B66AE00E4B103 /* zh-Hans */,
+				2C0337462A4B66AE00E4B103 /* ja */,
+				2C0337472A4B66AE00E4B103 /* zh-TW */,
+				2C0337482A4B66AE00E4B103 /* en */,
+				2C0337492A4B66AE00E4B103 /* uk */,
+				2C03374A2A4B66AE00E4B103 /* zh-HK */,
+				2C03374B2A4B66AE00E4B103 /* es_419 */,
+				2C03374C2A4B66AE00E4B103 /* es */,
+				2C03374D2A4B66AE00E4B103 /* pt_BR */,
+				2C03374E2A4B66AE00E4B103 /* da */,
+				2C03374F2A4B66AE00E4B103 /* it */,
+				2C0337502A4B66AE00E4B103 /* sk */,
+				2C0337512A4B66AE00E4B103 /* pt_PT */,
+				2C0337522A4B66AE00E4B103 /* ms */,
+				2C0337532A4B66AE00E4B103 /* sv */,
+				2C0337542A4B66AE00E4B103 /* cs */,
+				2C0337552A4B66AE00E4B103 /* ko */,
+				2C0337562A4B66AE00E4B103 /* zh-Hant */,
+				2C0337572A4B66AE00E4B103 /* no */,
+				2C0337582A4B66AE00E4B103 /* hu */,
+				2C0337592A4B66AE00E4B103 /* tr */,
+				2C03375A2A4B66AE00E4B103 /* pl */,
+				2C03375B2A4B66AE00E4B103 /* en_GB */,
+				2C03375C2A4B66AE00E4B103 /* vi */,
+				2C03375D2A4B66AE00E4B103 /* ru */,
+				2C03375E2A4B66AE00E4B103 /* zh-CN */,
+				2C03375F2A4B66AE00E4B103 /* fr_CA */,
+				2C0337602A4B66AE00E4B103 /* fr */,
+				2C0337612A4B66AE00E4B103 /* fi */,
+				2C0337622A4B66AE00E4B103 /* id */,
+				2C0337632A4B66AE00E4B103 /* nl */,
+				2C0337642A4B66AE00E4B103 /* th */,
+				2C0337652A4B66AE00E4B103 /* ro */,
+				2C0337662A4B66AE00E4B103 /* hr */,
+				2C0337672A4B66AE00E4B103 /* hi */,
+				2C0337682A4B66AE00E4B103 /* ca */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

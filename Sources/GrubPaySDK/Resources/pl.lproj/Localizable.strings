@@ -1,4 +1,14 @@
 "Card number" = "Numer karty";
-"Name on card" = "Imię i nazwisko";
+"Name on card" = "Imię i nazwisko na karcie";
 "Expiration" = "Ważność";
-"Name" = "Nazwa";
+"Name" = "Imię";
+"Done" = "Gotowe";
+"Cancel" = "Anuluj";
+"Country" = "Kraj";
+"Center your card until the fields are recognized" = "Wyśrodkuj kartę, aż pola zostaną rozpoznane";
+"Touch a recognized value to delete the value and try again" = "Dotknij rozpoznaną wartość, aby usunąć i spróbować ponownie";
+"Confirm" = "Potwierdź";
+"Pay" = "Zapłać";
+"Authorize Card" = "Autoryzuj kartę";
+"Authorize ACH" = "Autoryzuj ACH";
+"Submit" = "Wyślij";

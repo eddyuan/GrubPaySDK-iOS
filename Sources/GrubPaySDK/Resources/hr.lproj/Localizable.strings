@@ -2,3 +2,13 @@
 "Name on card" = "Ime na kartici";
 "Expiration" = "Istek";
 "Name" = "Ime";
+"Done" = "Gotovo";
+"Cancel" = "Odustani";
+"Country" = "Država";
+"Center your card until the fields are recognized" = "Centrirajte karticu dok se polja prepoznaju";
+"Touch a recognized value to delete the value and try again" = "Dodirnite prepoznatu vrijednost da biste je obrisali i pokušali ponovno";
+"Confirm" = "Potvrdi";
+"Pay" = "Plati";
+"Authorize Card" = "Autoriziraj karticu";
+"Authorize ACH" = "Autoriziraj ACH";
+"Submit" = "Pošalji";

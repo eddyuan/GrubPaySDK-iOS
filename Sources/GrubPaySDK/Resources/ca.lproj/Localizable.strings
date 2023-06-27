@@ -1,4 +1,14 @@
-"Card number" = "Número de la targeta";
-"Name on card" = "Nom en la targeta";
+"Card number" = "Número de targeta";
+"Name on card" = "Nom a la targeta";
 "Expiration" = "Caducitat";
 "Name" = "Nom";
+"Done" = "Fet";
+"Cancel" = "Cancel·lar";
+"Country" = "País";
+"Center your card until the fields are recognized" = "Centra la targeta fins que els camps siguin reconeguts";
+"Touch a recognized value to delete the value and try again" = "Toca un valor reconegut per eliminar-lo i tornar a intentar-ho";
+"Confirm" = "Confirmar";
+"Pay" = "Pagar";
+"Authorize Card" = "Autoritzar targeta";
+"Authorize ACH" = "Autoritzar ACH";
+"Submit" = "Enviar";

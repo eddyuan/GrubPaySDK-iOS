@@ -1,4 +1,14 @@
-"Card number" = "Nombor Kad";
-"Name on card" = "Nama pada kad";
-"Expiration" = "Tempoh sah";
+"Card number" = "Nombor kad";
+"Name on card" = "Nama di kad";
+"Expiration" = "Tammat";
 "Name" = "Nama";
+"Done" = "Selesai";
+"Cancel" = "Batal";
+"Country" = "Negara";
+"Center your card until the fields are recognized" = "Tengahkan kad anda sehingga medan dikenalpasti";
+"Touch a recognized value to delete the value and try again" = "Sentuh nilai yang dikenalpasti untuk memadam nilai dan cuba lagi";
+"Confirm" = "Sahkan";
+"Pay" = "Bayar";
+"Authorize Card" = "Benarkan Kad";
+"Authorize ACH" = "Benarkan ACH";
+"Submit" = "Hantar";
