@@ -76,6 +76,8 @@ internal class GPFormConfig {
 
 internal class GPFormController {
     // MARK: Data
+    
+    private let serverUrl = "https://api.grubpay.io/v4/"
   
     private var mounted: Bool {
         return config != nil
@@ -229,8 +231,7 @@ internal class GPFormController {
         params: [String: Any],
         completion: @escaping (Result<[String: Any], GrubPayError>) -> Void
     ) {
-        let baseUrl = "https://test.grubpay.io/laravel/api/"
-        guard let url = URL(string: baseUrl + url) else {
+        guard let url = URL(string: serverUrl + url) else {
             completion(.failure(GrubPayError.invalidUrl))
             return
         }

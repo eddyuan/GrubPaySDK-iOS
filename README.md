@@ -11,6 +11,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+- iOS 10.0+
+- iOS 13.0+ for credit card scanner (VisionKit) NSCamera usage required
+- Swift 4.0+
+
 ## Installation
 
 GrubPaySDK is available through [CocoaPods](https://cocoapods.org). To install
@@ -20,7 +24,7 @@ it, simply add the following line to your Podfile:
 pod 'GrubPaySDK'
 ```
 
-# Usage 1 - As an element (UIView)
+## Usage 1 - As an element (UIView)
 
 In this method, you will add our GrubPayElement as a UIView that contains a form for user to input. You will need to create your own submit button, and call .submit() when
 
@@ -97,7 +101,7 @@ grubpayElement.submit(saveCard: true) {
 }
 ```
 
-# Usage 2 - As a direct method, showing a modal
+## Usage 2 - As a direct method, showing a modal
 
 In this method, a modal with form and submit button will be presented, and upon success or failed, the modal will be dismissed
 
@@ -123,9 +127,9 @@ GrubPay.launch(
 }
 ```
 
-# Handle response / error
+## Handle response / error
 
-## Response
+### Response
 
 ```swift
 func handleResponse(_ response: GrubPayResponse) {
@@ -169,7 +173,7 @@ func handleResponse(_ response: GrubPayResponse) {
 }
 ```
 
-## Error
+### Error
 
 ```swift
 func handleError(_ error: GrubPayError) {
@@ -209,15 +213,15 @@ func handleError(_ error: GrubPayError) {
 }
 ```
 
-# Author
+## Author
 
 43017558, edward.yuan@iotpay.ca
 
-# License
+## License
 
 GrubPaySDK is available under the MIT license. See the LICENSE file for more info.
 
-# Full Example of a ViewController
+## Full Example of a ViewController
 
 ```swift
 //

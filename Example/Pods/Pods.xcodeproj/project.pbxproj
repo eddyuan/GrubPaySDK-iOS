@@ -75,7 +75,6 @@
 		2C0608AD2A14183F005663CC /* GPRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608AC2A14183F005663CC /* GPRadioButton.swift */; };
 		2C0608AF2A1443DF005663CC /* GPSwitch+ACHAgreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608AE2A1443DF005663CC /* GPSwitch+ACHAgreement.swift */; };
 		2C0608B12A1543CD005663CC /* GPRadioDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608B02A1543CD005663CC /* GPRadioDot.swift */; };
-		2C0608B32A159D98005663CC /* GPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608B22A159D98005663CC /* GPServer.swift */; };
 		2C0608B52A16A5ED005663CC /* GrubPayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0608B42A16A5ED005663CC /* GrubPayResponse.swift */; };
 		2C901FA72A01B61D00DADC09 /* GPPicker+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C901FA62A01B61D00DADC09 /* GPPicker+Expiry.swift */; };
 		2C9020352A0333BC00DADC09 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C90200B2A0333BC00DADC09 /* Localizable.strings */; };
@@ -208,7 +207,6 @@
 		2C0608AC2A14183F005663CC /* GPRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPRadioButton.swift; sourceTree = "<group>"; };
 		2C0608AE2A1443DF005663CC /* GPSwitch+ACHAgreement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPSwitch+ACHAgreement.swift"; sourceTree = "<group>"; };
 		2C0608B02A1543CD005663CC /* GPRadioDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPRadioDot.swift; sourceTree = "<group>"; };
-		2C0608B22A159D98005663CC /* GPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GPServer.swift; path = GrubPaySDK/Classes/GPServer.swift; sourceTree = "<group>"; };
 		2C0608B42A16A5ED005663CC /* GrubPayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GrubPayResponse.swift; path = GrubPaySDK/Classes/GrubPayResponse.swift; sourceTree = "<group>"; };
 		2C901FA62A01B61D00DADC09 /* GPPicker+Expiry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GPPicker+Expiry.swift"; sourceTree = "<group>"; };
 		2C90200C2A0333BC00DADC09 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -569,7 +567,6 @@
 				2C0608A42A13FEF5005663CC /* GPACHForm.swift */,
 				2C0029662A0EC118006909AD /* GPCardForm.swift */,
 				2C00296A2A0EF26D006909AD /* GPFormController.swift */,
-				2C0608B22A159D98005663CC /* GPServer.swift */,
 				EAEE3CD907F5D6B9ED60CA2ABC464280 /* Pod */,
 				2716BE7EC212C47230FEE74C92C03ABC /* Support Files */,
 			);
@@ -937,7 +934,6 @@
 				2C0029672A0EC118006909AD /* GPCardForm.swift in Sources */,
 				2C0336702A4505FD00E4B103 /* GPUtil.swift in Sources */,
 				2C0336802A45062300E4B103 /* GPCardOverlay.swift in Sources */,
-				2C0608B32A159D98005663CC /* GPServer.swift in Sources */,
 				2C0608A72A13FF6C005663CC /* GPInput+Routing.swift in Sources */,
 				2C0029182A09C3A2006909AD /* GPInput+Name.swift in Sources */,
 				4A82A6F80E805E824B4D9FDF8BD3E264 /* GrubPaySDK-dummy.m in Sources */,

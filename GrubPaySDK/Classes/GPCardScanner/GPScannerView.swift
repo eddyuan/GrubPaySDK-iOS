@@ -548,8 +548,6 @@ class GPScannerView: UIView {
                 didSetBoth()
             }
         }
-
-        print("cardNumberAffirm", cardNumberAffirm)
     }
 
     private func setCardDate(_ val: String?) {
@@ -579,7 +577,6 @@ class GPScannerView: UIView {
                 didSetBoth()
             }
         }
-        print("cardDateAffirm", cardDateAffirm)
     }
 
     private func tapticFeedback() {
@@ -643,14 +640,6 @@ extension GPScannerView: AVCaptureVideoDataOutputSampleBufferDelegate {
                 height: cardHeight
             )
         )
-
-//        DispatchQueue.main.async {
-//            let context = CIContext()
-//            if let cgImage = context.createCGImage(croppedImage, from: croppedImage.extent) {
-//                print("cgImage exist")
-//                self.testImage.image = UIImage(cgImage: cgImage)
-//            }
-//        }
 
         analyzer.analyz(
             ciImage: croppedImage,

@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     let mchId = "10001321"
     let loginName = "eway"
     let mchKey = "LkFe0lpxjFUU27xh9hXhPxU2yztzIcgv"
-    let requestUrl = "https://test.grubpay.io/laravel/api/auth"
+    let serverUrl = "https://api.grubpay.io/v4/"
 
     // MARK: - Properties
 
@@ -347,7 +347,7 @@ extension ViewController {
         params: [String: Any],
         completion: @escaping (Result<Data, Error>) -> Void
     ) {
-        guard let url = URL(string: url) else {
+        guard let url = URL(string: serverUrl + url) else {
             let error = NSError(domain: "Invalid URL", code: 0, userInfo: nil)
             completion(.failure(error))
             return
@@ -448,7 +448,7 @@ extension ViewController {
         )
 
         sendPOSTRequest(
-            url: requestUrl,
+            url: "auth",
             params: signedParams
         ) {
             result in

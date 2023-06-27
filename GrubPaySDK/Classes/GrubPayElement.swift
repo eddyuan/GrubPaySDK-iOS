@@ -128,9 +128,6 @@ public class GrubPayElement: UIView {
 
     private func updateViews() {
         let targetHeight: CGFloat = achForm?.frame.size.height ?? cardForm?.frame.size.height ?? 200
-
-        print("targetHeight", targetHeight)
-
         for subview in subviews {
             subview.removeFromSuperview()
         }
