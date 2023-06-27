@@ -156,6 +156,7 @@ class GrubPayVC: UIViewController {
                 self?.afterMounted()
             case .failure(let error):
                 self?.onCompletion(.failure(error))
+                self?.dismissView()
             }
         }
     }
