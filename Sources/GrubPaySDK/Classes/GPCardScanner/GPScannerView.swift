@@ -370,7 +370,7 @@ class GPScannerView: UIView {
     private func setupGuideViews() {
         layer.addSublayer(videoLayer)
         addSubview(viewGuide)
-        bringSubview(toFront: viewGuide)
+        bringSubviewToFront(viewGuide)
 //        addSubview(testImage)
         addSubview(labelCardNumber)
         addSubview(labelCardDate)

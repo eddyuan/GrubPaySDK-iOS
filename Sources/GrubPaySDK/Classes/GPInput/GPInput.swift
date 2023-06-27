@@ -233,7 +233,7 @@ class GPInput: UITextField {
     fileprivate func updatePlaceholder() {
         #if swift(>=4.2)
             attributedPlaceholder = NSAttributedString(
-                string: placeholder,
+                string: placeholder ?? "",
                 attributes: [
                     NSAttributedString.Key.foregroundColor: _placeholderColor
                 ]
@@ -404,7 +404,7 @@ class GPInput: UITextField {
             bottom: gpInputStyle.padding.bottom,
             right: gpInputStyle.padding.right + trailingWidth
         )
-        return UIEdgeInsetsInsetRect(superRect, inset)
+        return superRect.inset(by: inset)
     }
 
     fileprivate func buildLabelRect() -> CGRect {
@@ -423,7 +423,7 @@ class GPInput: UITextField {
             bottom: inputPadding.bottom,
             right: inputPadding.right + trailingWidth
         )
-        return UIEdgeInsetsInsetRect(bounds, inset)
+        return bounds.inset(by: inset)
     }
 
     fileprivate func buildBorderRect() -> CGRect {

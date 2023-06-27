@@ -7,124 +7,165 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0154882980FAA8F5A42377AE1E56B456 /* cc-amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D15D9E549C85E14A079023312E824F90 /* cc-amex@3x.png */; };
+		03EBB857D4319F48B8D6C26F3FC223CC /* GPFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4959A59AEE8E88AD370C4898343BED2 /* GPFormController.swift */; };
+		06B8BD46186B0564977047ED5E337646 /* GrubPayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5DE0EE7CAE704FBE2299C95B34859A /* GrubPayVC.swift */; };
+		0A3B875B5425C7ADC21B9E74D99CCE3E /* cc-master@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C7BDC13633D06E602106E50FFDD4911D /* cc-master@2x.png */; };
+		0BB48EB945A2C3F0D738EC00A28BB654 /* cc-bcglobal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6075FF0A8FE861A98F860C2445BECAEA /* cc-bcglobal@3x.png */; };
+		0EC1ECEE698038F72DC08A9B01CB636F /* GPInput+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FEA2A2FE4E481A0469B68FEADB58EA /* GPInput+Account.swift */; };
+		0FEF384BEBA222079FE076C044C914A5 /* no.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 628DECDAFCBE8893FAB085131555A353 /* no.lproj */; };
+		12934A62D784B08E2196B11DF2CABB48 /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FB1336583B5C07B4F2BCCF7A2CAB2F8F /* sv.lproj */; };
+		16597951210320083D92740110C06FB8 /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 51326BFE24F79EAD00082EE32980B117 /* el.lproj */; };
+		1A841C549CDE7CF43334B6FDF8C9D5E6 /* GPCardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58747E5D486B34D00EE0F6520A06D36 /* GPCardScanner.swift */; };
+		1E682B42C9D87E2F31D21EB2E31E9EBF /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 631C3AB88D801AC5A7E8A5536AB5241F /* ko.lproj */; };
 		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22AD34B23ED2AE2CE4C0E9EC4A0096F1 /* GrubPaySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3466ED50989FDFEE6EAD75B5F288D6B5 /* GrubPaySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F853C66D27B7CCA88C72162E278BCD5 /* GPInput+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE757D9A6C551926BB6A0352FDF15F34 /* GPInput+Card.swift */; };
+		20B46DEB949295CF6255C80E171AF312 /* hi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 622C9715EA2D1BA3C75BC498F289EE4C /* hi.lproj */; };
+		219B855462586A817E9F51D444026A45 /* cc-bcglobal.png in Resources */ = {isa = PBXBuildFile; fileRef = CFED1283C770309677127F0A526EF812 /* cc-bcglobal.png */; };
 		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
+		2AF8BE2098C1EA4D5AB7B64E3ADB3A54 /* fi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 94B16B942A20FA90D03025A26B2C3EBE /* fi.lproj */; };
+		2B442A0D4E1DD5004788657AE2F7E173 /* zh-HK.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3F00BA98C3046292273948EE15596396 /* zh-HK.lproj */; };
 		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C0337692A4B66AE00E4B103 /* GrubPayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F42A4B66AE00E4B103 /* GrubPayError.swift */; };
-		2C03376A2A4B66AE00E4B103 /* GPFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F52A4B66AE00E4B103 /* GPFormController.swift */; };
-		2C03376B2A4B66AE00E4B103 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F62A4B66AE00E4B103 /* Localization.swift */; };
-		2C03376C2A4B66AE00E4B103 /* GrubPayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F72A4B66AE00E4B103 /* GrubPayElement.swift */; };
-		2C03376D2A4B66AE00E4B103 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F82A4B66AE00E4B103 /* Enums.swift */; };
-		2C03376E2A4B66AE00E4B103 /* GrubPayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336F92A4B66AE00E4B103 /* GrubPayResponse.swift */; };
-		2C03376F2A4B66AE00E4B103 /* GrubPayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336FA2A4B66AE00E4B103 /* GrubPayVC.swift */; };
-		2C0337712A4B66AE00E4B103 /* GPCardAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336FD2A4B66AE00E4B103 /* GPCardAnalyzer.swift */; };
-		2C0337722A4B66AE00E4B103 /* CameraAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336FE2A4B66AE00E4B103 /* CameraAccess.swift */; };
-		2C0337732A4B66AE00E4B103 /* GPScannerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0336FF2A4B66AE00E4B103 /* GPScannerConfig.swift */; };
-		2C0337742A4B66AE00E4B103 /* GPScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337002A4B66AE00E4B103 /* GPScannerView.swift */; };
-		2C0337752A4B66AE00E4B103 /* GPCardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337012A4B66AE00E4B103 /* GPCardOverlay.swift */; };
-		2C0337762A4B66AE00E4B103 /* GPCardScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337022A4B66AE00E4B103 /* GPCardScanner.swift */; };
-		2C0337772A4B66AE00E4B103 /* GPACHForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337032A4B66AE00E4B103 /* GPACHForm.swift */; };
-		2C0337782A4B66AE00E4B103 /* GPUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337042A4B66AE00E4B103 /* GPUtil.swift */; };
-		2C0337792A4B66AE00E4B103 /* GrubPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337052A4B66AE00E4B103 /* GrubPay.swift */; };
-		2C03377A2A4B66AE00E4B103 /* GPCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337062A4B66AE00E4B103 /* GPCardForm.swift */; };
-		2C03377B2A4B66AE00E4B103 /* GPRadioDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337082A4B66AE00E4B103 /* GPRadioDot.swift */; };
-		2C03377C2A4B66AE00E4B103 /* GPInput+Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337092A4B66AE00E4B103 /* GPInput+Zip.swift */; };
-		2C03377D2A4B66AE00E4B103 /* GPInput+CVV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370A2A4B66AE00E4B103 /* GPInput+CVV.swift */; };
-		2C03377E2A4B66AE00E4B103 /* GPInput+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370B2A4B66AE00E4B103 /* GPInput+Card.swift */; };
-		2C03377F2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370C2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift */; };
-		2C0337802A4B66AE00E4B103 /* GrubPayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370D2A4B66AE00E4B103 /* GrubPayButton.swift */; };
-		2C0337812A4B66AE00E4B103 /* GPInput+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370E2A4B66AE00E4B103 /* GPInput+Style.swift */; };
-		2C0337822A4B66AE00E4B103 /* GPInput+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C03370F2A4B66AE00E4B103 /* GPInput+Expiry.swift */; };
-		2C0337832A4B66AE00E4B103 /* GPRadio+AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337102A4B66AE00E4B103 /* GPRadio+AccountType.swift */; };
-		2C0337842A4B66AE00E4B103 /* GPPicker+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337112A4B66AE00E4B103 /* GPPicker+Expiry.swift */; };
-		2C0337852A4B66AE00E4B103 /* GPInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337122A4B66AE00E4B103 /* GPInput.swift */; };
-		2C0337862A4B66AE00E4B103 /* GPInput+Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337132A4B66AE00E4B103 /* GPInput+Account.swift */; };
-		2C0337872A4B66AE00E4B103 /* GPPicker+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337142A4B66AE00E4B103 /* GPPicker+Country.swift */; };
-		2C0337882A4B66AE00E4B103 /* GPInput+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337152A4B66AE00E4B103 /* GPInput+Util.swift */; };
-		2C0337892A4B66AE00E4B103 /* GPRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337162A4B66AE00E4B103 /* GPRadioButton.swift */; };
-		2C03378A2A4B66AE00E4B103 /* GPInput+Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337172A4B66AE00E4B103 /* GPInput+Routing.swift */; };
-		2C03378B2A4B66AE00E4B103 /* GPInput+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337182A4B66AE00E4B103 /* GPInput+Name.swift */; };
-		2C03378C2A4B66AE00E4B103 /* GPInput+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0337192A4B66AE00E4B103 /* GPInput+Country.swift */; };
-		2C03378E2A4B66AE00E4B103 /* cc-visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03371C2A4B66AE00E4B103 /* cc-visa@2x.png */; };
-		2C03378F2A4B66AE00E4B103 /* cc-discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03371D2A4B66AE00E4B103 /* cc-discover.png */; };
-		2C0337902A4B66AE00E4B103 /* cc-maestro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03371E2A4B66AE00E4B103 /* cc-maestro.png */; };
-		2C0337912A4B66AE00E4B103 /* cc-visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03371F2A4B66AE00E4B103 /* cc-visa@3x.png */; };
-		2C0337922A4B66AE00E4B103 /* cc-jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337202A4B66AE00E4B103 /* cc-jcb@3x.png */; };
-		2C0337932A4B66AE00E4B103 /* cc-cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337212A4B66AE00E4B103 /* cc-cvc@2x.png */; };
-		2C0337942A4B66AE00E4B103 /* cc-discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337222A4B66AE00E4B103 /* cc-discover@3x.png */; };
-		2C0337952A4B66AE00E4B103 /* cc-dinner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337232A4B66AE00E4B103 /* cc-dinner@3x.png */; };
-		2C0337962A4B66AE00E4B103 /* cc-maestro@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337242A4B66AE00E4B103 /* cc-maestro@3x.png */; };
-		2C0337972A4B66AE00E4B103 /* cc-master@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337252A4B66AE00E4B103 /* cc-master@2x.png */; };
-		2C0337982A4B66AE00E4B103 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337262A4B66AE00E4B103 /* .gitkeep */; };
-		2C0337992A4B66AE00E4B103 /* cc-generic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337272A4B66AE00E4B103 /* cc-generic@3x.png */; };
-		2C03379A2A4B66AE00E4B103 /* cc-amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337282A4B66AE00E4B103 /* cc-amex.png */; };
-		2C03379B2A4B66AE00E4B103 /* cc-generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337292A4B66AE00E4B103 /* cc-generic@2x.png */; };
-		2C03379C2A4B66AE00E4B103 /* cc-cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372A2A4B66AE00E4B103 /* cc-cvc.png */; };
-		2C03379D2A4B66AE00E4B103 /* cc-master@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372B2A4B66AE00E4B103 /* cc-master@3x.png */; };
-		2C03379E2A4B66AE00E4B103 /* cc-dinner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372C2A4B66AE00E4B103 /* cc-dinner@2x.png */; };
-		2C03379F2A4B66AE00E4B103 /* cc-maestro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372D2A4B66AE00E4B103 /* cc-maestro@2x.png */; };
-		2C0337A02A4B66AE00E4B103 /* cc-cvc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372E2A4B66AE00E4B103 /* cc-cvc@3x.png */; };
-		2C0337A12A4B66AE00E4B103 /* cc-discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03372F2A4B66AE00E4B103 /* cc-discover@2x.png */; };
-		2C0337A22A4B66AE00E4B103 /* cc-jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337302A4B66AE00E4B103 /* cc-jcb@2x.png */; };
-		2C0337A32A4B66AE00E4B103 /* cc-amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337312A4B66AE00E4B103 /* cc-amex@2x.png */; };
-		2C0337A42A4B66AE00E4B103 /* cc-amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337322A4B66AE00E4B103 /* cc-amex@3x.png */; };
-		2C0337A52A4B66AE00E4B103 /* cc-dinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337332A4B66AE00E4B103 /* cc-dinner.png */; };
-		2C0337A62A4B66AE00E4B103 /* cc-bcglobal.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337342A4B66AE00E4B103 /* cc-bcglobal.png */; };
-		2C0337A72A4B66AE00E4B103 /* cc-unionpay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337352A4B66AE00E4B103 /* cc-unionpay@2x.png */; };
-		2C0337A82A4B66AE00E4B103 /* cc-unionpay.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337362A4B66AE00E4B103 /* cc-unionpay.png */; };
-		2C0337A92A4B66AE00E4B103 /* cc-bcglobal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337372A4B66AE00E4B103 /* cc-bcglobal@3x.png */; };
-		2C0337AA2A4B66AE00E4B103 /* cc-bcglobal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337382A4B66AE00E4B103 /* cc-bcglobal@2x.png */; };
-		2C0337AB2A4B66AE00E4B103 /* cc-visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C0337392A4B66AE00E4B103 /* cc-visa.png */; };
-		2C0337AC2A4B66AE00E4B103 /* cc-master.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373A2A4B66AE00E4B103 /* cc-master.png */; };
-		2C0337AD2A4B66AE00E4B103 /* cc-unionpay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373B2A4B66AE00E4B103 /* cc-unionpay@3x.png */; };
-		2C0337AE2A4B66AE00E4B103 /* cc-generic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373C2A4B66AE00E4B103 /* cc-generic.png */; };
-		2C0337AF2A4B66AE00E4B103 /* cc-jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373D2A4B66AE00E4B103 /* cc-jcb.png */; };
-		2C0337B02A4B66AE00E4B103 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C03373F2A4B66AE00E4B103 /* Localizable.strings */; };
 		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
-		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		2D7C294403B0A4B82DA60654726190D7 /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4599F194245DC824BAD01A2EE1B1D89F /* cs.lproj */; };
+		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7440F70BD68993032F563F354BD3B /* Foundation.framework */; };
+		30144132BCA573025CDA25C02684CD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7440F70BD68993032F563F354BD3B /* Foundation.framework */; };
 		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
 		33DFFB2FF6E320468B348B485DD45D7E /* Pods-GrubPaySDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124BE762C46BF8B57919DDA18DE9F124 /* Pods-GrubPaySDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3627ECE092149BC6B1F52FFECB7E3320 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 50DD606E2A3821C12AF6877395D31D58 /* nl.lproj */; };
 		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		4A82A6F80E805E824B4D9FDF8BD3E264 /* GrubPaySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA002712F930F823DEFFE56832586CF6 /* GrubPaySDK-dummy.m */; };
+		38C8AF24C59A02A2BE20E5EC0F06A8D7 /* GPRadio+AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E03A334B401DA7C0011BA6A5962A52 /* GPRadio+AccountType.swift */; };
+		3BD653FEBABDFC9D280264E09C4601A4 /* fr_CA.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 12ED6653B6F9807DC6255680602A2A77 /* fr_CA.lproj */; };
+		3CA6045B979C9110AC045C77FC2F3172 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 465F1EA4BA49701DF8ADF799C6123BC4 /* zh-Hant.lproj */; };
+		3CC8703D7D9E003190D6F11AB059169B /* GPRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684DD86929AA1FE65B0C9B77BEA92748 /* GPRadioButton.swift */; };
+		3E6EE9480E2F131E4277EA6CE73AD708 /* uk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C7C46F2C5178C9B681CA7DE8711D86F3 /* uk.lproj */; };
+		41CB605EE83CBCCFBE677A0EF52CB3DA /* cc-master@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F66C91C7C17A4014890BC4D47072BF2B /* cc-master@3x.png */; };
+		41F411529C0C3694A5CCBEFEBE501B02 /* GPInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279D1779587A7D918A87D1D2E9C6BBAA /* GPInput.swift */; };
+		42745A2450366879CB2E305196D1C7AE /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 067CE7AF596642E3BDF0A11335048540 /* tr.lproj */; };
+		463508A52E158AADF29DB7A0323A86FE /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E30EA2024FBF43A179ED7222BE35CA01 /* ar.lproj */; };
+		46B6A54F46125DD7161E658AD579B40C /* cc-jcb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF35EB584AD9749499F10768194CFD4A /* cc-jcb@3x.png */; };
+		46DC92FDBE1EF637A6A8661558851F7E /* pt_BR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C36F40A03478D846C98D5C0A89A70E1B /* pt_BR.lproj */; };
+		47F10518F4485C5F41295BBBFA0DD3E3 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CAA9FA89134170D195B7EA3B43D9FD97 /* hu.lproj */; };
+		48C72987194FD4E82662361C56150093 /* cc-maestro@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7C4AB184001DA88D120DB4556B3AEB /* cc-maestro@3x.png */; };
+		4A0EF0DC4A2D2714E3CBD8589C035F3B /* cc-visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A33E28884DB13BF9B8F96805514C50 /* cc-visa@3x.png */; };
+		4A390B8286D97E73C0E617C178526067 /* cc-jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54DAF5FBC094DEFB783D65EB703B6745 /* cc-jcb@2x.png */; };
+		4CC07DE1E96B028F18DF0939B31C6D15 /* GPCardAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F69671E8818C4AD30B0B486C32A430C /* GPCardAnalyzer.swift */; };
+		506ED5F9E549EE496D1FDA7CE8B0A58C /* th.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 79CD98C5501D677BF56F66B4D6FE15F5 /* th.lproj */; };
+		517D561BBB7B347EB3A9F513BBDA58C0 /* cc-dinner.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B9D42AFEBFC444708FDB76BD6D2988 /* cc-dinner.png */; };
+		548FB8DD29D405B853D3F6C877823CA3 /* cc-amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ECA0B7B26B0DAD8BACF183CB607BD9C /* cc-amex.png */; };
 		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		559AE98E20DCEB561E5759D3B3554B4C /* cc-discover@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 317D601F332D4BC21788671F1D703759 /* cc-discover@3x.png */; };
+		593969CDC8055999A118C98A3CC861D5 /* cc-visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3320E1EA818606B3920B2369A8E07C42 /* cc-visa@2x.png */; };
+		5B9A33A1D9F58FE4FDE68548283D69D6 /* GPCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB68777ABDF136FD752B1D156EB4B8A /* GPCardForm.swift */; };
+		5BBACEDC9A2908050FC6F71229D97122 /* zh-CN.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4A92DA393AC517F2C804751B3FF0FF79 /* zh-CN.lproj */; };
 		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
+		5BF7266DA26334FFCCC59D2178AD8114 /* he.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CA9C2C85D0982FB91DC388540519B553 /* he.lproj */; };
+		5DBDD0A5A2027D9142A636C260C2EDBA /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 25A05DCEB76A9C2F712162D219220B3C /* da.lproj */; };
+		639A6E915779ADE0053EED7201A2D5DE /* sk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0B7177210B8BDB85A02A0757F7BF2AD8 /* sk.lproj */; };
 		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		69369F8232A7A432BA9D57D3E76AD6C1 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 581155BA46F45F75096900C4513278C4 /* fr.lproj */; };
+		695262F5494359A75FF2BFFC48272623 /* GPRadioDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8776AE5B6C4A51FF5F2A11F62C6110A0 /* GPRadioDot.swift */; };
+		6958BF51E95B6523352E614F55C14650 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 20A1861E1E370B4DF706C47D78B46BFB /* ru.lproj */; };
+		6AC9899677ED4587B5135083BE3FD800 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6B708FD20F0673D292B2A6ADD7361D2F /* es.lproj */; };
+		6B3D571F44A3A13CD3CC62CF1F256E6F /* cc-jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E414E1BC7DDE3A0B766C42728DEB90 /* cc-jcb.png */; };
+		6CCBCFDBE5A23DFAC99C6DF6B43AFB71 /* GPInput+Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F43B5011A5D62DFE5E152BA5A16AA3 /* GPInput+Routing.swift */; };
+		6D1D40BAA3EF74218C73EB6BB8C74E1E /* GPPicker+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E01D4116DE012A169B2A0C4357727AC /* GPPicker+Country.swift */; };
+		6F3C6DF3329371330CE519676B5DD872 /* GPInput+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8FFB7E67E9A745B1CF27C7F3B52226 /* GPInput+Util.swift */; };
+		706031288AB7AE9F21FAFE1693A25D8F /* cc-visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D13AFEF70C988338A59131D53E8B961 /* cc-visa.png */; };
 		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		745E528729EE7401745CAF4A737F8FA8 /* Pods-GrubPaySDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 438A476FF009CD43B560951370079D94 /* Pods-GrubPaySDK_Example-dummy.m */; };
+		76BD27F74C2FBBC753A74EE331CBB93F /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7F61F72E78A3D0C53708D220DA2CCA7D /* ja.lproj */; };
+		778011ECE73018AC1C7D48DC3FC3B95A /* cc-unionpay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1C3F3E08A0B0E89A8C5234B805AF786 /* cc-unionpay@2x.png */; };
+		77B96DEF78C5794B04CC6B581F7498B2 /* cc-dinner@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED714E093E9EE2F6177F9DE10544946C /* cc-dinner@3x.png */; };
+		7A347CA352AD49B43B6BF75A6DB8A326 /* cc-generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 559F8732745A70A0761FC2F7C373AD8B /* cc-generic@2x.png */; };
+		7BA5497B5D261B16F1BB76C2BA8B05C1 /* GrubPaySDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9194A829083A56D3963E855F6FEE4243 /* GrubPaySDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
-		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
+		7EDB8713C8538E2A833C681E016DA9CD /* GPInput+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3708B2E3FDC7620511EBD9E050F18224 /* GPInput+Name.swift */; };
+		7EF9F062018CDAB9A317A7E9F339D491 /* GPUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF8AB641565375E5A2AD1E9318A9330 /* GPUtil.swift */; };
+		7FD929B2342EC2B1A07009691906CEF8 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 17B68A46CE62C45C44CD8F62D40474A4 /* en.lproj */; };
+		813D492AB8F875FCB3D4A97623C80BBA /* es_419.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 94F11858CC5403CBE90F7D32AFF7CB53 /* es_419.lproj */; };
+		81A6DB89092760D3C423B1F95985F83C /* GPInput+Zip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9879030CF9F0B22C6D2AEDB4675F5691 /* GPInput+Zip.swift */; };
+		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8BB7A6014FA7D7033A57D72D45D3C3 /* UIKit.framework */; };
+		8AD97C734D91C84A7704595984E2A602 /* GrubPay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B415E9494BD8BD8B380EC63C15FA80D3 /* GrubPay.swift */; };
 		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8BBC0A84551850581618CD7AC0D27074 /* cc-cvc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D084555CA61C441BEC64338E11C9BC87 /* cc-cvc@3x.png */; };
+		8D9F3316518FD698B10190F38761EA80 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FA480E25B4739422C3E0DD88F190254B /* vi.lproj */; };
+		8EB57E510E51B29F82C1D78700AB1A01 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 47007B2ADDF5FD14C7607F6BE44C90C6 /* zh-Hans.lproj */; };
+		9090FF547BE92F843456CA4800A28DA5 /* GPSwitch+ACHAgreement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850916F68EFF72ED991FF52AFA5C11E /* GPSwitch+ACHAgreement.swift */; };
+		9313338CFAA4C4A07BFB0EAD4E4E2687 /* GrubPayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DCFCBDAEB7FE60B6BDD5124FF36DD /* GrubPayResponse.swift */; };
+		949A1F125D78050DB6D8E5D74FA9A5BA /* cc-unionpay@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4C9564C7307565CF530258FF2829B7 /* cc-unionpay@3x.png */; };
+		9A6B6EAF6B96B29116486752CC84B4C2 /* cc-unionpay.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EA6DB30825F2340F48A65D620D3FF2 /* cc-unionpay.png */; };
 		9B4A5BAE661D648534426CA2FC202274 /* Pods-GrubPaySDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F317602BF41007CD2C92141BA5E8AF4 /* Pods-GrubPaySDK_Tests-dummy.m */; };
-		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
+		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5F1ECCE0C433424F3BF5DE1FB77FEC /* XCTest.framework */; };
+		A181B07D58AFA3403AD7615BF74B4AB7 /* GPInput+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B913BD99CB4558F88163B27AD1D7B4 /* GPInput+Expiry.swift */; };
+		A4240A0F7DC7A49787A97BD7A39BECB3 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 402EB5768ACE6C38DEFCA5DE2F4FC9DC /* it.lproj */; };
+		A655F26528115D234BFC99DE1FD0558D /* cc-maestro.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F2B38BEB63C1146D3E6979456EE8DB1 /* cc-maestro.png */; };
+		A742442A7492451CC49BF4E90D0D95C8 /* GrubPaySDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6387A4947873C03D8846EC6E16021A07 /* GrubPaySDK-dummy.m */; };
 		A81B693D616BE8545304F1E98719BDCC /* Pods-GrubPaySDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ABFB724C989A5462683BCD0361AE421 /* Pods-GrubPaySDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA773F4B301BA8ED877AF9CBE2EA2CCB /* GrubPayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE9765048D56097FEE920A529B04906 /* GrubPayButton.swift */; };
+		AD489CE0FDA277041CFC02063DE8EEB9 /* cc-discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C46BDE5916316F3C0C4A7FC16ED55F2 /* cc-discover@2x.png */; };
+		ADBA21EFEF270E5BFC19EBDD94B51259 /* zh-TW.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4E25063AA2FE8074D7F09A7BC84D7094 /* zh-TW.lproj */; };
+		AFE63502DD58C9304BA86F3F81FFB572 /* cc-bcglobal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B147D08D9FD442EA8A9ACAF0A5650A /* cc-bcglobal@2x.png */; };
+		B20BE680D5120CD2BD4544795793F30D /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D849E52005D36439AEFBA6DE38F1B3AC /* id.lproj */; };
+		B386DF41B3AAE54FF1335708FE8F20FB /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B9964AD48005EE5B7A63DB5A5C624 /* Localization.swift */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
-		B5DC6AF043D27D424D036331D63BD96D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		B757288C15ECBA2D1FE014330A82349B /* GPACHForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7025F5DA70C21CC54139584D592556 /* GPACHForm.swift */; };
+		B7D4274CA14D8747975AC7BAF846C917 /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1BF604348AD438F5691C7C5491E599C7 /* ro.lproj */; };
+		B91E2D3362EDCED4F2C13652FF50B52C /* cc-cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A4B74F4EE09A458C9D5968241D43574 /* cc-cvc.png */; };
+		B98E82CCED1DA25909C7CFF7A87D6F55 /* cc-master.png in Resources */ = {isa = PBXBuildFile; fileRef = B38BEFFECF6CFB2BFE6265E4F7ECDE63 /* cc-master.png */; };
+		BA18EE80DE12FF4AD0A291E5B85CA23F /* cc-generic.png in Resources */ = {isa = PBXBuildFile; fileRef = D1013C669A3B582E805D76CF6ACE378E /* cc-generic.png */; };
+		BA28216FA0FFB445E98585E41670DA57 /* pt_PT.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 29893A9B61FF77F953E4F447D40DF9A8 /* pt_PT.lproj */; };
+		BC77C5BC10ED265186993F34175191DB /* GPScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092589C745EE404E1DB137165F0D4532 /* GPScannerView.swift */; };
+		BCE8CEB1B255F5F6D8060876E53180F1 /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 013014314B8969C8A20C891D56F8EF3C /* ca.lproj */; };
+		C059B6D80FEA8D3416C32640381CB5C7 /* cc-amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3873993DFD070A4D9BB31274EC091651 /* cc-amex@2x.png */; };
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
-		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
+		C4C0D0ABE63C6048901FBB530B4B3795 /* GrubPayElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637367EC506817F01AFA90ACE689477C /* GrubPayElement.swift */; };
+		C84D8CE65125B38EA329C039163B63FE /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 43BA55808D367FD2E0518505D4CCDA05 /* de.lproj */; };
+		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC9D1595DB3D2CFF9043D76889AEA0 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		E0A2ADE63A9999671AC6190FA88D153D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		F63933AE089493BC1FA943CD54FF6F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		CC079D4D6D431D2DEC9DBBA87A7751B9 /* GPInput+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D25F00717B4AA46BF3BEBEEF86312D1 /* GPInput+Style.swift */; };
+		CDD13B618F94A433F4088159EB49251D /* GPInput+CVV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780924CCF7FA0A09F26D1F0055741EA7 /* GPInput+CVV.swift */; };
+		CE2F65E731CE46F87AE9A90D4D21FCC4 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2B7CE5A24C0760ADE61A208836A1E44F /* pl.lproj */; };
+		D14C23BF04A26433EB26A51C050F877C /* GPScannerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA642A4C822DB4B4764F435E75BD130 /* GPScannerConfig.swift */; };
+		D2846F1C4B4C925AB7AEDB7A94DDCF6F /* GPInput+Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E019268FBB4D0027184250EC4ECC4A /* GPInput+Country.swift */; };
+		D41C4CD76F7A01C109A8A81481088D96 /* GPPicker+Expiry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACB5BD953DB328259D60F6AD03F91E1 /* GPPicker+Expiry.swift */; };
+		D6CB7ECE99FA472AB71900F800764BD8 /* en_AU.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D8795F86B0C2623D664060BF2DFD92E5 /* en_AU.lproj */; };
+		D86B613B06C2A50AAE687ED7F96C6DCD /* VisionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C117F73A0A4EA57C86AB3684D1A7A4 /* VisionKit.framework */; };
+		DC727E1CCEA739C3C862950AD938983C /* cc-maestro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB531B0D9C5A4F96D984A43A9ABCF96A /* cc-maestro@2x.png */; };
+		DCA01B91C97AF92C918ED40903FF8937 /* cc-cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433E18B74B47E7F93E4906F8F81488B2 /* cc-cvc@2x.png */; };
+		E0A2ADE63A9999671AC6190FA88D153D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7440F70BD68993032F563F354BD3B /* Foundation.framework */; };
+		E16618B0025D582E2097DE2F81217A2E /* hr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2DA5E99078CCC30EE602D57FD0F3A1FF /* hr.lproj */; };
+		E48DDEFCAAC08702AF54E9BB8E6E3414 /* GPCardOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1D6C13C26206B067DC4D91730845B4 /* GPCardOverlay.swift */; };
+		E5F242DBF32E15E57FE4E38809CE0B70 /* CameraAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33E8419835182271D16E74E392E0FD7 /* CameraAccess.swift */; };
+		E70AD26476EE8ADA87A18CFA32526C91 /* cc-dinner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEBCC4265D4E62A4014C3BD91728C15E /* cc-dinner@2x.png */; };
+		E7C05BDA5112A21CE8550E33EEEA2CEA /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = AA137CB799D9504C57876501840396DA /* ms.lproj */; };
+		EA2DBBA1491C38B2E912F9D28AC84D10 /* cc-discover.png in Resources */ = {isa = PBXBuildFile; fileRef = 032C7AC2467335D041F079ECDF457D0F /* cc-discover.png */; };
+		EA64AC325D8E02D9C82C68CADC88FA63 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8BB7A6014FA7D7033A57D72D45D3C3 /* UIKit.framework */; };
+		F192B94F5DF9BA4E9B4F1BD41D397CF1 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8D0C761AA2A953D9924CE2592F2DA6 /* Enums.swift */; };
+		F63933AE089493BC1FA943CD54FF6F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7440F70BD68993032F563F354BD3B /* Foundation.framework */; };
+		F701E51035315FACA6CA17B1AF3712F3 /* GrubPayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 597F32B047FC370FF8512DE28C6B138E /* GrubPayError.swift */; };
+		F73E1B275CF492081C37FA0995F68E53 /* en_GB.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 44166BD7A03F8A2940649D145A8F00BE /* en_GB.lproj */; };
+		FA9C42E046FF649563857D0AE612F8FA /* cc-generic@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1D97086C48362E1AB3BF2830BFC630 /* cc-generic@3x.png */; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		12FF64385CFAACCB7612AB8868CFC0AC /* PBXContainerItemProxy */ = {
+		0C303A45D01412A731C883C0036471C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
 			remoteInfo = FBSnapshotTestCase;
 		};
-		1A5EC94A8F43A915B59A6E780B4A6380 /* PBXContainerItemProxy */ = {
+		78443D8A76806054685EEB5D75C98824 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7B78181CEE004200C39D588BF34625D1;
 			remoteInfo = GrubPaySDK;
 		};
-		841FF93C7413C9AE5E9EB651D26EB174 /* PBXContainerItemProxy */ = {
+		EDD29DC60307243AA01F9150DF414AEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -134,183 +175,185 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		013014314B8969C8A20C891D56F8EF3C /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ca.lproj; sourceTree = "<group>"; };
+		032C7AC2467335D041F079ECDF457D0F /* cc-discover.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-discover.png"; sourceTree = "<group>"; };
 		033293CA61A3BBCB97BCAD59CFE6F536 /* Pods_GrubPaySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrubPaySDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B9D42AFEBFC444708FDB76BD6D2988 /* cc-dinner.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-dinner.png"; sourceTree = "<group>"; };
+		067CE7AF596642E3BDF0A11335048540 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = tr.lproj; sourceTree = "<group>"; };
+		092589C745EE404E1DB137165F0D4532 /* GPScannerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GPScannerView.swift; sourceTree = "<group>"; };
+		09A896223F49EE11EA92E67AFC65A132 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0B7177210B8BDB85A02A0757F7BF2AD8 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = sk.lproj; sourceTree = "<group>"; };
+		0D36E242DB2567B14D0E308A9415998A /* GrubPaySDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GrubPaySDK-Info.plist"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		0F69671E8818C4AD30B0B486C32A430C /* GPCardAnalyzer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GPCardAnalyzer.swift; sourceTree = "<group>"; };
+		11FC9D1595DB3D2CFF9043D76889AEA0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		124BE762C46BF8B57919DDA18DE9F124 /* Pods-GrubPaySDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GrubPaySDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		128A5887E805EEA192A51CE2FBE9CD06 /* GrubPaySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GrubPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		128A5887E805EEA192A51CE2FBE9CD06 /* GrubPaySDK */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GrubPaySDK; path = GrubPaySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12ED6653B6F9807DC6255680602A2A77 /* fr_CA.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fr_CA.lproj; sourceTree = "<group>"; };
+		17B68A46CE62C45C44CD8F62D40474A4 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1BF604348AD438F5691C7C5491E599C7 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ro.lproj; sourceTree = "<group>"; };
+		1C46BDE5916316F3C0C4A7FC16ED55F2 /* cc-discover@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-discover@2x.png"; sourceTree = "<group>"; };
+		1C4C9564C7307565CF530258FF2829B7 /* cc-unionpay@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-unionpay@3x.png"; sourceTree = "<group>"; };
+		1C5DE0EE7CAE704FBE2299C95B34859A /* GrubPayVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrubPayVC.swift; path = Sources/GrubPaySDK/Classes/GrubPayVC.swift; sourceTree = "<group>"; };
+		1D13AFEF70C988338A59131D53E8B961 /* cc-visa.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-visa.png"; sourceTree = "<group>"; };
+		20A1861E1E370B4DF706C47D78B46BFB /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ru.lproj; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		254DE6CDBA97A51BA245006AA8A97C3E /* Pods-GrubPaySDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrubPaySDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		25A05DCEB76A9C2F712162D219220B3C /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = da.lproj; sourceTree = "<group>"; };
+		275144E347E7C3BDEBEA9DDEDD79E250 /* GrubPaySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrubPaySDK-prefix.pch"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		279D1779587A7D918A87D1D2E9C6BBAA /* GPInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GPInput.swift; sourceTree = "<group>"; };
 		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		2C0336F42A4B66AE00E4B103 /* GrubPayError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayError.swift; sourceTree = "<group>"; };
-		2C0336F52A4B66AE00E4B103 /* GPFormController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPFormController.swift; sourceTree = "<group>"; };
-		2C0336F62A4B66AE00E4B103 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
-		2C0336F72A4B66AE00E4B103 /* GrubPayElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayElement.swift; sourceTree = "<group>"; };
-		2C0336F82A4B66AE00E4B103 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
-		2C0336F92A4B66AE00E4B103 /* GrubPayResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayResponse.swift; sourceTree = "<group>"; };
-		2C0336FA2A4B66AE00E4B103 /* GrubPayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayVC.swift; sourceTree = "<group>"; };
-		2C0336FD2A4B66AE00E4B103 /* GPCardAnalyzer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardAnalyzer.swift; sourceTree = "<group>"; };
-		2C0336FE2A4B66AE00E4B103 /* CameraAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraAccess.swift; sourceTree = "<group>"; };
-		2C0336FF2A4B66AE00E4B103 /* GPScannerConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPScannerConfig.swift; sourceTree = "<group>"; };
-		2C0337002A4B66AE00E4B103 /* GPScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPScannerView.swift; sourceTree = "<group>"; };
-		2C0337012A4B66AE00E4B103 /* GPCardOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardOverlay.swift; sourceTree = "<group>"; };
-		2C0337022A4B66AE00E4B103 /* GPCardScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardScanner.swift; sourceTree = "<group>"; };
-		2C0337032A4B66AE00E4B103 /* GPACHForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPACHForm.swift; sourceTree = "<group>"; };
-		2C0337042A4B66AE00E4B103 /* GPUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPUtil.swift; sourceTree = "<group>"; };
-		2C0337052A4B66AE00E4B103 /* GrubPay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPay.swift; sourceTree = "<group>"; };
-		2C0337062A4B66AE00E4B103 /* GPCardForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPCardForm.swift; sourceTree = "<group>"; };
-		2C0337082A4B66AE00E4B103 /* GPRadioDot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPRadioDot.swift; sourceTree = "<group>"; };
-		2C0337092A4B66AE00E4B103 /* GPInput+Zip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Zip.swift"; sourceTree = "<group>"; };
-		2C03370A2A4B66AE00E4B103 /* GPInput+CVV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+CVV.swift"; sourceTree = "<group>"; };
-		2C03370B2A4B66AE00E4B103 /* GPInput+Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Card.swift"; sourceTree = "<group>"; };
-		2C03370C2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPSwitch+ACHAgreement.swift"; sourceTree = "<group>"; };
-		2C03370D2A4B66AE00E4B103 /* GrubPayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrubPayButton.swift; sourceTree = "<group>"; };
-		2C03370E2A4B66AE00E4B103 /* GPInput+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Style.swift"; sourceTree = "<group>"; };
-		2C03370F2A4B66AE00E4B103 /* GPInput+Expiry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Expiry.swift"; sourceTree = "<group>"; };
-		2C0337102A4B66AE00E4B103 /* GPRadio+AccountType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPRadio+AccountType.swift"; sourceTree = "<group>"; };
-		2C0337112A4B66AE00E4B103 /* GPPicker+Expiry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPPicker+Expiry.swift"; sourceTree = "<group>"; };
-		2C0337122A4B66AE00E4B103 /* GPInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPInput.swift; sourceTree = "<group>"; };
-		2C0337132A4B66AE00E4B103 /* GPInput+Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Account.swift"; sourceTree = "<group>"; };
-		2C0337142A4B66AE00E4B103 /* GPPicker+Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPPicker+Country.swift"; sourceTree = "<group>"; };
-		2C0337152A4B66AE00E4B103 /* GPInput+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Util.swift"; sourceTree = "<group>"; };
-		2C0337162A4B66AE00E4B103 /* GPRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPRadioButton.swift; sourceTree = "<group>"; };
-		2C0337172A4B66AE00E4B103 /* GPInput+Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Routing.swift"; sourceTree = "<group>"; };
-		2C0337182A4B66AE00E4B103 /* GPInput+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Name.swift"; sourceTree = "<group>"; };
-		2C0337192A4B66AE00E4B103 /* GPInput+Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GPInput+Country.swift"; sourceTree = "<group>"; };
-		2C03371C2A4B66AE00E4B103 /* cc-visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa@2x.png"; sourceTree = "<group>"; };
-		2C03371D2A4B66AE00E4B103 /* cc-discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover.png"; sourceTree = "<group>"; };
-		2C03371E2A4B66AE00E4B103 /* cc-maestro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro.png"; sourceTree = "<group>"; };
-		2C03371F2A4B66AE00E4B103 /* cc-visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa@3x.png"; sourceTree = "<group>"; };
-		2C0337202A4B66AE00E4B103 /* cc-jcb@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb@3x.png"; sourceTree = "<group>"; };
-		2C0337212A4B66AE00E4B103 /* cc-cvc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc@2x.png"; sourceTree = "<group>"; };
-		2C0337222A4B66AE00E4B103 /* cc-discover@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover@3x.png"; sourceTree = "<group>"; };
-		2C0337232A4B66AE00E4B103 /* cc-dinner@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner@3x.png"; sourceTree = "<group>"; };
-		2C0337242A4B66AE00E4B103 /* cc-maestro@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro@3x.png"; sourceTree = "<group>"; };
-		2C0337252A4B66AE00E4B103 /* cc-master@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master@2x.png"; sourceTree = "<group>"; };
-		2C0337262A4B66AE00E4B103 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		2C0337272A4B66AE00E4B103 /* cc-generic@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic@3x.png"; sourceTree = "<group>"; };
-		2C0337282A4B66AE00E4B103 /* cc-amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex.png"; sourceTree = "<group>"; };
-		2C0337292A4B66AE00E4B103 /* cc-generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic@2x.png"; sourceTree = "<group>"; };
-		2C03372A2A4B66AE00E4B103 /* cc-cvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc.png"; sourceTree = "<group>"; };
-		2C03372B2A4B66AE00E4B103 /* cc-master@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master@3x.png"; sourceTree = "<group>"; };
-		2C03372C2A4B66AE00E4B103 /* cc-dinner@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner@2x.png"; sourceTree = "<group>"; };
-		2C03372D2A4B66AE00E4B103 /* cc-maestro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-maestro@2x.png"; sourceTree = "<group>"; };
-		2C03372E2A4B66AE00E4B103 /* cc-cvc@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-cvc@3x.png"; sourceTree = "<group>"; };
-		2C03372F2A4B66AE00E4B103 /* cc-discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-discover@2x.png"; sourceTree = "<group>"; };
-		2C0337302A4B66AE00E4B103 /* cc-jcb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb@2x.png"; sourceTree = "<group>"; };
-		2C0337312A4B66AE00E4B103 /* cc-amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex@2x.png"; sourceTree = "<group>"; };
-		2C0337322A4B66AE00E4B103 /* cc-amex@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-amex@3x.png"; sourceTree = "<group>"; };
-		2C0337332A4B66AE00E4B103 /* cc-dinner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-dinner.png"; sourceTree = "<group>"; };
-		2C0337342A4B66AE00E4B103 /* cc-bcglobal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal.png"; sourceTree = "<group>"; };
-		2C0337352A4B66AE00E4B103 /* cc-unionpay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay@2x.png"; sourceTree = "<group>"; };
-		2C0337362A4B66AE00E4B103 /* cc-unionpay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay.png"; sourceTree = "<group>"; };
-		2C0337372A4B66AE00E4B103 /* cc-bcglobal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal@3x.png"; sourceTree = "<group>"; };
-		2C0337382A4B66AE00E4B103 /* cc-bcglobal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-bcglobal@2x.png"; sourceTree = "<group>"; };
-		2C0337392A4B66AE00E4B103 /* cc-visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-visa.png"; sourceTree = "<group>"; };
-		2C03373A2A4B66AE00E4B103 /* cc-master.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-master.png"; sourceTree = "<group>"; };
-		2C03373B2A4B66AE00E4B103 /* cc-unionpay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-unionpay@3x.png"; sourceTree = "<group>"; };
-		2C03373C2A4B66AE00E4B103 /* cc-generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-generic.png"; sourceTree = "<group>"; };
-		2C03373D2A4B66AE00E4B103 /* cc-jcb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-jcb.png"; sourceTree = "<group>"; };
-		2C0337402A4B66AE00E4B103 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337412A4B66AE00E4B103 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337422A4B66AE00E4B103 /* en_AU */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_AU; path = en_AU.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337432A4B66AE00E4B103 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337442A4B66AE00E4B103 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337452A4B66AE00E4B103 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C0337462A4B66AE00E4B103 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337472A4B66AE00E4B103 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C0337482A4B66AE00E4B103 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337492A4B66AE00E4B103 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03374A2A4B66AE00E4B103 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C03374B2A4B66AE00E4B103 /* es_419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es_419; path = es_419.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03374C2A4B66AE00E4B103 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03374D2A4B66AE00E4B103 /* pt_BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_BR; path = pt_BR.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03374E2A4B66AE00E4B103 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03374F2A4B66AE00E4B103 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337502A4B66AE00E4B103 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337512A4B66AE00E4B103 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_PT; path = pt_PT.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337522A4B66AE00E4B103 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337532A4B66AE00E4B103 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337542A4B66AE00E4B103 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337552A4B66AE00E4B103 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337562A4B66AE00E4B103 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C0337572A4B66AE00E4B103 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337582A4B66AE00E4B103 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337592A4B66AE00E4B103 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03375A2A4B66AE00E4B103 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03375B2A4B66AE00E4B103 /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = en_GB.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03375C2A4B66AE00E4B103 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03375D2A4B66AE00E4B103 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C03375E2A4B66AE00E4B103 /* zh-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-CN"; path = "zh-CN.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		2C03375F2A4B66AE00E4B103 /* fr_CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr_CA; path = fr_CA.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337602A4B66AE00E4B103 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337612A4B66AE00E4B103 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337622A4B66AE00E4B103 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337632A4B66AE00E4B103 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337642A4B66AE00E4B103 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337652A4B66AE00E4B103 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337662A4B66AE00E4B103 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337672A4B66AE00E4B103 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
-		2C0337682A4B66AE00E4B103 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
-		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		29893A9B61FF77F953E4F447D40DF9A8 /* pt_PT.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pt_PT.lproj; sourceTree = "<group>"; };
+		29F43B5011A5D62DFE5E152BA5A16AA3 /* GPInput+Routing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+Routing.swift"; sourceTree = "<group>"; };
+		2A4B74F4EE09A458C9D5968241D43574 /* cc-cvc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-cvc.png"; sourceTree = "<group>"; };
+		2B7CE5A24C0760ADE61A208836A1E44F /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pl.lproj; sourceTree = "<group>"; };
+		2BB68777ABDF136FD752B1D156EB4B8A /* GPCardForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPCardForm.swift; path = Sources/GrubPaySDK/Classes/GPCardForm.swift; sourceTree = "<group>"; };
+		2DA5E99078CCC30EE602D57FD0F3A1FF /* hr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = hr.lproj; sourceTree = "<group>"; };
+		2E01D4116DE012A169B2A0C4357727AC /* GPPicker+Country.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPPicker+Country.swift"; sourceTree = "<group>"; };
+		2E9958B970193CE2A2AF0C0E7DA2F0F2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2F2B38BEB63C1146D3E6979456EE8DB1 /* cc-maestro.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-maestro.png"; sourceTree = "<group>"; };
+		317D601F332D4BC21788671F1D703759 /* cc-discover@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-discover@3x.png"; sourceTree = "<group>"; };
+		3320E1EA818606B3920B2369A8E07C42 /* cc-visa@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-visa@2x.png"; sourceTree = "<group>"; };
 		33AE0FBD3614E812B518FE92A70C37EF /* Pods-GrubPaySDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GrubPaySDK_Example.modulemap"; sourceTree = "<group>"; };
-		340E331FAF01259372786724B8B26A08 /* GrubPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GrubPaySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		3466ED50989FDFEE6EAD75B5F288D6B5 /* GrubPaySDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrubPaySDK-umbrella.h"; sourceTree = "<group>"; };
 		36D2F1C2CC9E742BDA398C9C239A30B7 /* Pods-GrubPaySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3708B2E3FDC7620511EBD9E050F18224 /* GPInput+Name.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+Name.swift"; sourceTree = "<group>"; };
 		38485DE0886557EE3B1B79CB4FAC51DD /* Pods_GrubPaySDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrubPaySDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B31372B494D4D7C7A41CF9DCF4E776F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3873993DFD070A4D9BB31274EC091651 /* cc-amex@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-amex@2x.png"; sourceTree = "<group>"; };
+		3D25F00717B4AA46BF3BEBEEF86312D1 /* GPInput+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+Style.swift"; sourceTree = "<group>"; };
+		3F00BA98C3046292273948EE15596396 /* zh-HK.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-HK.lproj"; sourceTree = "<group>"; };
 		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		3FC2ED9F6D9E5F89B73D18C6319C0F7F /* Pods-GrubPaySDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GrubPaySDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		402EB5768ACE6C38DEFCA5DE2F4FC9DC /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = it.lproj; sourceTree = "<group>"; };
+		42E019268FBB4D0027184250EC4ECC4A /* GPInput+Country.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+Country.swift"; sourceTree = "<group>"; };
+		433E18B74B47E7F93E4906F8F81488B2 /* cc-cvc@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-cvc@2x.png"; sourceTree = "<group>"; };
 		438A476FF009CD43B560951370079D94 /* Pods-GrubPaySDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GrubPaySDK_Example-dummy.m"; sourceTree = "<group>"; };
+		43BA55808D367FD2E0518505D4CCDA05 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = de.lproj; sourceTree = "<group>"; };
+		44166BD7A03F8A2940649D145A8F00BE /* en_GB.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en_GB.lproj; sourceTree = "<group>"; };
+		44E414E1BC7DDE3A0B766C42728DEB90 /* cc-jcb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-jcb.png"; sourceTree = "<group>"; };
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		4A02A7B9F33ED5D315D2A147A70102FE /* GrubPaySDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrubPaySDK-prefix.pch"; sourceTree = "<group>"; };
+		4599F194245DC824BAD01A2EE1B1D89F /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = cs.lproj; sourceTree = "<group>"; };
+		465F1EA4BA49701DF8ADF799C6123BC4 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
+		47007B2ADDF5FD14C7607F6BE44C90C6 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		4A92DA393AC517F2C804751B3FF0FF79 /* zh-CN.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-CN.lproj"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		4E25063AA2FE8074D7F09A7BC84D7094 /* zh-TW.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-TW.lproj"; sourceTree = "<group>"; };
+		50DD606E2A3821C12AF6877395D31D58 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = nl.lproj; sourceTree = "<group>"; };
+		51326BFE24F79EAD00082EE32980B117 /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = el.lproj; sourceTree = "<group>"; };
 		547F7A29C95B277B1F8EB99F52AC80E5 /* Pods-GrubPaySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		54DAF5FBC094DEFB783D65EB703B6745 /* cc-jcb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-jcb@2x.png"; sourceTree = "<group>"; };
+		559F8732745A70A0761FC2F7C373AD8B /* cc-generic@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-generic@2x.png"; sourceTree = "<group>"; };
+		581155BA46F45F75096900C4513278C4 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fr.lproj; sourceTree = "<group>"; };
 		5852E8AEEBA3F6F789509ECA08D55B1E /* Pods-GrubPaySDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GrubPaySDK_Tests.modulemap"; sourceTree = "<group>"; };
+		597F32B047FC370FF8512DE28C6B138E /* GrubPayError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrubPayError.swift; path = Sources/GrubPaySDK/Classes/GrubPayError.swift; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7C4AB184001DA88D120DB4556B3AEB /* cc-maestro@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-maestro@3x.png"; sourceTree = "<group>"; };
+		5ECA0B7B26B0DAD8BACF183CB607BD9C /* cc-amex.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-amex.png"; sourceTree = "<group>"; };
 		5FBE7DFE389A77FB2CEBA82452311BFD /* Pods-GrubPaySDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrubPaySDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6075FF0A8FE861A98F860C2445BECAEA /* cc-bcglobal@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-bcglobal@3x.png"; sourceTree = "<group>"; };
+		622C9715EA2D1BA3C75BC498F289EE4C /* hi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = hi.lproj; sourceTree = "<group>"; };
+		628DECDAFCBE8893FAB085131555A353 /* no.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = no.lproj; sourceTree = "<group>"; };
+		631C3AB88D801AC5A7E8A5536AB5241F /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ko.lproj; sourceTree = "<group>"; };
+		637367EC506817F01AFA90ACE689477C /* GrubPayElement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrubPayElement.swift; path = Sources/GrubPaySDK/Classes/GrubPayElement.swift; sourceTree = "<group>"; };
+		6387A4947873C03D8846EC6E16021A07 /* GrubPaySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GrubPaySDK-dummy.m"; sourceTree = "<group>"; };
+		639DCFCBDAEB7FE60B6BDD5124FF36DD /* GrubPayResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrubPayResponse.swift; path = Sources/GrubPaySDK/Classes/GrubPayResponse.swift; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		67A33E28884DB13BF9B8F96805514C50 /* cc-visa@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-visa@3x.png"; sourceTree = "<group>"; };
+		684DD86929AA1FE65B0C9B77BEA92748 /* GPRadioButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GPRadioButton.swift; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		6ABFB724C989A5462683BCD0361AE421 /* Pods-GrubPaySDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GrubPaySDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6ACB5BD953DB328259D60F6AD03F91E1 /* GPPicker+Expiry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPPicker+Expiry.swift"; sourceTree = "<group>"; };
+		6B708FD20F0673D292B2A6ADD7361D2F /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = es.lproj; sourceTree = "<group>"; };
 		72CD73CBA3D08331D503F9F34A3CA6F4 /* Pods-GrubPaySDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GrubPaySDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		77B913BD99CB4558F88163B27AD1D7B4 /* GPInput+Expiry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+Expiry.swift"; sourceTree = "<group>"; };
+		780924CCF7FA0A09F26D1F0055741EA7 /* GPInput+CVV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+CVV.swift"; sourceTree = "<group>"; };
+		79C117F73A0A4EA57C86AB3684D1A7A4 /* VisionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisionKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/VisionKit.framework; sourceTree = DEVELOPER_DIR; };
+		79CD98C5501D677BF56F66B4D6FE15F5 /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = th.lproj; sourceTree = "<group>"; };
+		7C4146EAEE38A70B145E0B23E0A74E85 /* GrubPaySDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GrubPaySDK.modulemap; sourceTree = "<group>"; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		873E9165995F2BD81A4824EEFB978257 /* GrubPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GrubPaySDK.debug.xcconfig; sourceTree = "<group>"; };
+		7F61F72E78A3D0C53708D220DA2CCA7D /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ja.lproj; sourceTree = "<group>"; };
+		7FE9765048D56097FEE920A529B04906 /* GrubPayButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GrubPayButton.swift; sourceTree = "<group>"; };
+		84EA6DB30825F2340F48A65D620D3FF2 /* cc-unionpay.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-unionpay.png"; sourceTree = "<group>"; };
+		8776AE5B6C4A51FF5F2A11F62C6110A0 /* GPRadioDot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GPRadioDot.swift; sourceTree = "<group>"; };
 		87C9CEB3B3942612BEF6386C64CB829E /* Pods-GrubPaySDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrubPaySDK_Tests-Info.plist"; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		8E1D97086C48362E1AB3BF2830BFC630 /* cc-generic@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-generic@3x.png"; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		8FB2C1815F4700F31894EB4D1E5D91B1 /* GrubPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GrubPaySDK.release.xcconfig; sourceTree = "<group>"; };
+		8FF8AB641565375E5A2AD1E9318A9330 /* GPUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPUtil.swift; path = Sources/GrubPaySDK/Classes/GPUtil.swift; sourceTree = "<group>"; };
 		909A56D5D4C4773119EC411A0F6FB7B4 /* Pods-GrubPaySDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GrubPaySDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9194A829083A56D3963E855F6FEE4243 /* GrubPaySDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GrubPaySDK-umbrella.h"; sourceTree = "<group>"; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		94B16B942A20FA90D03025A26B2C3EBE /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fi.lproj; sourceTree = "<group>"; };
+		94F11858CC5403CBE90F7D32AFF7CB53 /* es_419.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = es_419.lproj; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		9879030CF9F0B22C6D2AEDB4675F5691 /* GPInput+Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+Zip.swift"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		9A8BB7A6014FA7D7033A57D72D45D3C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9AA642A4C822DB4B4764F435E75BD130 /* GPScannerConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GPScannerConfig.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F317602BF41007CD2C92141BA5E8AF4 /* Pods-GrubPaySDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GrubPaySDK_Tests-dummy.m"; sourceTree = "<group>"; };
-		A61ED119951047D1B93EF48191DD632B /* GrubPaySDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GrubPaySDK-Info.plist"; sourceTree = "<group>"; };
+		9F8D0C761AA2A953D9924CE2592F2DA6 /* Enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enums.swift; path = Sources/GrubPaySDK/Classes/Enums.swift; sourceTree = "<group>"; };
+		A1C3F3E08A0B0E89A8C5234B805AF786 /* cc-unionpay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-unionpay@2x.png"; sourceTree = "<group>"; };
+		A58747E5D486B34D00EE0F6520A06D36 /* GPCardScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GPCardScanner.swift; sourceTree = "<group>"; };
 		A660C3C3BE4292EA0A04B251F616B032 /* Pods-GrubPaySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		ACF30B631F407A2F75588E854F272901 /* GrubPaySDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GrubPaySDK.modulemap; sourceTree = "<group>"; };
+		AA137CB799D9504C57876501840396DA /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ms.lproj; sourceTree = "<group>"; };
+		AD1D6C13C26206B067DC4D91730845B4 /* GPCardOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GPCardOverlay.swift; sourceTree = "<group>"; };
+		AE3A4DC14953699CD1756854DC2C5650 /* GrubPaySDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GrubPaySDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		B38BEFFECF6CFB2BFE6265E4F7ECDE63 /* cc-master.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-master.png"; sourceTree = "<group>"; };
+		B415E9494BD8BD8B380EC63C15FA80D3 /* GrubPay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrubPay.swift; path = Sources/GrubPaySDK/Classes/GrubPay.swift; sourceTree = "<group>"; };
 		B517B2236F49FADC155A120AFCD0DE27 /* Pods-GrubPaySDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrubPaySDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		B7FEA2A2FE4E481A0469B68FEADB58EA /* GPInput+Account.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+Account.swift"; sourceTree = "<group>"; };
+		BD5F1ECCE0C433424F3BF5DE1FB77FEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C36F40A03478D846C98D5C0A89A70E1B /* pt_BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pt_BR.lproj; sourceTree = "<group>"; };
+		C4959A59AEE8E88AD370C4898343BED2 /* GPFormController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPFormController.swift; path = Sources/GrubPaySDK/Classes/GPFormController.swift; sourceTree = "<group>"; };
+		C7BDC13633D06E602106E50FFDD4911D /* cc-master@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-master@2x.png"; sourceTree = "<group>"; };
+		C7C46F2C5178C9B681CA7DE8711D86F3 /* uk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = uk.lproj; sourceTree = "<group>"; };
+		CA9C2C85D0982FB91DC388540519B553 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = he.lproj; sourceTree = "<group>"; };
+		CAA9FA89134170D195B7EA3B43D9FD97 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = hu.lproj; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		CD8FFB7E67E9A745B1CF27C7F3B52226 /* GPInput+Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+Util.swift"; sourceTree = "<group>"; };
+		CEBCC4265D4E62A4014C3BD91728C15E /* cc-dinner@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-dinner@2x.png"; sourceTree = "<group>"; };
+		CFED1283C770309677127F0A526EF812 /* cc-bcglobal.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-bcglobal.png"; sourceTree = "<group>"; };
+		D084555CA61C441BEC64338E11C9BC87 /* cc-cvc@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-cvc@3x.png"; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D0E68BF2FF67BE3C3A60C1305E728560 /* Pods-GrubPaySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GrubPaySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D1013C669A3B582E805D76CF6ACE378E /* cc-generic.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-generic.png"; sourceTree = "<group>"; };
+		D15D9E549C85E14A079023312E824F90 /* cc-amex@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-amex@3x.png"; sourceTree = "<group>"; };
+		D3E03A334B401DA7C0011BA6A5962A52 /* GPRadio+AccountType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPRadio+AccountType.swift"; sourceTree = "<group>"; };
+		D6B7440F70BD68993032F563F354BD3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D849E52005D36439AEFBA6DE38F1B3AC /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = id.lproj; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F1B355655FB3FE2639D5FD62EABA67F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FA002712F930F823DEFFE56832586CF6 /* GrubPaySDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GrubPaySDK-dummy.m"; sourceTree = "<group>"; };
+		D8795F86B0C2623D664060BF2DFD92E5 /* en_AU.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en_AU.lproj; sourceTree = "<group>"; };
+		DE757D9A6C551926BB6A0352FDF15F34 /* GPInput+Card.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPInput+Card.swift"; sourceTree = "<group>"; };
+		E30EA2024FBF43A179ED7222BE35CA01 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ar.lproj; sourceTree = "<group>"; };
+		E33E8419835182271D16E74E392E0FD7 /* CameraAccess.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CameraAccess.swift; sourceTree = "<group>"; };
+		E850916F68EFF72ED991FF52AFA5C11E /* GPSwitch+ACHAgreement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "GPSwitch+ACHAgreement.swift"; sourceTree = "<group>"; };
+		E9582C9F8C587C89D5DE8931A8698B90 /* GrubPaySDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GrubPaySDK.release.xcconfig; sourceTree = "<group>"; };
+		ED714E093E9EE2F6177F9DE10544946C /* cc-dinner@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-dinner@3x.png"; sourceTree = "<group>"; };
+		EF35EB584AD9749499F10768194CFD4A /* cc-jcb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-jcb@3x.png"; sourceTree = "<group>"; };
+		F1B147D08D9FD442EA8A9ACAF0A5650A /* cc-bcglobal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-bcglobal@2x.png"; sourceTree = "<group>"; };
+		F25B9964AD48005EE5B7A63DB5A5C624 /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localization.swift; path = Sources/GrubPaySDK/Classes/Localization.swift; sourceTree = "<group>"; };
+		F66C91C7C17A4014890BC4D47072BF2B /* cc-master@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-master@3x.png"; sourceTree = "<group>"; };
+		FA480E25B4739422C3E0DD88F190254B /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = vi.lproj; sourceTree = "<group>"; };
+		FB1336583B5C07B4F2BCCF7A2CAB2F8F /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = sv.lproj; sourceTree = "<group>"; };
+		FB531B0D9C5A4F96D984A43A9ABCF96A /* cc-maestro@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-maestro@2x.png"; sourceTree = "<group>"; };
+		FC7025F5DA70C21CC54139584D592556 /* GPACHForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GPACHForm.swift; path = Sources/GrubPaySDK/Classes/GPACHForm.swift; sourceTree = "<group>"; };
+		FCFD4B2C202D89D658A4C6BDF06BB538 /* GrubPaySDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GrubPaySDK.debug.xcconfig; sourceTree = "<group>"; };
 		FD1AA09B6E84D0C573610E7946AB4996 /* Pods-GrubPaySDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GrubPaySDK_Example-Info.plist"; sourceTree = "<group>"; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		21B0B087672E090B5F1B46A40CF464E6 /* Frameworks */ = {
+		1DE6834FED96002830DF36D8301426FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DC6AF043D27D424D036331D63BD96D /* Foundation.framework in Frameworks */,
+				30144132BCA573025CDA25C02684CD64 /* Foundation.framework in Frameworks */,
+				EA64AC325D8E02D9C82C68CADC88FA63 /* UIKit.framework in Frameworks */,
+				D86B613B06C2A50AAE687ED7F96C6DCD /* VisionKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,129 +387,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2716BE7EC212C47230FEE74C92C03ABC /* Support Files */ = {
+		038BD3E7C1C78C891E6B5D15B04592D6 /* GrubPaySDK */ = {
 			isa = PBXGroup;
 			children = (
-				ACF30B631F407A2F75588E854F272901 /* GrubPaySDK.modulemap */,
-				FA002712F930F823DEFFE56832586CF6 /* GrubPaySDK-dummy.m */,
-				A61ED119951047D1B93EF48191DD632B /* GrubPaySDK-Info.plist */,
-				4A02A7B9F33ED5D315D2A147A70102FE /* GrubPaySDK-prefix.pch */,
-				3466ED50989FDFEE6EAD75B5F288D6B5 /* GrubPaySDK-umbrella.h */,
-				873E9165995F2BD81A4824EEFB978257 /* GrubPaySDK.debug.xcconfig */,
-				8FB2C1815F4700F31894EB4D1E5D91B1 /* GrubPaySDK.release.xcconfig */,
+				9F8D0C761AA2A953D9924CE2592F2DA6 /* Enums.swift */,
+				FC7025F5DA70C21CC54139584D592556 /* GPACHForm.swift */,
+				2BB68777ABDF136FD752B1D156EB4B8A /* GPCardForm.swift */,
+				C4959A59AEE8E88AD370C4898343BED2 /* GPFormController.swift */,
+				8FF8AB641565375E5A2AD1E9318A9330 /* GPUtil.swift */,
+				B415E9494BD8BD8B380EC63C15FA80D3 /* GrubPay.swift */,
+				637367EC506817F01AFA90ACE689477C /* GrubPayElement.swift */,
+				597F32B047FC370FF8512DE28C6B138E /* GrubPayError.swift */,
+				639DCFCBDAEB7FE60B6BDD5124FF36DD /* GrubPayResponse.swift */,
+				1C5DE0EE7CAE704FBE2299C95B34859A /* GrubPayVC.swift */,
+				F25B9964AD48005EE5B7A63DB5A5C624 /* Localization.swift */,
+				8E90C6D78EB9EBFFA72B656A4D0C2668 /* Assets */,
+				84F339ABA412C1E37B8CE7C6C67DC5CD /* GPCardScanner */,
+				F3BC56E02B549FCDC195160758476A57 /* GPInput */,
+				6E3D6079909D935369641A25C9D63AA2 /* Pod */,
+				C3CEA7F38C49A37BA2669FBC7391C51A /* Resources */,
+				70B8BDF21D1FB58067256CFE6556F158 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GrubPaySDK";
-			sourceTree = "<group>";
-		};
-		2C0336F32A4B66AE00E4B103 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2C0337072A4B66AE00E4B103 /* GPInput */,
-				2C0336FC2A4B66AE00E4B103 /* GPCardScanner */,
-				2C0336F42A4B66AE00E4B103 /* GrubPayError.swift */,
-				2C0336F52A4B66AE00E4B103 /* GPFormController.swift */,
-				2C0336F62A4B66AE00E4B103 /* Localization.swift */,
-				2C0336F72A4B66AE00E4B103 /* GrubPayElement.swift */,
-				2C0336F82A4B66AE00E4B103 /* Enums.swift */,
-				2C0336F92A4B66AE00E4B103 /* GrubPayResponse.swift */,
-				2C0336FA2A4B66AE00E4B103 /* GrubPayVC.swift */,
-				2C0337032A4B66AE00E4B103 /* GPACHForm.swift */,
-				2C0337042A4B66AE00E4B103 /* GPUtil.swift */,
-				2C0337052A4B66AE00E4B103 /* GrubPay.swift */,
-				2C0337062A4B66AE00E4B103 /* GPCardForm.swift */,
-			);
-			name = Classes;
-			path = Sources/GrubPaySDK/Classes;
-			sourceTree = "<group>";
-		};
-		2C0336FC2A4B66AE00E4B103 /* GPCardScanner */ = {
-			isa = PBXGroup;
-			children = (
-				2C0336FD2A4B66AE00E4B103 /* GPCardAnalyzer.swift */,
-				2C0336FE2A4B66AE00E4B103 /* CameraAccess.swift */,
-				2C0336FF2A4B66AE00E4B103 /* GPScannerConfig.swift */,
-				2C0337002A4B66AE00E4B103 /* GPScannerView.swift */,
-				2C0337012A4B66AE00E4B103 /* GPCardOverlay.swift */,
-				2C0337022A4B66AE00E4B103 /* GPCardScanner.swift */,
-			);
-			path = GPCardScanner;
-			sourceTree = "<group>";
-		};
-		2C0337072A4B66AE00E4B103 /* GPInput */ = {
-			isa = PBXGroup;
-			children = (
-				2C0337082A4B66AE00E4B103 /* GPRadioDot.swift */,
-				2C0337092A4B66AE00E4B103 /* GPInput+Zip.swift */,
-				2C03370A2A4B66AE00E4B103 /* GPInput+CVV.swift */,
-				2C03370B2A4B66AE00E4B103 /* GPInput+Card.swift */,
-				2C03370C2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift */,
-				2C03370D2A4B66AE00E4B103 /* GrubPayButton.swift */,
-				2C03370E2A4B66AE00E4B103 /* GPInput+Style.swift */,
-				2C03370F2A4B66AE00E4B103 /* GPInput+Expiry.swift */,
-				2C0337102A4B66AE00E4B103 /* GPRadio+AccountType.swift */,
-				2C0337112A4B66AE00E4B103 /* GPPicker+Expiry.swift */,
-				2C0337122A4B66AE00E4B103 /* GPInput.swift */,
-				2C0337132A4B66AE00E4B103 /* GPInput+Account.swift */,
-				2C0337142A4B66AE00E4B103 /* GPPicker+Country.swift */,
-				2C0337152A4B66AE00E4B103 /* GPInput+Util.swift */,
-				2C0337162A4B66AE00E4B103 /* GPRadioButton.swift */,
-				2C0337172A4B66AE00E4B103 /* GPInput+Routing.swift */,
-				2C0337182A4B66AE00E4B103 /* GPInput+Name.swift */,
-				2C0337192A4B66AE00E4B103 /* GPInput+Country.swift */,
-			);
-			path = GPInput;
-			sourceTree = "<group>";
-		};
-		2C03371B2A4B66AE00E4B103 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				2C03371C2A4B66AE00E4B103 /* cc-visa@2x.png */,
-				2C03371D2A4B66AE00E4B103 /* cc-discover.png */,
-				2C03371E2A4B66AE00E4B103 /* cc-maestro.png */,
-				2C03371F2A4B66AE00E4B103 /* cc-visa@3x.png */,
-				2C0337202A4B66AE00E4B103 /* cc-jcb@3x.png */,
-				2C0337212A4B66AE00E4B103 /* cc-cvc@2x.png */,
-				2C0337222A4B66AE00E4B103 /* cc-discover@3x.png */,
-				2C0337232A4B66AE00E4B103 /* cc-dinner@3x.png */,
-				2C0337242A4B66AE00E4B103 /* cc-maestro@3x.png */,
-				2C0337252A4B66AE00E4B103 /* cc-master@2x.png */,
-				2C0337262A4B66AE00E4B103 /* .gitkeep */,
-				2C0337272A4B66AE00E4B103 /* cc-generic@3x.png */,
-				2C0337282A4B66AE00E4B103 /* cc-amex.png */,
-				2C0337292A4B66AE00E4B103 /* cc-generic@2x.png */,
-				2C03372A2A4B66AE00E4B103 /* cc-cvc.png */,
-				2C03372B2A4B66AE00E4B103 /* cc-master@3x.png */,
-				2C03372C2A4B66AE00E4B103 /* cc-dinner@2x.png */,
-				2C03372D2A4B66AE00E4B103 /* cc-maestro@2x.png */,
-				2C03372E2A4B66AE00E4B103 /* cc-cvc@3x.png */,
-				2C03372F2A4B66AE00E4B103 /* cc-discover@2x.png */,
-				2C0337302A4B66AE00E4B103 /* cc-jcb@2x.png */,
-				2C0337312A4B66AE00E4B103 /* cc-amex@2x.png */,
-				2C0337322A4B66AE00E4B103 /* cc-amex@3x.png */,
-				2C0337332A4B66AE00E4B103 /* cc-dinner.png */,
-				2C0337342A4B66AE00E4B103 /* cc-bcglobal.png */,
-				2C0337352A4B66AE00E4B103 /* cc-unionpay@2x.png */,
-				2C0337362A4B66AE00E4B103 /* cc-unionpay.png */,
-				2C0337372A4B66AE00E4B103 /* cc-bcglobal@3x.png */,
-				2C0337382A4B66AE00E4B103 /* cc-bcglobal@2x.png */,
-				2C0337392A4B66AE00E4B103 /* cc-visa.png */,
-				2C03373A2A4B66AE00E4B103 /* cc-master.png */,
-				2C03373B2A4B66AE00E4B103 /* cc-unionpay@3x.png */,
-				2C03373C2A4B66AE00E4B103 /* cc-generic.png */,
-				2C03373D2A4B66AE00E4B103 /* cc-jcb.png */,
-			);
-			name = Assets;
-			path = Sources/GrubPaySDK/Assets;
-			sourceTree = "<group>";
-		};
-		2C03373E2A4B66AE00E4B103 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2C03373F2A4B66AE00E4B103 /* Localizable.strings */,
-			);
-			name = Resources;
-			path = Sources/GrubPaySDK/Resources;
+			name = GrubPaySDK;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		460A15B64B60726A4F9A0FC46AAA0AE4 /* Targets Support Files */ = {
@@ -499,20 +442,92 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
+		6E3D6079909D935369641A25C9D63AA2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AE3A4DC14953699CD1756854DC2C5650 /* GrubPaySDK.podspec */,
+				09A896223F49EE11EA92E67AFC65A132 /* LICENSE */,
+				2E9958B970193CE2A2AF0C0E7DA2F0F2 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		70B8BDF21D1FB58067256CFE6556F158 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C4146EAEE38A70B145E0B23E0A74E85 /* GrubPaySDK.modulemap */,
+				6387A4947873C03D8846EC6E16021A07 /* GrubPaySDK-dummy.m */,
+				0D36E242DB2567B14D0E308A9415998A /* GrubPaySDK-Info.plist */,
+				275144E347E7C3BDEBEA9DDEDD79E250 /* GrubPaySDK-prefix.pch */,
+				9194A829083A56D3963E855F6FEE4243 /* GrubPaySDK-umbrella.h */,
+				FCFD4B2C202D89D658A4C6BDF06BB538 /* GrubPaySDK.debug.xcconfig */,
+				E9582C9F8C587C89D5DE8931A8698B90 /* GrubPaySDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GrubPaySDK";
+			sourceTree = "<group>";
+		};
+		84F339ABA412C1E37B8CE7C6C67DC5CD /* GPCardScanner */ = {
+			isa = PBXGroup;
+			children = (
+				E33E8419835182271D16E74E392E0FD7 /* CameraAccess.swift */,
+				0F69671E8818C4AD30B0B486C32A430C /* GPCardAnalyzer.swift */,
+				AD1D6C13C26206B067DC4D91730845B4 /* GPCardOverlay.swift */,
+				A58747E5D486B34D00EE0F6520A06D36 /* GPCardScanner.swift */,
+				9AA642A4C822DB4B4764F435E75BD130 /* GPScannerConfig.swift */,
+				092589C745EE404E1DB137165F0D4532 /* GPScannerView.swift */,
+			);
+			name = GPCardScanner;
+			path = Sources/GrubPaySDK/Classes/GPCardScanner;
+			sourceTree = "<group>";
+		};
+		8E90C6D78EB9EBFFA72B656A4D0C2668 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5ECA0B7B26B0DAD8BACF183CB607BD9C /* cc-amex.png */,
+				3873993DFD070A4D9BB31274EC091651 /* cc-amex@2x.png */,
+				D15D9E549C85E14A079023312E824F90 /* cc-amex@3x.png */,
+				CFED1283C770309677127F0A526EF812 /* cc-bcglobal.png */,
+				F1B147D08D9FD442EA8A9ACAF0A5650A /* cc-bcglobal@2x.png */,
+				6075FF0A8FE861A98F860C2445BECAEA /* cc-bcglobal@3x.png */,
+				2A4B74F4EE09A458C9D5968241D43574 /* cc-cvc.png */,
+				433E18B74B47E7F93E4906F8F81488B2 /* cc-cvc@2x.png */,
+				D084555CA61C441BEC64338E11C9BC87 /* cc-cvc@3x.png */,
+				05B9D42AFEBFC444708FDB76BD6D2988 /* cc-dinner.png */,
+				CEBCC4265D4E62A4014C3BD91728C15E /* cc-dinner@2x.png */,
+				ED714E093E9EE2F6177F9DE10544946C /* cc-dinner@3x.png */,
+				032C7AC2467335D041F079ECDF457D0F /* cc-discover.png */,
+				1C46BDE5916316F3C0C4A7FC16ED55F2 /* cc-discover@2x.png */,
+				317D601F332D4BC21788671F1D703759 /* cc-discover@3x.png */,
+				D1013C669A3B582E805D76CF6ACE378E /* cc-generic.png */,
+				559F8732745A70A0761FC2F7C373AD8B /* cc-generic@2x.png */,
+				8E1D97086C48362E1AB3BF2830BFC630 /* cc-generic@3x.png */,
+				44E414E1BC7DDE3A0B766C42728DEB90 /* cc-jcb.png */,
+				54DAF5FBC094DEFB783D65EB703B6745 /* cc-jcb@2x.png */,
+				EF35EB584AD9749499F10768194CFD4A /* cc-jcb@3x.png */,
+				2F2B38BEB63C1146D3E6979456EE8DB1 /* cc-maestro.png */,
+				FB531B0D9C5A4F96D984A43A9ABCF96A /* cc-maestro@2x.png */,
+				5D7C4AB184001DA88D120DB4556B3AEB /* cc-maestro@3x.png */,
+				B38BEFFECF6CFB2BFE6265E4F7ECDE63 /* cc-master.png */,
+				C7BDC13633D06E602106E50FFDD4911D /* cc-master@2x.png */,
+				F66C91C7C17A4014890BC4D47072BF2B /* cc-master@3x.png */,
+				84EA6DB30825F2340F48A65D620D3FF2 /* cc-unionpay.png */,
+				A1C3F3E08A0B0E89A8C5234B805AF786 /* cc-unionpay@2x.png */,
+				1C4C9564C7307565CF530258FF2829B7 /* cc-unionpay@3x.png */,
+				1D13AFEF70C988338A59131D53E8B961 /* cc-visa.png */,
+				3320E1EA818606B3920B2369A8E07C42 /* cc-visa@2x.png */,
+				67A33E28884DB13BF9B8F96805514C50 /* cc-visa@3x.png */,
+			);
+			name = Assets;
+			path = Sources/GrubPaySDK/Assets;
+			sourceTree = "<group>";
+		};
 		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
 				3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */,
 			);
 			name = SwiftSupport;
-			sourceTree = "<group>";
-		};
-		999C66DDE00AE7DAF210ACCCB3085D54 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E2785C96E28E439E5C9F58FF709F8044 /* GrubPaySDK */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
@@ -530,10 +545,10 @@
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
-		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
+				CDF5FD92E7114ED30CB7FCDBE126C9E7 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -552,36 +567,84 @@
 			isa = PBXGroup;
 			children = (
 				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
-				128A5887E805EEA192A51CE2FBE9CD06 /* GrubPaySDK.framework */,
+				128A5887E805EEA192A51CE2FBE9CD06 /* GrubPaySDK */,
 				38485DE0886557EE3B1B79CB4FAC51DD /* Pods_GrubPaySDK_Example.framework */,
 				033293CA61A3BBCB97BCAD59CFE6F536 /* Pods_GrubPaySDK_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C3CEA7F38C49A37BA2669FBC7391C51A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E30EA2024FBF43A179ED7222BE35CA01 /* ar.lproj */,
+				013014314B8969C8A20C891D56F8EF3C /* ca.lproj */,
+				4599F194245DC824BAD01A2EE1B1D89F /* cs.lproj */,
+				25A05DCEB76A9C2F712162D219220B3C /* da.lproj */,
+				43BA55808D367FD2E0518505D4CCDA05 /* de.lproj */,
+				51326BFE24F79EAD00082EE32980B117 /* el.lproj */,
+				17B68A46CE62C45C44CD8F62D40474A4 /* en.lproj */,
+				D8795F86B0C2623D664060BF2DFD92E5 /* en_AU.lproj */,
+				44166BD7A03F8A2940649D145A8F00BE /* en_GB.lproj */,
+				6B708FD20F0673D292B2A6ADD7361D2F /* es.lproj */,
+				94F11858CC5403CBE90F7D32AFF7CB53 /* es_419.lproj */,
+				94B16B942A20FA90D03025A26B2C3EBE /* fi.lproj */,
+				581155BA46F45F75096900C4513278C4 /* fr.lproj */,
+				12ED6653B6F9807DC6255680602A2A77 /* fr_CA.lproj */,
+				CA9C2C85D0982FB91DC388540519B553 /* he.lproj */,
+				622C9715EA2D1BA3C75BC498F289EE4C /* hi.lproj */,
+				2DA5E99078CCC30EE602D57FD0F3A1FF /* hr.lproj */,
+				CAA9FA89134170D195B7EA3B43D9FD97 /* hu.lproj */,
+				D849E52005D36439AEFBA6DE38F1B3AC /* id.lproj */,
+				402EB5768ACE6C38DEFCA5DE2F4FC9DC /* it.lproj */,
+				7F61F72E78A3D0C53708D220DA2CCA7D /* ja.lproj */,
+				631C3AB88D801AC5A7E8A5536AB5241F /* ko.lproj */,
+				AA137CB799D9504C57876501840396DA /* ms.lproj */,
+				50DD606E2A3821C12AF6877395D31D58 /* nl.lproj */,
+				628DECDAFCBE8893FAB085131555A353 /* no.lproj */,
+				2B7CE5A24C0760ADE61A208836A1E44F /* pl.lproj */,
+				C36F40A03478D846C98D5C0A89A70E1B /* pt_BR.lproj */,
+				29893A9B61FF77F953E4F447D40DF9A8 /* pt_PT.lproj */,
+				1BF604348AD438F5691C7C5491E599C7 /* ro.lproj */,
+				20A1861E1E370B4DF706C47D78B46BFB /* ru.lproj */,
+				0B7177210B8BDB85A02A0757F7BF2AD8 /* sk.lproj */,
+				FB1336583B5C07B4F2BCCF7A2CAB2F8F /* sv.lproj */,
+				79CD98C5501D677BF56F66B4D6FE15F5 /* th.lproj */,
+				067CE7AF596642E3BDF0A11335048540 /* tr.lproj */,
+				C7C46F2C5178C9B681CA7DE8711D86F3 /* uk.lproj */,
+				FA480E25B4739422C3E0DD88F190254B /* vi.lproj */,
+				4A92DA393AC517F2C804751B3FF0FF79 /* zh-CN.lproj */,
+				47007B2ADDF5FD14C7607F6BE44C90C6 /* zh-Hans.lproj */,
+				465F1EA4BA49701DF8ADF799C6123BC4 /* zh-Hant.lproj */,
+				3F00BA98C3046292273948EE15596396 /* zh-HK.lproj */,
+				4E25063AA2FE8074D7F09A7BC84D7094 /* zh-TW.lproj */,
+			);
+			name = Resources;
+			path = Sources/GrubPaySDK/Resources;
+			sourceTree = "<group>";
+		};
+		CDF5FD92E7114ED30CB7FCDBE126C9E7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6B7440F70BD68993032F563F354BD3B /* Foundation.framework */,
+				11FC9D1595DB3D2CFF9043D76889AEA0 /* QuartzCore.framework */,
+				9A8BB7A6014FA7D7033A57D72D45D3C3 /* UIKit.framework */,
+				79C117F73A0A4EA57C86AB3684D1A7A4 /* VisionKit.framework */,
+				BD5F1ECCE0C433424F3BF5DE1FB77FEC /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				999C66DDE00AE7DAF210ACCCB3085D54 /* Development Pods */,
-				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				F0E1B1748A843949AE170A2DA01CD148 /* Development Pods */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
 				E81A37DBDE41E671312C56736544E2FA /* Pods */,
 				C268AC9D070F1A0B71902BB8D6C44C70 /* Products */,
 				460A15B64B60726A4F9A0FC46AAA0AE4 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		E2785C96E28E439E5C9F58FF709F8044 /* GrubPaySDK */ = {
-			isa = PBXGroup;
-			children = (
-				2C03371B2A4B66AE00E4B103 /* Assets */,
-				2C0336F32A4B66AE00E4B103 /* Classes */,
-				2C03373E2A4B66AE00E4B103 /* Resources */,
-				EAEE3CD907F5D6B9ED60CA2ABC464280 /* Pod */,
-				2716BE7EC212C47230FEE74C92C03ABC /* Support Files */,
-			);
-			name = GrubPaySDK;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
@@ -590,16 +653,6 @@
 				BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		EAEE3CD907F5D6B9ED60CA2ABC464280 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				340E331FAF01259372786724B8B26A08 /* GrubPaySDK.podspec */,
-				F1B355655FB3FE2639D5FD62EABA67F5 /* LICENSE */,
-				3B31372B494D4D7C7A41CF9DCF4E776F /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		EBE27FAC012A9732BE80ADD751C0F281 /* Pods-GrubPaySDK_Example */ = {
@@ -619,15 +672,38 @@
 			path = "Target Support Files/Pods-GrubPaySDK_Example";
 			sourceTree = "<group>";
 		};
-		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
+		F0E1B1748A843949AE170A2DA01CD148 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */,
-				3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */,
-				1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */,
-				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
+				038BD3E7C1C78C891E6B5D15B04592D6 /* GrubPaySDK */,
 			);
-			name = iOS;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F3BC56E02B549FCDC195160758476A57 /* GPInput */ = {
+			isa = PBXGroup;
+			children = (
+				279D1779587A7D918A87D1D2E9C6BBAA /* GPInput.swift */,
+				B7FEA2A2FE4E481A0469B68FEADB58EA /* GPInput+Account.swift */,
+				DE757D9A6C551926BB6A0352FDF15F34 /* GPInput+Card.swift */,
+				42E019268FBB4D0027184250EC4ECC4A /* GPInput+Country.swift */,
+				780924CCF7FA0A09F26D1F0055741EA7 /* GPInput+CVV.swift */,
+				77B913BD99CB4558F88163B27AD1D7B4 /* GPInput+Expiry.swift */,
+				3708B2E3FDC7620511EBD9E050F18224 /* GPInput+Name.swift */,
+				29F43B5011A5D62DFE5E152BA5A16AA3 /* GPInput+Routing.swift */,
+				3D25F00717B4AA46BF3BEBEEF86312D1 /* GPInput+Style.swift */,
+				CD8FFB7E67E9A745B1CF27C7F3B52226 /* GPInput+Util.swift */,
+				9879030CF9F0B22C6D2AEDB4675F5691 /* GPInput+Zip.swift */,
+				2E01D4116DE012A169B2A0C4357727AC /* GPPicker+Country.swift */,
+				6ACB5BD953DB328259D60F6AD03F91E1 /* GPPicker+Expiry.swift */,
+				D3E03A334B401DA7C0011BA6A5962A52 /* GPRadio+AccountType.swift */,
+				684DD86929AA1FE65B0C9B77BEA92748 /* GPRadioButton.swift */,
+				8776AE5B6C4A51FF5F2A11F62C6110A0 /* GPRadioDot.swift */,
+				E850916F68EFF72ED991FF52AFA5C11E /* GPSwitch+ACHAgreement.swift */,
+				7FE9765048D56097FEE920A529B04906 /* GrubPayButton.swift */,
+			);
+			name = GPInput;
+			path = Sources/GrubPaySDK/Classes/GPInput;
 			sourceTree = "<group>";
 		};
 		FF397D0FF76BF5F0CEFCD772ABB9E4F3 /* Pods-GrubPaySDK_Tests */ = {
@@ -650,11 +726,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4E4CC80444F704B0B8211C55B057F5F2 /* Headers */ = {
+		241DACDD71F8FC1BADCBFD55DA780020 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22AD34B23ED2AE2CE4C0E9EC4A0096F1 /* GrubPaySDK-umbrella.h in Headers */,
+				7BA5497B5D261B16F1BB76C2BA8B05C1 /* GrubPaySDK-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,8 +780,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				2A811296A9866E50E289C9723F73B3D7 /* PBXTargetDependency */,
-				20176383043073CE02F845001C06AAC4 /* PBXTargetDependency */,
+				8DF8DC96F7EDB108651E7B336FC9FC20 /* PBXTargetDependency */,
+				68A3964FA6F5337E0D79F36521FEC52A /* PBXTargetDependency */,
 			);
 			name = "Pods-GrubPaySDK_Tests";
 			productName = Pods_GrubPaySDK_Tests;
@@ -714,12 +790,12 @@
 		};
 		7B78181CEE004200C39D588BF34625D1 /* GrubPaySDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7CD39CA819B69F0AC4ABFD51D62D26A /* Build configuration list for PBXNativeTarget "GrubPaySDK" */;
+			buildConfigurationList = FACEF1419A6AD0292FD145C43E63065E /* Build configuration list for PBXNativeTarget "GrubPaySDK" */;
 			buildPhases = (
-				4E4CC80444F704B0B8211C55B057F5F2 /* Headers */,
-				E3C2EAABA577ECC6D07E65FA05F55A63 /* Sources */,
-				21B0B087672E090B5F1B46A40CF464E6 /* Frameworks */,
-				AC525322541A7434E91647088B4B4095 /* Resources */,
+				241DACDD71F8FC1BADCBFD55DA780020 /* Headers */,
+				A4B9B77BAF2C36E7D50670EF81125C25 /* Sources */,
+				1DE6834FED96002830DF36D8301426FF /* Frameworks */,
+				EA5E27CA05287977C03A96A8070838C6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -727,7 +803,7 @@
 			);
 			name = GrubPaySDK;
 			productName = GrubPaySDK;
-			productReference = 128A5887E805EEA192A51CE2FBE9CD06 /* GrubPaySDK.framework */;
+			productReference = 128A5887E805EEA192A51CE2FBE9CD06 /* GrubPaySDK */;
 			productType = "com.apple.product-type.framework";
 		};
 		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
@@ -760,7 +836,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D211A3C397D57D3CBEBFEBEF9EFD6ED3 /* PBXTargetDependency */,
+				5EB6563A66A0BCC717AF07A29C347707 /* PBXTargetDependency */,
 			);
 			name = "Pods-GrubPaySDK_Example";
 			productName = Pods_GrubPaySDK_Example;
@@ -774,7 +850,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -782,48 +858,47 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
-				en,
-				de,
-				he,
-				en_AU,
 				ar,
-				el,
-				"zh-Hans",
-				ja,
-				"zh-TW",
-				uk,
-				"zh-HK",
-				es_419,
-				es,
-				pt_BR,
-				da,
-				it,
-				sk,
-				pt_PT,
-				ms,
-				sv,
-				cs,
-				ko,
-				"zh-Hant",
-				no,
-				nb,
-				hu,
-				tr,
-				pl,
-				en_GB,
-				vi,
-				ru,
-				"zh-CN",
-				fr_CA,
-				fr,
-				fi,
-				id,
-				nl,
-				th,
-				ro,
-				hr,
-				hi,
 				ca,
+				cs,
+				da,
+				de,
+				el,
+				en,
+				en_AU,
+				en_GB,
+				es,
+				es_419,
+				fi,
+				fr,
+				fr_CA,
+				he,
+				hi,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nl,
+				no,
+				pl,
+				pt_BR,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				uk,
+				vi,
+				"zh-CN",
+				"zh-HK",
+				"zh-Hans",
+				"zh-Hant",
+				"zh-TW",
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = C268AC9D070F1A0B71902BB8D6C44C70 /* Products */;
@@ -860,45 +935,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC525322541A7434E91647088B4B4095 /* Resources */ = {
+		EA5E27CA05287977C03A96A8070838C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0337AF2A4B66AE00E4B103 /* cc-jcb.png in Resources */,
-				2C0337AA2A4B66AE00E4B103 /* cc-bcglobal@2x.png in Resources */,
-				2C0337A12A4B66AE00E4B103 /* cc-discover@2x.png in Resources */,
-				2C0337A92A4B66AE00E4B103 /* cc-bcglobal@3x.png in Resources */,
-				2C0337AB2A4B66AE00E4B103 /* cc-visa.png in Resources */,
-				2C0337992A4B66AE00E4B103 /* cc-generic@3x.png in Resources */,
-				2C0337A02A4B66AE00E4B103 /* cc-cvc@3x.png in Resources */,
-				2C0337952A4B66AE00E4B103 /* cc-dinner@3x.png in Resources */,
-				2C0337A32A4B66AE00E4B103 /* cc-amex@2x.png in Resources */,
-				2C03379F2A4B66AE00E4B103 /* cc-maestro@2x.png in Resources */,
-				2C0337972A4B66AE00E4B103 /* cc-master@2x.png in Resources */,
-				2C0337982A4B66AE00E4B103 /* .gitkeep in Resources */,
-				2C0337B02A4B66AE00E4B103 /* Localizable.strings in Resources */,
-				2C03379D2A4B66AE00E4B103 /* cc-master@3x.png in Resources */,
-				2C0337912A4B66AE00E4B103 /* cc-visa@3x.png in Resources */,
-				2C0337942A4B66AE00E4B103 /* cc-discover@3x.png in Resources */,
-				2C03378F2A4B66AE00E4B103 /* cc-discover.png in Resources */,
-				2C03378E2A4B66AE00E4B103 /* cc-visa@2x.png in Resources */,
-				2C0337A52A4B66AE00E4B103 /* cc-dinner.png in Resources */,
-				2C0337AD2A4B66AE00E4B103 /* cc-unionpay@3x.png in Resources */,
-				2C0337AE2A4B66AE00E4B103 /* cc-generic.png in Resources */,
-				2C03379E2A4B66AE00E4B103 /* cc-dinner@2x.png in Resources */,
-				2C0337A82A4B66AE00E4B103 /* cc-unionpay.png in Resources */,
-				2C0337932A4B66AE00E4B103 /* cc-cvc@2x.png in Resources */,
-				2C0337A62A4B66AE00E4B103 /* cc-bcglobal.png in Resources */,
-				2C0337902A4B66AE00E4B103 /* cc-maestro.png in Resources */,
-				2C0337A22A4B66AE00E4B103 /* cc-jcb@2x.png in Resources */,
-				2C0337A42A4B66AE00E4B103 /* cc-amex@3x.png in Resources */,
-				2C0337922A4B66AE00E4B103 /* cc-jcb@3x.png in Resources */,
-				2C03379C2A4B66AE00E4B103 /* cc-cvc.png in Resources */,
-				2C03379A2A4B66AE00E4B103 /* cc-amex.png in Resources */,
-				2C0337962A4B66AE00E4B103 /* cc-maestro@3x.png in Resources */,
-				2C03379B2A4B66AE00E4B103 /* cc-generic@2x.png in Resources */,
-				2C0337A72A4B66AE00E4B103 /* cc-unionpay@2x.png in Resources */,
-				2C0337AC2A4B66AE00E4B103 /* cc-master.png in Resources */,
+				463508A52E158AADF29DB7A0323A86FE /* ar.lproj in Resources */,
+				BCE8CEB1B255F5F6D8060876E53180F1 /* ca.lproj in Resources */,
+				548FB8DD29D405B853D3F6C877823CA3 /* cc-amex.png in Resources */,
+				C059B6D80FEA8D3416C32640381CB5C7 /* cc-amex@2x.png in Resources */,
+				0154882980FAA8F5A42377AE1E56B456 /* cc-amex@3x.png in Resources */,
+				219B855462586A817E9F51D444026A45 /* cc-bcglobal.png in Resources */,
+				AFE63502DD58C9304BA86F3F81FFB572 /* cc-bcglobal@2x.png in Resources */,
+				0BB48EB945A2C3F0D738EC00A28BB654 /* cc-bcglobal@3x.png in Resources */,
+				B91E2D3362EDCED4F2C13652FF50B52C /* cc-cvc.png in Resources */,
+				DCA01B91C97AF92C918ED40903FF8937 /* cc-cvc@2x.png in Resources */,
+				8BBC0A84551850581618CD7AC0D27074 /* cc-cvc@3x.png in Resources */,
+				517D561BBB7B347EB3A9F513BBDA58C0 /* cc-dinner.png in Resources */,
+				E70AD26476EE8ADA87A18CFA32526C91 /* cc-dinner@2x.png in Resources */,
+				77B96DEF78C5794B04CC6B581F7498B2 /* cc-dinner@3x.png in Resources */,
+				EA2DBBA1491C38B2E912F9D28AC84D10 /* cc-discover.png in Resources */,
+				AD489CE0FDA277041CFC02063DE8EEB9 /* cc-discover@2x.png in Resources */,
+				559AE98E20DCEB561E5759D3B3554B4C /* cc-discover@3x.png in Resources */,
+				BA18EE80DE12FF4AD0A291E5B85CA23F /* cc-generic.png in Resources */,
+				7A347CA352AD49B43B6BF75A6DB8A326 /* cc-generic@2x.png in Resources */,
+				FA9C42E046FF649563857D0AE612F8FA /* cc-generic@3x.png in Resources */,
+				6B3D571F44A3A13CD3CC62CF1F256E6F /* cc-jcb.png in Resources */,
+				4A390B8286D97E73C0E617C178526067 /* cc-jcb@2x.png in Resources */,
+				46B6A54F46125DD7161E658AD579B40C /* cc-jcb@3x.png in Resources */,
+				A655F26528115D234BFC99DE1FD0558D /* cc-maestro.png in Resources */,
+				DC727E1CCEA739C3C862950AD938983C /* cc-maestro@2x.png in Resources */,
+				48C72987194FD4E82662361C56150093 /* cc-maestro@3x.png in Resources */,
+				B98E82CCED1DA25909C7CFF7A87D6F55 /* cc-master.png in Resources */,
+				0A3B875B5425C7ADC21B9E74D99CCE3E /* cc-master@2x.png in Resources */,
+				41CB605EE83CBCCFBE677A0EF52CB3DA /* cc-master@3x.png in Resources */,
+				9A6B6EAF6B96B29116486752CC84B4C2 /* cc-unionpay.png in Resources */,
+				778011ECE73018AC1C7D48DC3FC3B95A /* cc-unionpay@2x.png in Resources */,
+				949A1F125D78050DB6D8E5D74FA9A5BA /* cc-unionpay@3x.png in Resources */,
+				706031288AB7AE9F21FAFE1693A25D8F /* cc-visa.png in Resources */,
+				593969CDC8055999A118C98A3CC861D5 /* cc-visa@2x.png in Resources */,
+				4A0EF0DC4A2D2714E3CBD8589C035F3B /* cc-visa@3x.png in Resources */,
+				2D7C294403B0A4B82DA60654726190D7 /* cs.lproj in Resources */,
+				5DBDD0A5A2027D9142A636C260C2EDBA /* da.lproj in Resources */,
+				C84D8CE65125B38EA329C039163B63FE /* de.lproj in Resources */,
+				16597951210320083D92740110C06FB8 /* el.lproj in Resources */,
+				7FD929B2342EC2B1A07009691906CEF8 /* en.lproj in Resources */,
+				D6CB7ECE99FA472AB71900F800764BD8 /* en_AU.lproj in Resources */,
+				F73E1B275CF492081C37FA0995F68E53 /* en_GB.lproj in Resources */,
+				6AC9899677ED4587B5135083BE3FD800 /* es.lproj in Resources */,
+				813D492AB8F875FCB3D4A97623C80BBA /* es_419.lproj in Resources */,
+				2AF8BE2098C1EA4D5AB7B64E3ADB3A54 /* fi.lproj in Resources */,
+				69369F8232A7A432BA9D57D3E76AD6C1 /* fr.lproj in Resources */,
+				3BD653FEBABDFC9D280264E09C4601A4 /* fr_CA.lproj in Resources */,
+				5BF7266DA26334FFCCC59D2178AD8114 /* he.lproj in Resources */,
+				20B46DEB949295CF6255C80E171AF312 /* hi.lproj in Resources */,
+				E16618B0025D582E2097DE2F81217A2E /* hr.lproj in Resources */,
+				47F10518F4485C5F41295BBBFA0DD3E3 /* hu.lproj in Resources */,
+				B20BE680D5120CD2BD4544795793F30D /* id.lproj in Resources */,
+				A4240A0F7DC7A49787A97BD7A39BECB3 /* it.lproj in Resources */,
+				76BD27F74C2FBBC753A74EE331CBB93F /* ja.lproj in Resources */,
+				1E682B42C9D87E2F31D21EB2E31E9EBF /* ko.lproj in Resources */,
+				E7C05BDA5112A21CE8550E33EEEA2CEA /* ms.lproj in Resources */,
+				3627ECE092149BC6B1F52FFECB7E3320 /* nl.lproj in Resources */,
+				0FEF384BEBA222079FE076C044C914A5 /* no.lproj in Resources */,
+				CE2F65E731CE46F87AE9A90D4D21FCC4 /* pl.lproj in Resources */,
+				46DC92FDBE1EF637A6A8661558851F7E /* pt_BR.lproj in Resources */,
+				BA28216FA0FFB445E98585E41670DA57 /* pt_PT.lproj in Resources */,
+				B7D4274CA14D8747975AC7BAF846C917 /* ro.lproj in Resources */,
+				6958BF51E95B6523352E614F55C14650 /* ru.lproj in Resources */,
+				639A6E915779ADE0053EED7201A2D5DE /* sk.lproj in Resources */,
+				12934A62D784B08E2196B11DF2CABB48 /* sv.lproj in Resources */,
+				506ED5F9E549EE496D1FDA7CE8B0A58C /* th.lproj in Resources */,
+				42745A2450366879CB2E305196D1C7AE /* tr.lproj in Resources */,
+				3E6EE9480E2F131E4277EA6CE73AD708 /* uk.lproj in Resources */,
+				8D9F3316518FD698B10190F38761EA80 /* vi.lproj in Resources */,
+				5BBACEDC9A2908050FC6F71229D97122 /* zh-CN.lproj in Resources */,
+				8EB57E510E51B29F82C1D78700AB1A01 /* zh-Hans.lproj in Resources */,
+				3CA6045B979C9110AC045C77FC2F3172 /* zh-Hant.lproj in Resources */,
+				2B442A0D4E1DD5004788657AE2F7E173 /* zh-HK.lproj in Resources */,
+				ADBA21EFEF270E5BFC19EBDD94B51259 /* zh-TW.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -921,46 +1035,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3C2EAABA577ECC6D07E65FA05F55A63 /* Sources */ = {
+		A4B9B77BAF2C36E7D50670EF81125C25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C0337792A4B66AE00E4B103 /* GrubPay.swift in Sources */,
-				4A82A6F80E805E824B4D9FDF8BD3E264 /* GrubPaySDK-dummy.m in Sources */,
-				2C03378B2A4B66AE00E4B103 /* GPInput+Name.swift in Sources */,
-				2C03376E2A4B66AE00E4B103 /* GrubPayResponse.swift in Sources */,
-				2C0337872A4B66AE00E4B103 /* GPPicker+Country.swift in Sources */,
-				2C03377F2A4B66AE00E4B103 /* GPSwitch+ACHAgreement.swift in Sources */,
-				2C0337742A4B66AE00E4B103 /* GPScannerView.swift in Sources */,
-				2C03378A2A4B66AE00E4B103 /* GPInput+Routing.swift in Sources */,
-				2C0337712A4B66AE00E4B103 /* GPCardAnalyzer.swift in Sources */,
-				2C03377B2A4B66AE00E4B103 /* GPRadioDot.swift in Sources */,
-				2C03376A2A4B66AE00E4B103 /* GPFormController.swift in Sources */,
-				2C0337722A4B66AE00E4B103 /* CameraAccess.swift in Sources */,
-				2C0337852A4B66AE00E4B103 /* GPInput.swift in Sources */,
-				2C0337732A4B66AE00E4B103 /* GPScannerConfig.swift in Sources */,
-				2C0337862A4B66AE00E4B103 /* GPInput+Account.swift in Sources */,
-				2C0337892A4B66AE00E4B103 /* GPRadioButton.swift in Sources */,
-				2C03377A2A4B66AE00E4B103 /* GPCardForm.swift in Sources */,
-				2C0337812A4B66AE00E4B103 /* GPInput+Style.swift in Sources */,
-				2C0337762A4B66AE00E4B103 /* GPCardScanner.swift in Sources */,
-				2C0337802A4B66AE00E4B103 /* GrubPayButton.swift in Sources */,
-				2C03376B2A4B66AE00E4B103 /* Localization.swift in Sources */,
-				2C03376C2A4B66AE00E4B103 /* GrubPayElement.swift in Sources */,
-				2C03377C2A4B66AE00E4B103 /* GPInput+Zip.swift in Sources */,
-				2C0337832A4B66AE00E4B103 /* GPRadio+AccountType.swift in Sources */,
-				2C03376F2A4B66AE00E4B103 /* GrubPayVC.swift in Sources */,
-				2C03376D2A4B66AE00E4B103 /* Enums.swift in Sources */,
-				2C0337782A4B66AE00E4B103 /* GPUtil.swift in Sources */,
-				2C0337842A4B66AE00E4B103 /* GPPicker+Expiry.swift in Sources */,
-				2C0337822A4B66AE00E4B103 /* GPInput+Expiry.swift in Sources */,
-				2C0337752A4B66AE00E4B103 /* GPCardOverlay.swift in Sources */,
-				2C03378C2A4B66AE00E4B103 /* GPInput+Country.swift in Sources */,
-				2C0337692A4B66AE00E4B103 /* GrubPayError.swift in Sources */,
-				2C03377E2A4B66AE00E4B103 /* GPInput+Card.swift in Sources */,
-				2C0337882A4B66AE00E4B103 /* GPInput+Util.swift in Sources */,
-				2C0337772A4B66AE00E4B103 /* GPACHForm.swift in Sources */,
-				2C03377D2A4B66AE00E4B103 /* GPInput+CVV.swift in Sources */,
+				E5F242DBF32E15E57FE4E38809CE0B70 /* CameraAccess.swift in Sources */,
+				F192B94F5DF9BA4E9B4F1BD41D397CF1 /* Enums.swift in Sources */,
+				B757288C15ECBA2D1FE014330A82349B /* GPACHForm.swift in Sources */,
+				4CC07DE1E96B028F18DF0939B31C6D15 /* GPCardAnalyzer.swift in Sources */,
+				5B9A33A1D9F58FE4FDE68548283D69D6 /* GPCardForm.swift in Sources */,
+				E48DDEFCAAC08702AF54E9BB8E6E3414 /* GPCardOverlay.swift in Sources */,
+				1A841C549CDE7CF43334B6FDF8C9D5E6 /* GPCardScanner.swift in Sources */,
+				03EBB857D4319F48B8D6C26F3FC223CC /* GPFormController.swift in Sources */,
+				41F411529C0C3694A5CCBEFEBE501B02 /* GPInput.swift in Sources */,
+				0EC1ECEE698038F72DC08A9B01CB636F /* GPInput+Account.swift in Sources */,
+				1F853C66D27B7CCA88C72162E278BCD5 /* GPInput+Card.swift in Sources */,
+				D2846F1C4B4C925AB7AEDB7A94DDCF6F /* GPInput+Country.swift in Sources */,
+				CDD13B618F94A433F4088159EB49251D /* GPInput+CVV.swift in Sources */,
+				A181B07D58AFA3403AD7615BF74B4AB7 /* GPInput+Expiry.swift in Sources */,
+				7EDB8713C8538E2A833C681E016DA9CD /* GPInput+Name.swift in Sources */,
+				6CCBCFDBE5A23DFAC99C6DF6B43AFB71 /* GPInput+Routing.swift in Sources */,
+				CC079D4D6D431D2DEC9DBBA87A7751B9 /* GPInput+Style.swift in Sources */,
+				6F3C6DF3329371330CE519676B5DD872 /* GPInput+Util.swift in Sources */,
+				81A6DB89092760D3C423B1F95985F83C /* GPInput+Zip.swift in Sources */,
+				6D1D40BAA3EF74218C73EB6BB8C74E1E /* GPPicker+Country.swift in Sources */,
+				D41C4CD76F7A01C109A8A81481088D96 /* GPPicker+Expiry.swift in Sources */,
+				38C8AF24C59A02A2BE20E5EC0F06A8D7 /* GPRadio+AccountType.swift in Sources */,
+				3CC8703D7D9E003190D6F11AB059169B /* GPRadioButton.swift in Sources */,
+				695262F5494359A75FF2BFFC48272623 /* GPRadioDot.swift in Sources */,
+				D14C23BF04A26433EB26A51C050F877C /* GPScannerConfig.swift in Sources */,
+				BC77C5BC10ED265186993F34175191DB /* GPScannerView.swift in Sources */,
+				9090FF547BE92F843456CA4800A28DA5 /* GPSwitch+ACHAgreement.swift in Sources */,
+				7EF9F062018CDAB9A317A7E9F339D491 /* GPUtil.swift in Sources */,
+				8AD97C734D91C84A7704595984E2A602 /* GrubPay.swift in Sources */,
+				AA773F4B301BA8ED877AF9CBE2EA2CCB /* GrubPayButton.swift in Sources */,
+				C4C0D0ABE63C6048901FBB530B4B3795 /* GrubPayElement.swift in Sources */,
+				F701E51035315FACA6CA17B1AF3712F3 /* GrubPayError.swift in Sources */,
+				9313338CFAA4C4A07BFB0EAD4E4E2687 /* GrubPayResponse.swift in Sources */,
+				A742442A7492451CC49BF4E90D0D95C8 /* GrubPaySDK-dummy.m in Sources */,
+				06B8BD46186B0564977047ED5E337646 /* GrubPayVC.swift in Sources */,
+				B386DF41B3AAE54FF1335708FE8F20FB /* Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -983,76 +1097,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		20176383043073CE02F845001C06AAC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-GrubPaySDK_Example";
-			target = CAFFCBAA1A04555DBB657BEFB92BECFD /* Pods-GrubPaySDK_Example */;
-			targetProxy = 841FF93C7413C9AE5E9EB651D26EB174 /* PBXContainerItemProxy */;
-		};
-		2A811296A9866E50E289C9723F73B3D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 12FF64385CFAACCB7612AB8868CFC0AC /* PBXContainerItemProxy */;
-		};
-		D211A3C397D57D3CBEBFEBEF9EFD6ED3 /* PBXTargetDependency */ = {
+		5EB6563A66A0BCC717AF07A29C347707 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GrubPaySDK;
 			target = 7B78181CEE004200C39D588BF34625D1 /* GrubPaySDK */;
-			targetProxy = 1A5EC94A8F43A915B59A6E780B4A6380 /* PBXContainerItemProxy */;
+			targetProxy = 78443D8A76806054685EEB5D75C98824 /* PBXContainerItemProxy */;
+		};
+		68A3964FA6F5337E0D79F36521FEC52A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GrubPaySDK_Example";
+			target = CAFFCBAA1A04555DBB657BEFB92BECFD /* Pods-GrubPaySDK_Example */;
+			targetProxy = EDD29DC60307243AA01F9150DF414AEB /* PBXContainerItemProxy */;
+		};
+		8DF8DC96F7EDB108651E7B336FC9FC20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 0C303A45D01412A731C883C0036471C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2C03373F2A4B66AE00E4B103 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C0337402A4B66AE00E4B103 /* de */,
-				2C0337412A4B66AE00E4B103 /* he */,
-				2C0337422A4B66AE00E4B103 /* en_AU */,
-				2C0337432A4B66AE00E4B103 /* ar */,
-				2C0337442A4B66AE00E4B103 /* el */,
-				2C0337452A4B66AE00E4B103 /* zh-Hans */,
-				2C0337462A4B66AE00E4B103 /* ja */,
-				2C0337472A4B66AE00E4B103 /* zh-TW */,
-				2C0337482A4B66AE00E4B103 /* en */,
-				2C0337492A4B66AE00E4B103 /* uk */,
-				2C03374A2A4B66AE00E4B103 /* zh-HK */,
-				2C03374B2A4B66AE00E4B103 /* es_419 */,
-				2C03374C2A4B66AE00E4B103 /* es */,
-				2C03374D2A4B66AE00E4B103 /* pt_BR */,
-				2C03374E2A4B66AE00E4B103 /* da */,
-				2C03374F2A4B66AE00E4B103 /* it */,
-				2C0337502A4B66AE00E4B103 /* sk */,
-				2C0337512A4B66AE00E4B103 /* pt_PT */,
-				2C0337522A4B66AE00E4B103 /* ms */,
-				2C0337532A4B66AE00E4B103 /* sv */,
-				2C0337542A4B66AE00E4B103 /* cs */,
-				2C0337552A4B66AE00E4B103 /* ko */,
-				2C0337562A4B66AE00E4B103 /* zh-Hant */,
-				2C0337572A4B66AE00E4B103 /* no */,
-				2C0337582A4B66AE00E4B103 /* hu */,
-				2C0337592A4B66AE00E4B103 /* tr */,
-				2C03375A2A4B66AE00E4B103 /* pl */,
-				2C03375B2A4B66AE00E4B103 /* en_GB */,
-				2C03375C2A4B66AE00E4B103 /* vi */,
-				2C03375D2A4B66AE00E4B103 /* ru */,
-				2C03375E2A4B66AE00E4B103 /* zh-CN */,
-				2C03375F2A4B66AE00E4B103 /* fr_CA */,
-				2C0337602A4B66AE00E4B103 /* fr */,
-				2C0337612A4B66AE00E4B103 /* fi */,
-				2C0337622A4B66AE00E4B103 /* id */,
-				2C0337632A4B66AE00E4B103 /* nl */,
-				2C0337642A4B66AE00E4B103 /* th */,
-				2C0337652A4B66AE00E4B103 /* ro */,
-				2C0337662A4B66AE00E4B103 /* hr */,
-				2C0337672A4B66AE00E4B103 /* hi */,
-				2C0337682A4B66AE00E4B103 /* ca */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		06C06CDF9BF41BD3AC02BAF853900603 /* Debug */ = {
@@ -1071,7 +1134,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GrubPaySDK_Tests/Pods-GrubPaySDK_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GrubPaySDK_Tests/Pods-GrubPaySDK_Tests.modulemap";
@@ -1087,37 +1150,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		0CF977E736A9F0297ED689DCD07C3E1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		4BE5E61BCCF17177134E6FAFBF8405C0 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1135,7 +1167,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GrubPaySDK_Tests/Pods-GrubPaySDK_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GrubPaySDK_Tests/Pods-GrubPaySDK_Tests.modulemap";
@@ -1146,38 +1178,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6E1B8C7FBC4E44D38A73048801140608 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FB2C1815F4700F31894EB4D1E5D91B1 /* GrubPaySDK.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GrubPaySDK/GrubPaySDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK.modulemap";
-				PRODUCT_MODULE_NAME = GrubPaySDK;
-				PRODUCT_NAME = GrubPaySDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1220,7 +1220,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1236,7 +1235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1247,10 +1246,11 @@
 			};
 			name = Release;
 		};
-		842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */ = {
+		89EC5A9484BCF71B101CF6DC8BB38C44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
+			baseConfigurationReference = E9582C9F8C587C89D5DE8931A8698B90 /* GrubPaySDK.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1259,23 +1259,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/GrubPaySDK/GrubPaySDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
+				MODULEMAP_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK.modulemap";
+				PRODUCT_MODULE_NAME = GrubPaySDK;
+				PRODUCT_NAME = GrubPaySDK;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		9CEA79E13F298696C8641A4759CBB2EC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1293,7 +1294,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GrubPaySDK_Example/Pods-GrubPaySDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GrubPaySDK_Example/Pods-GrubPaySDK_Example.modulemap";
@@ -1309,6 +1310,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A5260D0FA05EAB6F571F22F1B64BDA99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1345,7 +1377,6 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1364,7 +1395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1393,7 +1424,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-GrubPaySDK_Example/Pods-GrubPaySDK_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GrubPaySDK_Example/Pods-GrubPaySDK_Example.modulemap";
@@ -1411,9 +1442,39 @@
 			};
 			name = Release;
 		};
-		D56E1BACBC64415C74D0E48FE243FD51 /* Debug */ = {
+		D7F7E427291BCFAAF489E1644F5CEED6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 873E9165995F2BD81A4824EEFB978257 /* GrubPaySDK.debug.xcconfig */;
+			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0F7B2DD495E89364A547084959C3D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFD4B2C202D89D658A4C6BDF06BB538 /* GrubPaySDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1427,7 +1488,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GrubPaySDK/GrubPaySDK-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GrubPaySDK/GrubPaySDK.modulemap";
 				PRODUCT_MODULE_NAME = GrubPaySDK;
@@ -1435,7 +1496,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1448,8 +1509,8 @@
 		28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				842C60C4F1EBC85F9C8FF97D39D120FF /* Debug */,
-				0CF977E736A9F0297ED689DCD07C3E1C /* Release */,
+				D7F7E427291BCFAAF489E1644F5CEED6 /* Debug */,
+				A5260D0FA05EAB6F571F22F1B64BDA99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1472,20 +1533,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7CD39CA819B69F0AC4ABFD51D62D26A /* Build configuration list for PBXNativeTarget "GrubPaySDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D56E1BACBC64415C74D0E48FE243FD51 /* Debug */,
-				6E1B8C7FBC4E44D38A73048801140608 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		CDB2FBE2AE89FC0B280FD809DC8F19AF /* Build configuration list for PBXNativeTarget "Pods-GrubPaySDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CEA79E13F298696C8641A4759CBB2EC /* Debug */,
 				D42610636D993C826A96F9B4A4ED994E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACEF1419A6AD0292FD145C43E63065E /* Build configuration list for PBXNativeTarget "GrubPaySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0F7B2DD495E89364A547084959C3D6D /* Debug */,
+				89EC5A9484BCF71B101CF6DC8BB38C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

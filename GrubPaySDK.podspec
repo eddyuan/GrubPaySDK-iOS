@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'GrubPaySDK'
   s.version          = '0.1.0'
   s.summary          = 'GrubPay.io SDK for embedding card/ACH payment UI'
+  s.swift_version    = '4.2'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,23 +26,21 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/iotpayca/GrubPaySDK-IOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '43017558' => 'edward.yuan@iotpay.ca' }
+  s.author           = { 'Edward Yuan' => 'edward.yuan@iotpay.ca' }
   s.source           = { :git => 'https://github.com/iotpayca/GrubPaySDK-IOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'Sources/GrubPaySDK/Classes/**/*'
+  s.resources = ['Sources/GrubPaySDK/Assets/*.png', 'Sources/GrubPaySDK/Resources/*.lproj']
   
-  s.ios.resource_bundle = { 'GrubPaySDK' => ['Sources/GrubPaySDK/Resources/*.lproj'] }
-  
-  s.resource_bundles = {
-    'GrubPaySDK' => ['Sources/GrubPaySDK/Assets/*.png']
-  }
+#  s.resource_bundles = {
+#    'GrubPaySDK' => ['Sources/GrubPaySDK/Assets/*.png', 'Sources/GrubPaySDK/Resources/*.lproj']
+#  }
 
   s.frameworks = 'UIKit', 'VisionKit'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
- 
   # s.dependency 'AFNetworking', '~> 2.3'
 end

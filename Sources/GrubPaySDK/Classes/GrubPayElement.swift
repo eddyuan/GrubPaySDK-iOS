@@ -62,9 +62,9 @@ public class GrubPayElement: UIView {
         let v = UIView()
         let l: UIActivityIndicatorView
         if #available(iOS 13.0, *) {
-            l = UIActivityIndicatorView(activityIndicatorStyle: .medium)
+            l = UIActivityIndicatorView(style: .medium)
         } else {
-            l = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+            l = UIActivityIndicatorView(style: .gray)
         }
         v.translatesAutoresizingMaskIntoConstraints = false
         l.translatesAutoresizingMaskIntoConstraints = false

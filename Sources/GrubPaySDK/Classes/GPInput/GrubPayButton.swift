@@ -35,7 +35,7 @@ internal class GrubPayButton: UIButton {
         activityIndicator.hidesWhenStopped = true
         activityIndicator.color = .white
         if #available(iOS 13.0, *) {
-            activityIndicator.activityIndicatorViewStyle = .medium
+            activityIndicator.style = .medium
         }
         addSubview(activityIndicator)
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
