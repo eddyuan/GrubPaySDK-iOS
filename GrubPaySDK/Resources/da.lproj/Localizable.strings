@@ -1,4 +1,14 @@
 "Card number" = "Kortnummer";
 "Name on card" = "Navn på kort";
-"Expiration" = "Udløb";
+"Expiration" = "Udløbsdato";
 "Name" = "Navn";
+"Done" = "Færdig";
+"Cancel" = "Annuller";
+"Country" = "Land";
+"Center your card until the fields are recognized" = "Centrér dit kort, indtil felterne genkendes";
+"Touch a recognized value to delete the value and try again" = "Rør ved en genkendt værdi for at slette værdien og prøv igen";
+"Confirm" = "Bekræft";
+"Pay" = "Betal";
+"Authorize Card" = "Autorisér kort";
+"Authorize ACH" = "Autorisér ACH";
+"Submit" = "Send";

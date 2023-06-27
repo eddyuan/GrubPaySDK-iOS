@@ -2,3 +2,13 @@
 "Name on card" = "Name auf der Karte";
 "Expiration" = "Ablaufdatum";
 "Name" = "Name";
+"Done" = "Fertig";
+"Cancel" = "Abbrechen";
+"Country" = "Land";
+"Center your card until the fields are recognized" = "Zentrieren Sie Ihre Karte, bis die Felder erkannt werden";
+"Touch a recognized value to delete the value and try again" = "Berühren Sie einen erkannten Wert, um ihn zu löschen und erneut zu versuchen";
+"Confirm" = "Bestätigen";
+"Pay" = "Bezahlen";
+"Authorize Card" = "Karte autorisieren";
+"Authorize ACH" = "ACH autorisieren";
+"Submit" = "Absenden";

@@ -2,3 +2,13 @@
 "Name on card" = "Nombre en la tarjeta";
 "Expiration" = "Vencimiento";
 "Name" = "Nombre";
+"Done" = "Listo";
+"Cancel" = "Cancelar";
+"Country" = "País";
+"Center your card until the fields are recognized" = "Centra tu tarjeta hasta que los campos sean reconocidos";
+"Touch a recognized value to delete the value and try again" = "Toca un valor reconocido para eliminarlo y volver a intentarlo";
+"Confirm" = "Confirmar";
+"Pay" = "Pagar";
+"Authorize Card" = "Autorizar tarjeta";
+"Authorize ACH" = "Autorizar ACH";
+"Submit" = "Enviar";

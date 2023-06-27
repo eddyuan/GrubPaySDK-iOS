@@ -2,3 +2,13 @@
 "Name on card" = "Jméno na kartě";
 "Expiration" = "Platnost do";
 "Name" = "Jméno";
+"Done" = "Hotovo";
+"Cancel" = "Zrušit";
+"Country" = "Země";
+"Center your card until the fields are recognized" = "Vycentrujte kartu, dokud nebudou pole rozpoznána";
+"Touch a recognized value to delete the value and try again" = "Dotkněte se rozpoznané hodnoty, abyste hodnotu smazali a zkuste to znovu";
+"Confirm" = "Potvrdit";
+"Pay" = "Zaplaceno";
+"Authorize Card" = "Autorizovat kartu";
+"Authorize ACH" = "Autorizovat ACH";
+"Submit" = "Odeslat";

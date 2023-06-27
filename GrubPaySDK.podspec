@@ -22,24 +22,26 @@ Pod::Spec.new do |s|
   Providing both UIView element and modal style
                        DESC
 
-  s.homepage         = 'https://github.com/43017558/GrubPaySDK'
+  s.homepage         = 'https://github.com/iotpayca/GrubPaySDK-IOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '43017558' => 'edward.yuan@iotpay.ca' }
-  s.source           = { :git => 'https://github.com/43017558/GrubPaySDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/iotpayca/GrubPaySDK-IOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'GrubPaySDK/Classes/**/*'
+  s.source_files = 'Sources/GrubPaySDK/Classes/**/*'
   
-  s.ios.resource_bundle = { 'GrubPaySDK' => ['GrubPaySDK/Resources/*.lproj'] }
+  s.ios.resource_bundle = { 'GrubPaySDK' => ['Sources/GrubPaySDK/Resources/*.lproj'] }
   
   s.resource_bundles = {
-    'GrubPaySDK' => ['GrubPaySDK/Assets/*.png']
+    'GrubPaySDK' => ['Sources/GrubPaySDK/Assets/*.png']
   }
 
+  s.frameworks = 'UIKit', 'VisionKit'
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+ 
   # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -236,10 +236,10 @@ import CommonCrypto
 class ViewController: UIViewController {
     // MARK: - Config For Testing
 
-    let mchId = "10001321"
-    let loginName = "eway"
-    let mchKey = "LkFe0lpxjFUU27xh9hXhPxU2yztzIcgv"
-    let requestUrl = "https://test.grubpay.io/laravel/api/auth"
+    let mchId = ""
+    let loginName = ""
+    let mchKey = ""
+    let requestUrl = "https://api.grubpay.io/auth"
 
     // MARK: - Properties
 

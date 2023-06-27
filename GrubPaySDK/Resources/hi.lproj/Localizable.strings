@@ -1,4 +1,14 @@
 "Card number" = "कार्ड नंबर";
 "Name on card" = "कार्ड पर नाम";
-"Expiration" = "समय सीमा";
+"Expiration" = "समाप्ति";
 "Name" = "नाम";
+"Done" = "हो गया";
+"Cancel" = "रद्द करें";
+"Country" = "देश";
+"Center your card until the fields are recognized" = "कार्ड को बीच में रखें जब तक कि क्षेत्र पहचाने जा रहे हों";
+"Touch a recognized value to delete the value and try again" = "मान्यता प्राप्त मान को छूकर मान को हटाएं और फिर से प्रयास करें";
+"Confirm" = "पुष्टि करें";
+"Pay" = "भुगतान करें";
+"Authorize Card" = "कार्ड की प्राधिकृतता करें";
+"Authorize ACH" = "ACH की प्राधिकृतता करें";
+"Submit" = "जमा करें";

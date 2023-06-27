@@ -176,14 +176,36 @@ class GrubPayVC: UIViewController {
                 if let formattedValue = numberFormatter.string(from: NSNumber(value: Float(config.amount) / 100)) {
                     self?.title = formattedValue
                 }
-                self?.submitButton.setTitle("Pay", for: .normal)
+                self?.submitButton.setTitle(
+                    NSLocalizedString(
+                        "Pay",
+                        bundle: Bundle(for: GrubPayVC.self),
+                        comment: ""
+                    ),
+                    for: .normal
+                )
             } else {
                 if config.channel == .card {
-                    self?.title = "Authorize Card"
+                    self?.title = NSLocalizedString(
+                        "Authorize Card",
+                        bundle: Bundle(for: GrubPayVC.self),
+                        comment: ""
+                    )
                 } else {
-                    self?.title = "Authorize ACH"
+                    self?.title = NSLocalizedString(
+                        "Authorize ACH",
+                        bundle: Bundle(for: GrubPayVC.self),
+                        comment: ""
+                    )
                 }
-                self?.submitButton.setTitle("Submit", for: .normal)
+                self?.submitButton.setTitle(
+                    NSLocalizedString(
+                        "Submit",
+                        bundle: Bundle(for: GrubPayVC.self),
+                        comment: ""
+                    ),
+                    for: .normal
+                )
             }
         }
     }

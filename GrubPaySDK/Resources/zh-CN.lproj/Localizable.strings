@@ -2,3 +2,13 @@
 "Name on card" = "持卡人姓名";
 "Expiration" = "有效期";
 "Name" = "姓名";
+"Done" = "完成";
+"Cancel" = "取消";
+"Country" = "国家";
+"Center your card until the fields are recognized" = "将您的卡居中，直到字段被识别";
+"Touch a recognized value to delete the value and try again" = "点击已识别的值以删除并重试";
+"Confirm" = "确认";
+"Pay" = "支付";
+"Authorize Card" = "授权卡";
+"Authorize ACH" = "授权ACH";
+"Submit" = "提交";

@@ -1,4 +1,14 @@
-"Card number" = "Numărul cardului";
+"Card number" = "Număr card";
 "Name on card" = "Numele de pe card";
 "Expiration" = "Expirare";
 "Name" = "Nume";
+"Done" = "Gata";
+"Cancel" = "Anulare";
+"Country" = "Țară";
+"Center your card until the fields are recognized" = "Centrați cardul până câmpurile sunt recunoscute";
+"Touch a recognized value to delete the value and try again" = "Atingeți o valoare recunoscută pentru a o șterge și a încerca din nou";
+"Confirm" = "Confirmare";
+"Pay" = "Plată";
+"Authorize Card" = "Autorizați cardul";
+"Authorize ACH" = "Autorizați ACH";
+"Submit" = "Trimite";

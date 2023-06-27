@@ -1,4 +1,14 @@
 "Card number" = "Kortin numero";
 "Name on card" = "Nimi kortissa";
-"Expiration" = "Voimassaolo päättyy";
+"Expiration" = "Vanhenemispäivä";
 "Name" = "Nimi";
+"Done" = "Valmis";
+"Cancel" = "Peruuta";
+"Country" = "Maa";
+"Center your card until the fields are recognized" = "Keskitä korttisi, kunnes kentät tunnistetaan";
+"Touch a recognized value to delete the value and try again" = "Kosketa tunnistettua arvoa poistaaksesi sen ja yritä uudelleen";
+"Confirm" = "Vahvista";
+"Pay" = "Maksa";
+"Authorize Card" = "Hyväksy kortti";
+"Authorize ACH" = "Hyväksy ACH";
+"Submit" = "Lähetä";

@@ -2,3 +2,13 @@
 "Name on card" = "שם על הכרטיס";
 "Expiration" = "תוקף";
 "Name" = "שם";
+"Done" = "סיום";
+"Cancel" = "ביטול";
+"Country" = "מדינה";
+"Center your card until the fields are recognized" = "מרכז את הכרטיס עד שהשדות מוכרזים";
+"Touch a recognized value to delete the value and try again" = "נגע בערך שמזוהה כדי למחוק את הערך ולנסות שוב";
+"Confirm" = "אישור";
+"Pay" = "שלם";
+"Authorize Card" = "אישור כרטיס";
+"Authorize ACH" = "אישור ACH";
+"Submit" = "שלח";

@@ -1,4 +1,14 @@
 "Card number" = "カード番号";
-"Name on card" = "カード名義人";
+"Name on card" = "カード名義";
 "Expiration" = "有効期限";
-"Name" = "氏名";
+"Name" = "名前";
+"Done" = "完了";
+"Cancel" = "キャンセル";
+"Country" = "国";
+"Center your card until the fields are recognized" = "フィールドが認識されるまでカードを中央に配置してください";
+"Touch a recognized value to delete the value and try again" = "認識された値をタッチして値を削除し、もう一度お試しください";
+"Confirm" = "確認";
+"Pay" = "支払い";
+"Authorize Card" = "カードの承認";
+"Authorize ACH" = "ACHの承認";
+"Submit" = "送信";

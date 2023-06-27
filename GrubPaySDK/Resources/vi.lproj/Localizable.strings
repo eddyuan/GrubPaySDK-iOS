@@ -2,3 +2,13 @@
 "Name on card" = "Tên trên thẻ";
 "Expiration" = "Hết hạn";
 "Name" = "Tên";
+"Done" = "Hoàn tất";
+"Cancel" = "Hủy";
+"Country" = "Quốc gia";
+"Center your card until the fields are recognized" = "Canh giữa thẻ của bạn cho đến khi các trường được nhận diện";
+"Touch a recognized value to delete the value and try again" = "Chạm vào giá trị đã nhận diện để xóa giá trị và thử lại";
+"Confirm" = "Xác nhận";
+"Pay" = "Thanh toán";
+"Authorize Card" = "Ủy quyền thẻ";
+"Authorize ACH" = "Ủy quyền ACH";
+"Submit" = "Gửi";
