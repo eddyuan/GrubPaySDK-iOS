@@ -292,26 +292,26 @@ class GrubPayVC: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     
-    func launch(
-        rootViewController: UIViewController? = nil,
-        completion: @escaping (Result<GrubPayChannel, GrubPayError>) -> Void
-    ) {
-        DispatchQueue.main.async {
-            guard let rootViewController = rootViewController ?? UIApplication.shared.windows.first(
-                where: { $0.isKeyWindow }
-            )?.rootViewController else {
-                return
-            }
-            let navigationController = UINavigationController(rootViewController: self)
-            navigationController.presentationController?.delegate = self
-            navigationController.modalPresentationStyle = .pageSheet
-            rootViewController.present(
-                navigationController,
-                animated: true,
-                completion: nil
-            )
-        }
-    }
+//    func launch(
+//        rootViewController: UIViewController? = nil,
+//        completion: @escaping (Result<GrubPayChannel, GrubPayError>) -> Void
+//    ) {
+//        DispatchQueue.main.async {
+//            guard let rootViewController = rootViewController ?? UIApplication.shared.windows.first(
+//                where: { $0.isKeyWindow }
+//            )?.rootViewController else {
+//                return
+//            }
+//            let navigationController = UINavigationController(rootViewController: self)
+//            navigationController.presentationController?.delegate = self
+//            navigationController.modalPresentationStyle = .pageSheet
+//            rootViewController.present(
+//                navigationController,
+//                animated: true,
+//                completion: nil
+//            )
+//        }
+//    }
     
     @objc func onSubmitButton() {
         submitButton.isLoading = true

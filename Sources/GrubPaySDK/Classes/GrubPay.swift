@@ -36,17 +36,18 @@ public enum GrubPay {
                 completion(.failure(.viewController))
                 return
             }
-            var navigationController: UINavigationController?
+//            let navigationController: UINavigationController!
             let grubPayVC = GrubPayVC(
                 secureId,
                 inputStyle: inputStyle,
                 completion: completion
             )
-            navigationController = UINavigationController(rootViewController: grubPayVC)
-            navigationController?.presentationController?.delegate = grubPayVC
-            navigationController?.modalPresentationStyle = .pageSheet
+
+            let navigationController = UINavigationController(rootViewController: grubPayVC)
+            navigationController.modalPresentationStyle = .pageSheet
+            navigationController.presentationController?.delegate = grubPayVC
             rootViewController.present(
-                navigationController!,
+                navigationController,
                 animated: true,
                 completion: nil
             )
