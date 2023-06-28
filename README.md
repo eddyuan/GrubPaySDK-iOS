@@ -9,6 +9,11 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+<p align="center">
+    <img src="https://github.com/iotpayca/GrubPaySDK-IOS/blob/master/ScreenShots/ach.png" />
+    <img src="https://github.com/iotpayca/GrubPaySDK-IOS/blob/master/ScreenShots/card.png" />
+</p>
+
 ## Requirements
 
 - iOS 10.0+
