@@ -16,7 +16,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-- iOS 10.0+
+- iOS 11.0+
 - iOS 13.0+ for credit card scanner (VisionKit) NSCamera usage required
 - Swift 4.2+
 

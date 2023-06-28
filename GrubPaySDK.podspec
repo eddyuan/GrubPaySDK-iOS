@@ -28,19 +28,13 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Edward Yuan' => 'edward.yuan@iotpay.ca' }
   s.source           = { :git => 'https://github.com/iotpayca/GrubPaySDK-IOS.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'Sources/GrubPaySDK/Classes/**/*'
   s.resources = ['Sources/GrubPaySDK/Assets/*.png', 'Sources/GrubPaySDK/Resources/*.lproj']
   
-#  s.resource_bundles = {
-#    'GrubPaySDK' => ['Sources/GrubPaySDK/Assets/*.png', 'Sources/GrubPaySDK/Resources/*.lproj']
-#  }
 
   s.frameworks = 'UIKit', 'VisionKit'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
