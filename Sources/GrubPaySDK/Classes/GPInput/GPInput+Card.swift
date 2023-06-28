@@ -66,9 +66,14 @@ class GPInputCard: GPInput {
     private var cardBrand: GrubPayCardBrand = .unknown {
         didSet {
             toggleCameraButton()
+//            let img = UIImage(
+//                named: cardBrand.imageName,
+//                in: Bundle(for: type(of: self)),
+//                compatibleWith: nil
+//            )
             let img = UIImage(
                 named: cardBrand.imageName,
-                in: Bundle(for: type(of: self)),
+                in: Bundle.module,
                 compatibleWith: nil
             )
             UIView.transition(
