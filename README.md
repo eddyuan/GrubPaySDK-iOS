@@ -10,15 +10,15 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 <p align="center">
-    <img style="width: 30%" src="https://github.com/iotpayca/GrubPaySDK-IOS/blob/master/ScreenShots/ach.png" />
-    <img style="width: 30%" src="https://github.com/iotpayca/GrubPaySDK-IOS/blob/master/ScreenShots/card.png" />
+    <img style="width: 40%" src="https://github.com/iotpayca/GrubPaySDK-IOS/blob/master/ScreenShots/ach.png" />
+    <img style="width: 40%" src="https://github.com/iotpayca/GrubPaySDK-IOS/blob/master/ScreenShots/card.png" />
 </p>
 
 ## Requirements
 
 - iOS 10.0+
 - iOS 13.0+ for credit card scanner (VisionKit) NSCamera usage required
-- Swift 4.0+
+- Swift 4.2+
 
 ## Installation
 
