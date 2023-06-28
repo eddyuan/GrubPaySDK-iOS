@@ -27,7 +27,7 @@ class GPACHForm: UIStackView {
     private var routingField: GPInputRouting?
     private var nameField: GPInputName?
     private var accountField: GPInputAccount?
-    private var accountTypeField: GPRadioAccountType?
+    private var accountTypeField: GPInputAccount?
     private var agreementField: GPSwitchACHAgreement?
 
     // MARK: Setups

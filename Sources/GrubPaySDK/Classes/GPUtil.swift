@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 internal extension String {
     func toValidDateStringOrNil() -> String? {

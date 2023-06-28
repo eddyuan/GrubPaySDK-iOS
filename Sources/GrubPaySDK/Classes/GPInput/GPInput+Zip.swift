@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class GPInputZip: GPInput {
     // MARK: Validators

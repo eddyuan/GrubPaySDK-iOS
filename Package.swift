@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "GrubPaySDK",
+    defaultLocalization: "en",
+    platforms: [
+        .iOS(.v11),
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -17,4 +21,6 @@ let package = Package(
         .target(
             name: "GrubPaySDK"),
     ],
-)
+    swiftLanguageVersions: [
+        .v4_2,
+    ])

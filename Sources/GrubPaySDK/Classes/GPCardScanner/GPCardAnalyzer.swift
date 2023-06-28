@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import Vision
 
 @available(iOS 13.0, *)

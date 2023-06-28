@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class GPInputName: GPInput {
     // MARK: Validators

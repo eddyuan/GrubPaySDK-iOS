@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 private extension UITapGestureRecognizer {
     func didTapAttributedTextInLabel(label: UILabel, inRange targetRange: NSRange) -> Bool {

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class GPInputCVV: GPInput {
     // MARK: Validators

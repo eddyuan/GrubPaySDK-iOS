@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 internal enum GPCountry: String, CaseIterable {
     case us = "US"
