@@ -14,9 +14,9 @@ import CommonCrypto
 class ViewController: UIViewController {
     // MARK: - Config For Testing
 
-    let mchId = "10001321"
-    let loginName = "eway"
-    let mchKey = "LkFe0lpxjFUU27xh9hXhPxU2yztzIcgv"
+    let mchId = "your_mchid"
+    let loginName = "your_username"
+    let mchKey = "your_merchant_key"
     let serverUrl = "https://api.grubpay.io/v4/"
 
     // MARK: - Properties
