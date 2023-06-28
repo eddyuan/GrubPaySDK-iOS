@@ -149,16 +149,6 @@ class GrubPayVC: UIViewController {
         addViews()
         updateColors()
         setupLayout()
-        grubpayElement.mount(secureId) {
-            [weak self] result in
-            switch result {
-            case .success:
-                self?.afterMounted()
-            case .failure(let error):
-                self?.onCompletion(.failure(error))
-                self?.dismissView()
-            }
-        }
     }
     
     private func afterMounted() {
@@ -283,6 +273,8 @@ class GrubPayVC: UIViewController {
         _ secureId: String,
         saveCard: Bool = false,
         inputStyle: GPInputStyle = .init(),
+        launchAfterLoaded: Bool = false,
+        rootViewController: UIViewController? = nil,
         completion: @escaping (Result<GrubPayResponse, GrubPayError>) -> Void
     ) {
         self.secureId = secureId
@@ -290,28 +282,40 @@ class GrubPayVC: UIViewController {
         self.onCompletion = completion
         self.saveCard = saveCard
         super.init(nibName: nil, bundle: nil)
+        grubpayElement.mount(secureId) {
+            [weak self] result in
+            switch result {
+            case .success:
+                self?.afterMounted()
+                if launchAfterLoaded {
+                    self?.launch(rootViewController)
+                }
+            case .failure(let error):
+                self?.onCompletion(.failure(error))
+                self?.dismissView()
+            }
+        }
     }
     
-//    func launch(
-//        rootViewController: UIViewController? = nil,
-//        completion: @escaping (Result<GrubPayChannel, GrubPayError>) -> Void
-//    ) {
-//        DispatchQueue.main.async {
-//            guard let rootViewController = rootViewController ?? UIApplication.shared.windows.first(
-//                where: { $0.isKeyWindow }
-//            )?.rootViewController else {
-//                return
-//            }
-//            let navigationController = UINavigationController(rootViewController: self)
-//            navigationController.presentationController?.delegate = self
-//            navigationController.modalPresentationStyle = .pageSheet
-//            rootViewController.present(
-//                navigationController,
-//                animated: true,
-//                completion: nil
-//            )
-//        }
-//    }
+    private func launch(_ rootViewController: UIViewController? = nil) {
+        DispatchQueue.main.async {
+            [weak self] in
+            guard let rootViewController = rootViewController ?? UIApplication.shared.windows.first(
+                where: { $0.isKeyWindow }
+            )?.rootViewController, let self = self else {
+                self?.onCompletion(.failure(.viewController))
+                return
+            }
+            self.modalPresentationStyle = .pageSheet
+            let navigationController = UINavigationController(rootViewController: self)
+            navigationController.presentationController?.delegate = self
+            rootViewController.present(
+                navigationController,
+                animated: true,
+                completion: nil
+            )
+        }
+    }
     
     @objc func onSubmitButton() {
         submitButton.isLoading = true

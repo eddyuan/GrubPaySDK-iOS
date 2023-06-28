@@ -81,16 +81,18 @@ class GPCardScanner: UIViewController {
         rootViewController: UIViewController,
         completed: @escaping (_ number: String?, _ date: String?) -> Void
     ) {
-        let viewScanner = GPCardScanner(
-            resultsHandler: completed,
-            buttonColor: buttonColor
-        )
-        let navigation = UINavigationController(rootViewController: viewScanner)
-        navigation.modalPresentationStyle = .pageSheet
-        rootViewController.present(
-            navigation,
-            animated: true,
-            completion: nil
-        )
+        DispatchQueue.main.async {
+            let viewScanner = GPCardScanner(
+                resultsHandler: completed,
+                buttonColor: buttonColor
+            )
+            let navigation = UINavigationController(rootViewController: viewScanner)
+            navigation.modalPresentationStyle = .pageSheet
+            rootViewController.present(
+                navigation,
+                animated: true,
+                completion: nil
+            )
+        }
     }
 }
