@@ -1,9 +1,10 @@
 # GrubPaySDK
 
-[![CI Status](https://img.shields.io/travis/43017558/GrubPaySDK.svg?style=flat)](https://travis-ci.org/43017558/GrubPaySDK)
-[![Version](https://img.shields.io/cocoapods/v/GrubPaySDK.svg?style=flat)](https://cocoapods.org/pods/GrubPaySDK)
-[![License](https://img.shields.io/cocoapods/l/GrubPaySDK.svg?style=flat)](https://cocoapods.org/pods/GrubPaySDK)
-[![Platform](https://img.shields.io/cocoapods/p/GrubPaySDK.svg?style=flat)](https://cocoapods.org/pods/GrubPaySDK)
+[![Static Badge](https://img.shields.io/badge/Swift-4.2-blue)](https://cocoapods.org/pods/GrubPaySDK)
+[![Static Badge](https://img.shields.io/badge/Swift_Package_Manager-compatible-4BC51D)](https://cocoapods.org/pods/GrubPaySDK)
+[![Version](https://img.shields.io/cocoapods/v/GrubPaySDK.svg)](https://cocoapods.org/pods/GrubPaySDK)
+[![License](https://img.shields.io/cocoapods/l/GrubPaySDK.svg)](https://cocoapods.org/pods/GrubPaySDK)
+[![Platform](https://img.shields.io/cocoapods/p/GrubPaySDK.svg)](https://cocoapods.org/pods/GrubPaySDK)
 
 ## Example
 
