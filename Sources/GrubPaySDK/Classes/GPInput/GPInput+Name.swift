@@ -35,7 +35,7 @@ class GPInputName: GPInput {
         super.delegate = self
         super.titleText = NSLocalizedString(
             controller.config?.channel == .card ? "Name on card" : "Name",
-            bundle: Bundle(for: type(of: self)),
+            bundle: GrubPay.bundle,
             comment: ""
         )
         super.placeholder = "John Smith"

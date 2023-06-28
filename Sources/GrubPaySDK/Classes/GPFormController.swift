@@ -241,8 +241,7 @@ internal class GPFormController {
         params["uuid"] = uuid.uuidString
         params["device"] = "iOS"
         params["os_version"] = UIDevice.current.systemVersion
-        let podBundle = Bundle(for: GPFormController.self)
-        if let version = podBundle.infoDictionary?["CFBundleShortVersionString"] as? String {
+        if let version = GrubPay.bundle.infoDictionary?["CFBundleShortVersionString"] as? String {
             params["sdk_version"] = version
         }
         

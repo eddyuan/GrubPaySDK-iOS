@@ -66,14 +66,9 @@ class GPInputCard: GPInput {
     private var cardBrand: GrubPayCardBrand = .unknown {
         didSet {
             toggleCameraButton()
-//            let img = UIImage(
-//                named: cardBrand.imageName,
-//                in: Bundle(for: type(of: self)),
-//                compatibleWith: nil
-//            )
             let img = UIImage(
                 named: cardBrand.imageName,
-                in: Bundle.module,
+                in: GrubPay.bundle,
                 compatibleWith: nil
             )
             UIView.transition(
@@ -128,7 +123,7 @@ class GPInputCard: GPInput {
         super.delegate = self
         super.titleText = NSLocalizedString(
             "Card number",
-            bundle: Bundle(for: type(of: self)),
+            bundle: GrubPay.bundle,
             comment: ""
         )
         super.placeholder = "1234 5678 9012 3456"
@@ -167,7 +162,7 @@ class GPInputCard: GPInput {
     private lazy var cardImage: UIImageView = {
         let img = UIImage(
             named: cardBrand.imageName,
-            in: Bundle(for: type(of: self)),
+            in: GrubPay.bundle,
             compatibleWith: nil
         )
         let imgView = UIImageView(image: img)

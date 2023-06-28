@@ -8,7 +8,15 @@
 import Foundation
 import UIKit
 
-public enum GrubPay {
+public class GrubPay {
+    internal static var bundle: Bundle {
+        #if SWIFT_PACKAGE
+        return Bundle.module
+        #else
+        return Bundle(for: GrubPay.self)
+        #endif
+    }
+
     public static func element(
         viewController: UIViewController? = nil,
         onValidChange: @escaping (_ isValid: Bool) -> Void = { _ in },

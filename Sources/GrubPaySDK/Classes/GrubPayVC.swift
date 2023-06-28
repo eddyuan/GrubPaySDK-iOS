@@ -170,7 +170,7 @@ class GrubPayVC: UIViewController {
                 self?.submitButton.setTitle(
                     NSLocalizedString(
                         "Pay",
-                        bundle: Bundle(for: GrubPayVC.self),
+                        bundle: GrubPay.bundle,
                         comment: ""
                     ),
                     for: .normal
@@ -179,20 +179,20 @@ class GrubPayVC: UIViewController {
                 if config.channel == .card {
                     self?.title = NSLocalizedString(
                         "Authorize Card",
-                        bundle: Bundle(for: GrubPayVC.self),
+                        bundle: GrubPay.bundle,
                         comment: ""
                     )
                 } else {
                     self?.title = NSLocalizedString(
                         "Authorize ACH",
-                        bundle: Bundle(for: GrubPayVC.self),
+                        bundle: GrubPay.bundle,
                         comment: ""
                     )
                 }
                 self?.submitButton.setTitle(
                     NSLocalizedString(
                         "Submit",
-                        bundle: Bundle(for: GrubPayVC.self),
+                        bundle: GrubPay.bundle,
                         comment: ""
                     ),
                     for: .normal

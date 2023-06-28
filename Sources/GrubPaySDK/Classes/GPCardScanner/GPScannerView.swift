@@ -139,19 +139,19 @@ class GPScannerView: UIView {
 
     private var hintTopText = NSLocalizedString(
         "Center your card until the fields are recognized",
-        bundle: Bundle(for: GPScannerView.self),
+        bundle: GrubPay.bundle,
         comment: ""
     )
 
     private var hintBottomText = NSLocalizedString(
         "Touch a recognized value to delete the value and try again",
-        bundle: Bundle(for: GPScannerView.self),
+        bundle: GrubPay.bundle,
         comment: ""
     )
 
     private var buttonCancelTitle = NSLocalizedString(
         "Cancel",
-        bundle: Bundle(for: GPScannerView.self),
+        bundle: GrubPay.bundle,
         comment: ""
     )
 

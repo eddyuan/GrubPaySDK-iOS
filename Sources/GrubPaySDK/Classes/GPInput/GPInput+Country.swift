@@ -44,7 +44,7 @@ class GPInputCountry: GPInput {
         super.delegate = self
         super.titleText = NSLocalizedString(
             "Country",
-            bundle: Bundle(for: type(of: self)),
+            bundle: GrubPay.bundle,
             comment: ""
         )
         super.keyboardType = .numberPad
@@ -58,7 +58,7 @@ class GPInputCountry: GPInput {
         toolBar.sizeToFit()
         // Adding Button ToolBar
         let doneButton = UIBarButtonItem(
-            title: NSLocalizedString("Done", bundle: Bundle(for: type(of: self)), comment: ""),
+            title: NSLocalizedString("Done", bundle: GrubPay.bundle, comment: ""),
             style: .plain,
             target: self,
             action: #selector(doneClick)
@@ -67,7 +67,7 @@ class GPInputCountry: GPInput {
         let cancelButton = UIBarButtonItem(
             title: NSLocalizedString(
                 "Cancel",
-                bundle: Bundle(for: type(of: self)),
+                bundle: GrubPay.bundle,
                 comment: ""
             ),
             style: .plain,

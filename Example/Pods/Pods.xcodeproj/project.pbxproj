@@ -108,7 +108,6 @@
 		ADBA21EFEF270E5BFC19EBDD94B51259 /* zh-TW.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4E25063AA2FE8074D7F09A7BC84D7094 /* zh-TW.lproj */; };
 		AFE63502DD58C9304BA86F3F81FFB572 /* cc-bcglobal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B147D08D9FD442EA8A9ACAF0A5650A /* cc-bcglobal@2x.png */; };
 		B20BE680D5120CD2BD4544795793F30D /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D849E52005D36439AEFBA6DE38F1B3AC /* id.lproj */; };
-		B386DF41B3AAE54FF1335708FE8F20FB /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25B9964AD48005EE5B7A63DB5A5C624 /* Localization.swift */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		B757288C15ECBA2D1FE014330A82349B /* GPACHForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7025F5DA70C21CC54139584D592556 /* GPACHForm.swift */; };
 		B7D4274CA14D8747975AC7BAF846C917 /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1BF604348AD438F5691C7C5491E599C7 /* ro.lproj */; };
@@ -335,7 +334,6 @@
 		ED714E093E9EE2F6177F9DE10544946C /* cc-dinner@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-dinner@3x.png"; sourceTree = "<group>"; };
 		EF35EB584AD9749499F10768194CFD4A /* cc-jcb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-jcb@3x.png"; sourceTree = "<group>"; };
 		F1B147D08D9FD442EA8A9ACAF0A5650A /* cc-bcglobal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-bcglobal@2x.png"; sourceTree = "<group>"; };
-		F25B9964AD48005EE5B7A63DB5A5C624 /* Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Localization.swift; path = Sources/GrubPaySDK/Classes/Localization.swift; sourceTree = "<group>"; };
 		F66C91C7C17A4014890BC4D47072BF2B /* cc-master@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "cc-master@3x.png"; sourceTree = "<group>"; };
 		FA480E25B4739422C3E0DD88F190254B /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = vi.lproj; sourceTree = "<group>"; };
 		FB1336583B5C07B4F2BCCF7A2CAB2F8F /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = sv.lproj; sourceTree = "<group>"; };
@@ -400,7 +398,6 @@
 				597F32B047FC370FF8512DE28C6B138E /* GrubPayError.swift */,
 				639DCFCBDAEB7FE60B6BDD5124FF36DD /* GrubPayResponse.swift */,
 				1C5DE0EE7CAE704FBE2299C95B34859A /* GrubPayVC.swift */,
-				F25B9964AD48005EE5B7A63DB5A5C624 /* Localization.swift */,
 				8E90C6D78EB9EBFFA72B656A4D0C2668 /* Assets */,
 				84F339ABA412C1E37B8CE7C6C67DC5CD /* GPCardScanner */,
 				F3BC56E02B549FCDC195160758476A57 /* GPInput */,
@@ -1074,7 +1071,6 @@
 				9313338CFAA4C4A07BFB0EAD4E4E2687 /* GrubPayResponse.swift in Sources */,
 				A742442A7492451CC49BF4E90D0D95C8 /* GrubPaySDK-dummy.m in Sources */,
 				06B8BD46186B0564977047ED5E337646 /* GrubPayVC.swift in Sources */,
-				B386DF41B3AAE54FF1335708FE8F20FB /* Localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

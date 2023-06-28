@@ -51,7 +51,7 @@ class GPInputExpiry: GPInput {
 
     private func initField() {
         super.delegate = self
-        super.titleText = NSLocalizedString("Expiration", bundle: Bundle(for: type(of: self)), comment: "")
+        super.titleText = NSLocalizedString("Expiration", bundle: GrubPay.bundle, comment: "")
         super.placeholder = "MM/YY"
         super.keyboardType = .decimalPad
         super.inputView = expiryPicker
@@ -64,14 +64,14 @@ class GPInputExpiry: GPInput {
         toolBar.sizeToFit()
         // Adding Button ToolBar
         let doneButton = UIBarButtonItem(
-            title: NSLocalizedString("Done", bundle: Bundle(for: type(of: self)), comment: ""),
+            title: NSLocalizedString("Done", bundle: GrubPay.bundle, comment: ""),
             style: .plain,
             target: self,
             action: #selector(doneClick)
         )
         let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let cancelButton = UIBarButtonItem(
-            title: NSLocalizedString("Cancel", bundle: Bundle(for: type(of: self)), comment: ""),
+            title: NSLocalizedString("Cancel", bundle: GrubPay.bundle, comment: ""),
             style: .plain,
             target: self,
             action: #selector(cancelClick)

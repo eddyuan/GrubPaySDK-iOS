@@ -6,17 +6,19 @@
 //  Copyright (c) 2023 43017558. All rights reserved.
 //
 
+import CommonCrypto
 import GrubPaySDK
 import UIKit
-
-import CommonCrypto
 
 class ViewController: UIViewController {
     // MARK: - Config For Testing
 
-    let mchId = "your_mchid"
-    let loginName = "your_username"
-    let mchKey = "your_merchant_key"
+//    let mchId = "your_mchid"
+//    let loginName = "your_username"
+//    let mchKey = "your_merchant_key"
+    let mchId = "10001321"
+    let loginName = "eway"
+    let mchKey = "LkFe0lpxjFUU27xh9hXhPxU2yztzIcgv"
     let serverUrl = "https://api.grubpay.io/v4/"
 
     // MARK: - Properties
