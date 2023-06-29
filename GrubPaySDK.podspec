@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GrubPaySDK'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'GrubPay.io SDK for embedding card/ACH payment UI'
   s.swift_version    = '4.2'
 
