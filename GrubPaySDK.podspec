@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/iotpayca/GrubPaySDK-IOS'
-  s.screenshots      = 'https://github.com/iotpayca/GrubPaySDK-IOS/blob/master/ScreenShots/ach.png', 'https://github.com/iotpayca/GrubPaySDK-IOS/blob/master/ScreenShots/card.png'
+  s.screenshots      = 'https://raw.githubusercontent.com/iotpayca/GrubPaySDK-IOS/master/ScreenShots/ach.png', 'https://raw.githubusercontent.com/iotpayca/GrubPaySDK-IOS/master/ScreenShots/card.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Edward Yuan' => 'edward.yuan@iotpay.ca' }
   s.source           = { :git => 'https://github.com/iotpayca/GrubPaySDK-IOS.git', :tag => s.version.to_s }
