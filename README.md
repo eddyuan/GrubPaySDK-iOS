@@ -52,7 +52,7 @@ Once you have your Swift package set up, adding `GrubPaySDK` as a dependency is 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/eddyuan/GrubPaySDK-iOS", .upToNextMajor(from: "0.1.0"))
+    .package(url: "https://github.com/eddyuan/GrubPaySDK-iOS", .upToNextMajor(from: "0.1.2"))
 ]
 ```
 
