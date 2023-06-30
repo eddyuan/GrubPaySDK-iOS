@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GrubPaySDK'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'GrubPay.io SDK for embedding card/ACH payment UI'
   s.swift_version    = '4.2'
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  GrubPay.io SDK for embedding card/ACH payment UI
+  GrubPay.io SDK for embedding Card/ACH payment UI
   Providing both UIView element and modal style
                        DESC
 
